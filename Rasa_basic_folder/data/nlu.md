@@ -38,6 +38,8 @@
 - hello
 - heyo
 - hola
+ 
+
 
 ## intent:restaurant_search
 - i'm looking for a place to eat
@@ -54,8 +56,19 @@
 - I am looking for [asian fusion](cuisine) food
 - I am looking a restaurant in [294328](location)
 - in [Gurgaon](location)
-- [South Indian](cuisine)
-- [North Indian](cuisine)
+- [SIndian](cuisine)
+- [NIndian](cuisine)
+- [Mexican](cuisine)
+- [American](cuisine)
+- [North American](cuisine:American)
+- [South Indian](cuisine:SIndian)
+- [South indian](cuisine:SIndian)
+- [south Indian](cuisine:SIndian)
+- [south indian](cuisine:SIndian)
+- [North Indian](cuisine:NIndian)
+- [North indian](cuisine:NIndian)
+- [north Indian](cuisine:NIndian)
+- [north indian](cuisine:NIndian)
 - [Italian](cuisine)
 - [Chinese](cuisine:chinese)
 - [chinese](cuisine)
@@ -67,17 +80,22 @@
 - can you book a table in [rome](location) in a [moderate](price:mid) price range with [british](cuisine) food for [four](people:4) people
 - [central](location) [indian](cuisine) restaurant
 - please help me to find restaurants in [pune](location)
-- Please find me a restaurantin [bangalore](location)
+- Please find me a restaurant in [bangalore](location)
 - [mumbai](location)
 - [Chinese](cuisine:chinese)
 - show me restaurants
 - [mumbai](location)
-- [Italian](cuisine)
 - please find me [chinese](cuisine) restaurant in [delhi](location)
 - can you find me a [chinese](cuisine) restaurant
 - [delhi](location)
 - please find me a restaurant in [ahmedabad](location)
 - please show me a few [italian](cuisine) restaurants in [bangalore](location)
+- get me [italian](cuisine) restaurants in [bangalore](location)
+- get me [italian](cuisine) restaurants from [bangalore](location)
+
+
+## lookup:location
+./CityList.txt
 
 ## synonym:4
 - four
@@ -413,7 +431,8 @@
 - America
 
 
-## synonym:South Indian
+## synonym:SIndian
+- South Indian
 - South
 - south
 - south indian
@@ -421,7 +440,8 @@
 - South indian
 
 
-## synonym:North Indian
+## synonym:NIndian
+- North Indian
 - North
 - north
 - north indian
