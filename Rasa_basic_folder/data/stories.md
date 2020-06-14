@@ -1,217 +1,184 @@
-## complete path
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_search_restaurants
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - utter_goodbye
-    - export
-
-## location specified
-* greet
-    - utter_greet
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_search_restaurants
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - utter_goodbye
-    - export
-
-## complete path 2
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "North Indian"}
-    - slot{"cuisine": "North Indian"}
-    - action_search_restaurants
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - utter_goodbye
-
-## complete path 3
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "italy"}
-    - slot{"location": "italy"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_search_restaurants
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-* goodbye
-    - utter_goodbye
-
-## complete path 4
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_search_restaurants
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - slot{"location": "delhi"}
-    - export
-
-
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"location": "mumbai"}
-    - slot{"location": "mumbai"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_search_restaurants
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - slot{"location": "mumbai"}
-* stop
-
 ## interactive_story_1
 * greet
     - utter_greet
 * restaurant_search
     - utter_ask_location
-* restaurant_search{"location": "mumbai"}
-    - slot{"location": "mumbai"}
+* restaurant_search{"location": "Tiruchirapalli"}
+    - slot{"location": "Tiruchirapalli"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
-    - action_search_restaurants
-    - slot{"location": "mumbai"}
-
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"cuisine": "chinese", "location": "delhi"}
-    - slot{"cuisine": "chinese"}
-    - slot{"location": "delhi"}
-    - action_search_restaurants
-    - slot{"location": "delhi"}
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-* affirm
-    - utter_goodbye
-    
-    
-## happy_path
-* greet
-    - utter_greet
-* restaurant_search{"cuisine": "italian", "location": "mumbai"}
-    - slot{"cuisine": "italian"}
-    - slot{"location": "mumbai"}
-    - action_search_restaurants
-    - slot{"location": "mumbai"}
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-* affirm
-    - utter_goodbye
-
-
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - utter_ask_location
-* restaurant_search{"location": "delhi"}
-    - slot{"location": "delhi"}
-    - action_search_restaurants
-    - slot{"location": "delhi"}
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email" : "johndoe@gmail.com"}
-    - slot{"contact_email" : "johndoe@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-* affirm
-    - utter_goodbye
-
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"location": "Quilon"}
-    - slot{"location": "Quilon"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "SIndian"}
+    - slot{"cuisine": "SIndian"}
     - utter_ask_price_range
 * price_info{"price": "300To700"}
     - slot{"price": "300To700"}
     - action_search_restaurants
-    - slot{"location": "Quilon"}
+    - slot{"location": "Tiruchirapalli"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "johndoe@amazon.com"}
+    - slot{"contact_email": "johndoe@amazon.com"}
+    - action_send_mail
+    - slot{"location": "Tiruchirapalli"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "location": "chandigarh"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "chandigarh"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "chandigarh"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "ygndgf1233@yyrt.de"}
+    - slot{"contact_email": "ygndgf1233@yyrt.de"}
+    - action_send_mail
+    - slot{"location": "chandigarh"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Mumbai"}
+    - slot{"location": "Mumbai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "American"}
+    - slot{"cuisine": "American"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "Mumbai"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - slot{"location": "Mumbai"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Madurai"}
+    - slot{"location": "Madurai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "Mexican"}
+    - slot{"cuisine": "Mexican"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "Madurai"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "location": "chandigarh"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "chandigarh"}
+    - utter_ask_price_range
+* price_info{"price": "300To700"}
+    - slot{"price": "300To700"}
+    - action_search_restaurants
+    - slot{"location": "chandigarh"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "mumbai"}
+    - slot{"location": "mumbai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "SIndian"}
+    - slot{"cuisine": "SIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "mumbai"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "bengaluru"}
+    - slot{"location": "bengaluru"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price_range
+* price_info{"price": "300To700"}
+    - slot{"price": "300To700"}
+    - action_search_restaurants
+    - slot{"location": "bengaluru"}
     - utter_ask_send_details
 * affirm
     - utter_ask_id
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
     - slot{"contact_email": "madhavi.koduganti@gmail.com"}
     - action_send_mail
-    - slot{"location": "Quilon"}
+    - slot{"location": "bengaluru"}
     - utter_sent_mail
-* affirm
     - utter_goodbye
-    - action_restart
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "NIndian", "location": "Kozhikode"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"location": "Kozhikode"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "Kozhikode"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Rishikesh"}
+    - slot{"location": "Rishikesh"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "American"}
+    - slot{"cuisine": "American"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "Rishikesh"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "xyz@sth.edu"}
+    - slot{"contact_email": "xyz@sth.edu"}
+    - action_send_mail
+    - slot{"location": "Rishikesh"}
+    - utter_sent_mail
+    - utter_goodbye

@@ -29,6 +29,9 @@
 - unnecessary
 - no thanks
 - no, thanks
+- no. not needed
+- don't send
+- why? it is not necessary
 
 ## intent:price_info
 - [LT300](price)
@@ -41,7 +44,7 @@
 - [between 300 and 700]{"entity": "price", "value": "300To700"}
 - [below 300]{"entity": "price", "value": "LT300"}
 - [above 700]{"entity": "price", "value": "MT700"}
-- [300To700](price)
+- [LT300](price)
 
 ## intent:goodbye
 - bye
@@ -64,6 +67,11 @@
 - dear sir
 - heyo
 - hola
+- Hello there!
+- Hey hi there!
+- Hola
+- hey buddy
+- Hey
 
 ## intent:contact_id
 - My email id is [maxmeier@firma.de](contact_email)
@@ -74,6 +82,11 @@
 - [maxmeier@firma.de](contact_email)
 - [bot-fan@bots.com](contact_email)
 - madhavi.koduganti@gmail.com[]{"entity": "contact_email", "value": "madhavi.koduganti@gmail.com"}
+- johndoe@amazon.com[]{"entity": "contact_email", "value": "johndoe@amazon.com"}
+- ygndgf1233@yyrt.de[]{"entity": "contact_email", "value": "ygndgf1233@yyrt.de"}
+- manasa.koduganti@gmail.c[om]{"entity": "contact_email", "value": "manasa.koduganti@gmail.com"}
+- yes, my email id is madhavi.koduganti@gmail.com[]{"entity": "contact_email", "value": "madhavi.koduganti@gmail.com"}
+- yes. Please send it to [xyz@sth.edu](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -127,7 +140,18 @@
 - get me [italian](cuisine) restaurants from [bangalore](location)
 - get me restaurants from [bangalore](location)
 - please show me restaurants from Quilon[]{"entity": "location", "value": "Quilon"}
-- [Italian](cuisine)
+- I’m hungry. Looking out for some good restaurants
+- Tiruchirapalli[]{"entity": "location", "value": "Tiruchirapalli"}
+- I’m hungry. Looking out for some good [chinese](cuisine) restaurants in [chandigarh](location)
+- I am very hungry right now and about to become unconscious. I really need to eat somewhere. Can you please show me some restaurants?
+- in [Bombay]{"entity": "location", "value": "Mumbai"}[Bombay]{"entity": "location", "value": "Mumbai"}
+- Will you be able to let me know of some restaurants?
+- In [Madurai](location)
+- in [mumbai](location)
+- bengaluru[]{"entity": "location", "value": "bengaluru"}
+- I cannot tell you how hungry I am right now. I can totally devour a big elephant. I really need to find some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants in [Calicut]{"entity": "location", "value": "Kozhikode"}
+- Can you suggest some good restaurants in [Rishikesh](location)
+- [American](cuisine)
 
 ## synonym:300To700
 - Rs. 300 to 700
@@ -490,6 +514,9 @@
 - Chines
 - china
 - China
+
+## synonym:manasa.koduganti@gmail.com
+- om
 
 ## synonym:mid
 - moderate
