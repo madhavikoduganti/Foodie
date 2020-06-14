@@ -72,20 +72,8 @@
 - ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
 
 ## intent:restaurant_search
-- i'm looking for a place to eat
-- I want to grab lunch
-- I am searching for a dinner spot
-- I am looking for some restaurants in [Delhi](location).
-- I am looking for some restaurants in [Bangalore](location)
-- show me [chinese](cuisine) restaurants
-- show me [chines](cuisine:chinese) restaurants in the [New Delhi](location:Delhi)
-- show me a [mexican](cuisine) place in the [centre](location)
-- i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
-- search for restaurants
-- anywhere in the [west](location)
-- I am looking for [asian fusion](cuisine) food
-- I am looking a restaurant in [294328](location)
-- in [Gurgaon](location)
+
+
 - [SIndian](cuisine)
 - [NIndian](cuisine)
 - [Mexican](cuisine)
@@ -102,25 +90,44 @@
 - [Italian](cuisine)
 - [Chinese](cuisine:chinese)
 - [chinese](cuisine)
+- [mumbai](location)
 - [Lithuania](location)
+- in [Gurgaon](location)
 - Oh, sorry, in [Italy](location)
 - in [delhi](location)
+- [mumbai](location)
+- [delhi](location)
+- [central](location) [indian](cuisine) restaurant
+- show me restaurants
+- i'm looking for a place to eat
+- I want to grab lunch
+- I am searching for a dinner spot
+- search for restaurants
+- I am looking for some restaurants in [Delhi](location).
+- I am looking for some restaurants in [Bangalore](location)
+- show me [chinese](cuisine) restaurants
+- show me [chines](cuisine:chinese) restaurants in the [New Delhi](location:Delhi)
+- show me [chines](cuisine:chinese) restaurants from [New Delhi](location:Delhi)
+- show me restaurants from [New Delhi](location:Delhi)
+- show me a [mexican](cuisine) place in the [centre](location)
+- i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
+- anywhere in the [west](location)
+- I am looking for [asian fusion](cuisine) food
+- I am looking a restaurant in [294328](location)
 - I am looking for some restaurants in [Mumbai](location)
 - I am looking for [mexican indian fusion](cuisine)
-- [central](location) [indian](cuisine) restaurant
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurant in [bangalore](location)
-- [mumbai](location)
-- [Chinese](cuisine:chinese)
-- show me restaurants
-- [mumbai](location)
 - please find me [chinese](cuisine) restaurant in [delhi](location)
 - can you find me a [chinese](cuisine) restaurant
-- [delhi](location)
 - please find me a restaurant in [ahmedabad](location)
 - please show me a few [italian](cuisine) restaurants in [bangalore](location)
 - get me [italian](cuisine) restaurants in [bangalore](location)
 - get me [italian](cuisine) restaurants from [bangalore](location)
+- get me restaurants from [bangalore](location)
+
+
+
 
 
 ## lookup:location

@@ -5,6 +5,7 @@ intents:
 - restaurant_search
 - contact_id
 - goodbye
+- stop
 
 
 
@@ -22,22 +23,19 @@ entities:
 slots:
   cuisine:
     type: text
-  mail:
+  contact_email:
     type: text
   location:
     type: text
-  price_range:
-    type: categorical
-    values:
-    - LT300
-    - 300To700
-    - MT700
+  price:
+    type: text
+
  
 
 
 
     
-templates:
+responses:
   utter_ask_cuisine:
   - buttons:
     - payload: North Indian
@@ -76,6 +74,10 @@ templates:
   - text: how can I help you?
   utter_ask_location:
   - text: In what location?
+  utter_sent_mail:
+  - text: Sent you the mail :)
+  - text: Sending.... Sending... Sent you the mail :)
+  - text: Open your mail and be amazed at my awesomeness!
   utter_default:
   - text: I cannot understand
   - text: I could not understand
@@ -102,6 +104,7 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_send_details
 - utter_ask_id
+- utter_sent_mail
 - utter_ask_location
 - utter_default
 - utter_goodbye

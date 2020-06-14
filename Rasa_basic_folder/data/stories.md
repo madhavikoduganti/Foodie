@@ -9,7 +9,13 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - action_search_restaurants
-    - slot{"location": "delhi"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
     - utter_goodbye
     - export
 
@@ -22,7 +28,13 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - action_search_restaurants
+    - utter_ask_send_details
 * affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
     - utter_goodbye
     - export
 
@@ -37,6 +49,13 @@
 * restaurant_search{"cuisine": "North Indian"}
     - slot{"cuisine": "North Indian"}
     - action_search_restaurants
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
     - utter_goodbye
 
 ## complete path 3
@@ -46,10 +65,17 @@
     - utter_ask_location
 * restaurant_search{"location": "italy"}
     - slot{"location": "italy"}
-	- utter_ask_cuisine
+    - utter_ask_cuisine
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - action_search_restaurants
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
 * goodbye
     - utter_goodbye
 
@@ -64,6 +90,13 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - action_search_restaurants
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
     - slot{"location": "delhi"}
     - export
 
@@ -77,6 +110,13 @@
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
     - action_search_restaurants
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
     - slot{"location": "mumbai"}
 * stop
 
@@ -101,6 +141,13 @@
     - slot{"location": "delhi"}
     - action_search_restaurants
     - slot{"location": "delhi"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
 * affirm
     - utter_goodbye
     
@@ -113,6 +160,13 @@
     - slot{"location": "mumbai"}
     - action_search_restaurants
     - slot{"location": "mumbai"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
 * affirm
     - utter_goodbye
 
@@ -127,5 +181,12 @@
     - slot{"location": "delhi"}
     - action_search_restaurants
     - slot{"location": "delhi"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email" : "johndoe@gmail.com"}
+    - slot{"contact_email" : "johndoe@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
 * affirm
     - utter_goodbye
