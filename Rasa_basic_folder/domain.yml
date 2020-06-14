@@ -18,10 +18,10 @@ entities:
 - price
 intents:
 - affirm
+- restaurant_search
 - price_info
 - contact_id
 - greet
-- restaurant_search
 - deny
 - goodbye
 - stop

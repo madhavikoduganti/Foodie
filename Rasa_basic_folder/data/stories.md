@@ -205,3 +205,49 @@
     - slot{"location": "Kolkata"}
     - utter_sent_mail
     - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Lucknow"}
+    - slot{"location": "Lucknow"}
+    - utter_ask_cuisine
+* None{"cuisine": "Italian"}
+    - slot{"cuisine": "Italian"}
+    - utter_ask_price_range
+* None{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "Lucknow"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "madd@yahoo.com"}
+    - slot{"contact_email": "madd@yahoo.com"}
+    - action_send_mail
+    - slot{"location": "Lucknow"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "kolkata"}
+    - slot{"location": "kolkata"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "Italian"}
+    - slot{"cuisine": "Italian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "kolkata"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "madhavi.kodu@yahoo.com"}
+    - slot{"contact_email": "madhavi.kodu@yahoo.com"}
+    - action_send_mail
+    - slot{"location": "kolkata"}
+    - utter_sent_mail
+    - utter_goodbye

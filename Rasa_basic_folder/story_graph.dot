@@ -13,11 +13,11 @@ digraph  {
 10 [class=active, fontsize=12, label=utter_goodbye];
 11 [class="intent dashed active", label="  ?  ", shape=rect];
 12 [class="intent active", fillcolor=lightblue, label=hi, shape=rect, style=filled];
-13 [class="intent active", fillcolor=lightblue, label="Can you suggest some good restaurants in Kolkata", shape=rect, style=filled];
-14 [class="intent active", fillcolor=lightblue, label="North Indian", shape=rect, style=filled];
+13 [class="intent active", fillcolor=lightblue, label="Can you suggest some good restaurants in kolkata", shape=rect, style=filled];
+14 [class="intent active", fillcolor=lightblue, label=Italian, shape=rect, style=filled];
 15 [class="intent active", fillcolor=lightblue, label=MT700, shape=rect, style=filled];
 16 [class="intent active", fillcolor=lightblue, label=yes, shape=rect, style=filled];
-17 [class="intent active", fillcolor=lightblue, label="it is manmanman@madhavi.com", shape=rect, style=filled];
+17 [class="intent active", fillcolor=lightblue, label="madhavi.kodu@yahoo.com", shape=rect, style=filled];
 0 -> "-1"  [class="", key=NONE, label=""];
 0 -> 1  [class=active, key=NONE, label=""];
 1 -> 12  [class=active, key=0];
