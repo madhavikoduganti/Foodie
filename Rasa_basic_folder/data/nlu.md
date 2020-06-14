@@ -44,7 +44,7 @@
 - [between 300 and 700]{"entity": "price", "value": "300To700"}
 - [below 300]{"entity": "price", "value": "LT300"}
 - [above 700]{"entity": "price", "value": "MT700"}
-- [LT300](price)
+- [MT700](price)
 
 ## intent:goodbye
 - bye
@@ -87,6 +87,7 @@
 - manasa.koduganti@gmail.c[om]{"entity": "contact_email", "value": "manasa.koduganti@gmail.com"}
 - yes, my email id is madhavi.koduganti@gmail.com[]{"entity": "contact_email", "value": "madhavi.koduganti@gmail.com"}
 - yes. Please send it to [xyz@sth.edu](contact_email)
+- it is [manmanman@madhavi.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -151,7 +152,8 @@
 - bengaluru[]{"entity": "location", "value": "bengaluru"}
 - I cannot tell you how hungry I am right now. I can totally devour a big elephant. I really need to find some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants in [Calicut]{"entity": "location", "value": "Kozhikode"}
 - Can you suggest some good restaurants in [Rishikesh](location)
-- [American](cuisine)
+- Can you suggest some good restaurants in [Kolkata](location)
+- [North Indian]{"entity": "cuisine", "value": "NIndian"}
 
 ## synonym:300To700
 - Rs. 300 to 700

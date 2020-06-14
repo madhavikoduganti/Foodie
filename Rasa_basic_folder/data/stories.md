@@ -182,3 +182,26 @@
     - slot{"location": "Rishikesh"}
     - utter_sent_mail
     - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Kolkata"}
+    - slot{"location": "Kolkata"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "Kolkata"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "manmanman@madhavi.com"}
+    - slot{"contact_email": "manmanman@madhavi.com"}
+    - action_send_mail
+    - slot{"location": "Kolkata"}
+    - utter_sent_mail
+    - utter_goodbye
