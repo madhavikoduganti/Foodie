@@ -14,6 +14,23 @@
 - thanks
 - thanks
 
+## intent:deny
+- no
+- not necessary
+- no. that's okay
+- no. that's not needed
+- no. that's ok
+- not needed
+- nope
+- nada
+- no that's fine
+- no that's unnecessary
+- no that is unnecessary
+- unnecessary
+- no thanks
+- no, thanks
+
+
 ## intent:goodbye
 - bye
 - goodbye
@@ -39,7 +56,20 @@
 - heyo
 - hola
  
+ 
+## intent:contact_id
+- My email id is [maxmeier@firma.de](contact_email)
+- email id is [maxmeier@firma.de](contact_email)
+- send it to [maxmeier@firma.de](contact_email)
+- to [maxmeier@firma.de](contact_email)
+- Send it to [maxmeier@firma.de](contact_email)
+- [maxmeier@firma.de](contact_email)
+- [bot-fan@bots.com](contact_email)
+- [maxmeier@firma.de](contact_email)
+- [bot-fan@bots.com](contact_email)
 
+## regex:contact_email
+- ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
 
 ## intent:restaurant_search
 - i'm looking for a place to eat
@@ -77,7 +107,6 @@
 - in [delhi](location)
 - I am looking for some restaurants in [Mumbai](location)
 - I am looking for [mexican indian fusion](cuisine)
-- can you book a table in [rome](location) in a [moderate](price:mid) price range with [british](cuisine) food for [four](people:4) people
 - [central](location) [indian](cuisine) restaurant
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurant in [bangalore](location)

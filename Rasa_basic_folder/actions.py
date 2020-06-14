@@ -33,3 +33,18 @@ class ActionSearchRestaurants(Action):
 		dispatcher.utter_message("-----"+response)
 		return [SlotSet('location',loc)]
 
+
+
+class ActionSendEmail(Action):
+    def name(self):
+        return 'action_send_mail'
+        
+    def run(self, dispatcher, tracker, domain):
+        loc = tracker.get_slot('location')
+        cuisine = tracker.get_slot('cuisine')
+        price_range = tracker.get_slot('price_range')
+        mail = tracker.get_slot('mail')
+        response = loc +" "+cuisine+" "+price_range+" "+mail
+        dispatcher.utter_message("-----"+response)
+        return [SlotSet('location',loc)]
+
