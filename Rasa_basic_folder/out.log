@@ -1,0 +1,9 @@
+2020-06-14 19:36:21,780 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-06-14 19:36:22,755 [INFO ]  Rasa server is up and running.
+2020-06-14 19:36:22,757 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "/Users/madhavi/Documents/Upgrad/NLP/Asst/Foodie/venv/lib/python3.7/site-packages/sanic/server.py", line 895, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "uvloop/loop.pyx", line 1456, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1727, in create_server
+OSError: [Errno 48] error while attempting to bind on address ('0.0.0.0', 5005): address already in use

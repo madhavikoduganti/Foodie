@@ -12,7 +12,7 @@
 - great choice
 - sounds really good
 - thanks
-- thanks
+- Thanks
 
 ## intent:deny
 - no
@@ -30,6 +30,18 @@
 - no thanks
 - no, thanks
 
+## intent:price_info
+- [LT300](price)
+- [MT700](price)
+- [300To700](price)
+- [Lesser than Rs. 300]{"entity": "price", "value": "LT300"}
+- [Rs. 300 to 700]{"entity": "price", "value": "300To700"}
+- [More than 700]{"entity": "price", "value": "MT700"}
+- [300-700]{"entity": "price", "value": "300To700"} range
+- [between 300 and 700]{"entity": "price", "value": "300To700"}
+- [below 300]{"entity": "price", "value": "LT300"}
+- [above 700]{"entity": "price", "value": "MT700"}
+- [300To700](price)
 
 ## intent:goodbye
 - bye
@@ -50,13 +62,9 @@
 - good morning
 - good evening
 - dear sir
-- hi
-- hi
-- hello
 - heyo
 - hola
- 
- 
+
 ## intent:contact_id
 - My email id is [maxmeier@firma.de](contact_email)
 - email id is [maxmeier@firma.de](contact_email)
@@ -65,37 +73,30 @@
 - Send it to [maxmeier@firma.de](contact_email)
 - [maxmeier@firma.de](contact_email)
 - [bot-fan@bots.com](contact_email)
-- [maxmeier@firma.de](contact_email)
-- [bot-fan@bots.com](contact_email)
-
-## regex:contact_email
-- ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
+- madhavi.koduganti@gmail.com[]{"entity": "contact_email", "value": "madhavi.koduganti@gmail.com"}
 
 ## intent:restaurant_search
-
-
 - [SIndian](cuisine)
 - [NIndian](cuisine)
 - [Mexican](cuisine)
 - [American](cuisine)
-- [North American](cuisine:American)
-- [South Indian](cuisine:SIndian)
-- [South indian](cuisine:SIndian)
-- [south Indian](cuisine:SIndian)
-- [south indian](cuisine:SIndian)
-- [North Indian](cuisine:NIndian)
-- [North indian](cuisine:NIndian)
-- [north Indian](cuisine:NIndian)
-- [north indian](cuisine:NIndian)
+- [North American]{"entity": "cuisine", "value": "American"}
+- [South Indian]{"entity": "cuisine", "value": "SIndian"}
+- [South indian]{"entity": "cuisine", "value": "SIndian"}
+- [south Indian]{"entity": "cuisine", "value": "SIndian"}
+- [south indian]{"entity": "cuisine", "value": "SIndian"}
+- [North Indian]{"entity": "cuisine", "value": "NIndian"}
+- [North indian]{"entity": "cuisine", "value": "NIndian"}
+- [north Indian]{"entity": "cuisine", "value": "NIndian"}
+- [north indian]{"entity": "cuisine", "value": "NIndian"}
 - [Italian](cuisine)
-- [Chinese](cuisine:chinese)
+- [Chinese]{"entity": "cuisine", "value": "chinese"}
 - [chinese](cuisine)
 - [mumbai](location)
 - [Lithuania](location)
 - in [Gurgaon](location)
 - Oh, sorry, in [Italy](location)
 - in [delhi](location)
-- [mumbai](location)
 - [delhi](location)
 - [central](location) [indian](cuisine) restaurant
 - show me restaurants
@@ -106,9 +107,9 @@
 - I am looking for some restaurants in [Delhi](location).
 - I am looking for some restaurants in [Bangalore](location)
 - show me [chinese](cuisine) restaurants
-- show me [chines](cuisine:chinese) restaurants in the [New Delhi](location:Delhi)
-- show me [chines](cuisine:chinese) restaurants from [New Delhi](location:Delhi)
-- show me restaurants from [New Delhi](location:Delhi)
+- show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants in the [New Delhi]{"entity": "location", "value": "Delhi"}
+- show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
+- show me restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me a [mexican](cuisine) place in the [centre](location)
 - i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
 - anywhere in the [west](location)
@@ -125,39 +126,19 @@
 - get me [italian](cuisine) restaurants in [bangalore](location)
 - get me [italian](cuisine) restaurants from [bangalore](location)
 - get me restaurants from [bangalore](location)
+- please show me restaurants from Quilon[]{"entity": "location", "value": "Quilon"}
+- [Italian](cuisine)
 
-
-
-
-
-## lookup:location
-./CityList.txt
+## synonym:300To700
+- Rs. 300 to 700
+- 300-700
+- between 300 and 700
 
 ## synonym:4
 - four
 
-## synonym:Delhi
-- New Delhi
-- Dilli
-
-## synonym:bangalore
-- Bengaluru
-
 ## synonym:Ahmedabad
 - Amdavad
-
-## synonym:Chennai
-- Madras
-
-## synonym:Kolkata
-- Calcutta
-
-## synonym:Mumbai
-- Bombay
-- Bambai
-
-## synonym:Pune
-- poona
 
 ## synonym:Ajmer
 - Ajmeer
@@ -170,6 +151,17 @@
 - Aligad
 - Aligadh
 - Aligar
+
+## synonym:Allahabad
+- Prayag
+- Prayagraj
+- Illahabad
+
+## synonym:American
+- North American
+- america
+- american
+- America
 
 ## synonym:Amravati
 - Udumbravati
@@ -201,9 +193,16 @@
 - Nagar Kalinga
 - Chakra Kshetra
 - Ekamra Kanan
-- Ekamra Kshetra 
+- Ekamra Kshetra
 - Mandira Malini Nagari
 - Mandira Malini Nagar
+
+## synonym:Bijapur
+- Vijayapura
+- Vijaypura
+
+## synonym:Chennai
+- Madras
 
 ## synonym:Coimbatore
 - Kovai
@@ -212,6 +211,10 @@
 
 ## synonym:Dehradun
 - Dera Doon
+
+## synonym:Delhi
+- New Delhi
+- Dilli
 
 ## synonym:Erode
 - Yellow City
@@ -223,6 +226,11 @@
 ## synonym:Ghaziabad
 - Ghaziuddinnagar
 
+## synonym:Goa
+- Sindapur
+- Sandabur
+- Mahassapatam
+
 ## synonym:Gulbarga
 - Kalaburagi
 
@@ -232,12 +240,17 @@
 ## synonym:Guwahati
 - Gauhati
 
-## synonym:Indore
-- Holkar
-
 ## synonym:Hubli–Dharwad
 - Dharwad
 - Hubballi
+
+## synonym:Indore
+- Holkar
+
+## synonym:Italian
+- italy
+- italian
+- Italy
 
 ## synonym:Jabalpur
 - Jubbulpore
@@ -270,20 +283,19 @@
 - Cananor
 - Coonoor
 
+## synonym:Kanpur
+- Kanhapur
+
 ## synonym:Kochi
 - Ernakulam
 - Cochin
-
-## synonym:Kanpur
-- Kanhapur
 
 ## synonym:Kolhapur
 - Dakshin Kashi
 - Colapore
 
-## synonym:Kollam
-- Quilon
-- Coulao
+## synonym:Kolkata
+- Calcutta
 
 ## synonym:Kollam
 - Quilon
@@ -295,22 +307,22 @@
 ## synonym:Kurnool
 - Kandanavolu
 
+## synonym:LT300
+- Lesser than Rs. 300
+- below 300
+
 ## synonym:Lucknow
 - Lakhanpur
+
+## synonym:MT700
+- More than 700
+- above 700
 
 ## synonym:Madurai
 - Koodal
 - Malligai Maanagar
 - Naanmadakoodal
 - Thirualavai
-
-## synonym:Mathura
-- Madhupura
-
-## synonym:Goa
-- Sindapur
-- Sandabur
-- Mahassapatam
 
 ## synonym:Mangalore
 - Kudla
@@ -321,16 +333,35 @@
 - Maikala
 - Manjarun
 
+## synonym:Mathura
+- Madhupura
+
 ## synonym:Meerut
 - Meerat
+
+## synonym:Mexican
+- mexican
+- mexico
+
+## synonym:Moradabad
+- Brass City
+- Pital Nagri
+
+## synonym:Mumbai
+- Bombay
+- Bambai
 
 ## synonym:Mysore
 - Mysuru
 - Maisuru
 
-## synonym:Moradabad
-- Brass City
-- Pital Nagri
+## synonym:NIndian
+- North Indian
+- North indian
+- north Indian
+- north indian
+- North
+- north
 
 ## synonym:Nagpur
 - Nagpore
@@ -350,13 +381,8 @@
 - Puducherry
 - Pondy
 
-## synonym:Allahabad
-- Prayag
-- Prayagraj
-- Illahabad
-
-## synonym:Rajkot
-- Chitranagri
+## synonym:Pune
+- poona
 
 ## synonym:Rajahmundry
 - Rajamahendravaram
@@ -364,6 +390,8 @@
 - Rajamundry
 - Rajamandri
 
+## synonym:Rajkot
+- Chitranagri
 
 ## synonym:Ranchi
 - Rachi
@@ -372,6 +400,14 @@
 - Steel City
 - spat Mahanagar
 - Engineering Hub
+
+## synonym:SIndian
+- South Indian
+- South indian
+- south Indian
+- south indian
+- South
+- south
 
 ## synonym:Sangli
 - Sahagalli
@@ -414,10 +450,6 @@
 - Avantika
 - Avantikapuri
 
-## synonym:Bijapur
-- Vijayapura
-- Vijaypura
-
 ## synonym:Vadodara
 - Baroda
 
@@ -426,7 +458,9 @@
 - Banaras
 - Kashi
 
- 
+## synonym:Vellore
+- Velore
+- Velluru
 
 ## synonym:Vijayawada
 - Vijayavatika
@@ -440,10 +474,6 @@
 - Visakha
 - Waltair
 
-## synonym:Vellore
-- Velore
-- Velluru
-
 ## synonym:Warangal
 - Orugallu
 - Ekasila Nagaram
@@ -451,43 +481,12 @@
 - Ekasila Nagari
 - Omatikonda
 
-
-## synonym:Mexican
-- mexican
-- mexico
-
-## synonym:Italian
-- italy
-- italian
-- Italy
-
-## synonym:American
-- america
-- american
-- America
-
-
-## synonym:SIndian
-- South Indian
-- South
-- south
-- south indian
-- south Indian
-- South indian
-
-
-## synonym:NIndian
-- North Indian
-- North
-- north
-- north indian
-- north Indian
-- North indian
-
+## synonym:bangalore
+- Bengaluru
 
 ## synonym:chinese
-- chines
 - Chinese
+- chines
 - Chines
 - china
 - China
@@ -501,13 +500,8 @@
 - veggo
 - vegan
 
-
-
-
-
-
-
-
+## regex:contact_email
+- ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
 
 ## regex:greet
 - hey[^\s]*
@@ -518,4 +512,5 @@
 ## regex:price
 - [3,7]0{2}
 
-
+## lookup:location
+  ./CityList.txt

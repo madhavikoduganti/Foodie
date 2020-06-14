@@ -16,7 +16,15 @@ class ActionSearchRestaurants(Action):
         cuisine = tracker.get_slot('cuisine')
         price_range = tracker.get_slot('price')
         mail = tracker.get_slot('contact_email')
-        response = "action_search_restaurants for "+loc +" "+cuisine+" "+price_range+" "+mail
+        response = "action_search_restaurants for "
+        if loc is not None:
+            response = response + "-----"+str(loc)
+        if cuisine is not None:
+            response = response + "-----"+str(cuisine)
+        if price_range is not None:
+            response = response +"-----"+ str(price_range)
+        if mail is not None:
+            response = response +"-----"+ str(mail)
         dispatcher.utter_message("-----"+response)
         return [SlotSet('location',loc)]
 
@@ -31,7 +39,15 @@ class ActionSendEmail(Action):
         cuisine = tracker.get_slot('cuisine')
         price_range = tracker.get_slot('price')
         mail = tracker.get_slot('contact_email')
-        response = "action_send_mail for "+loc +" "+cuisine+" "+price_range+" "+mail
+        response = "action_send_mail for "
+        if loc is not None:
+            response = response + "-----"+str(loc)
+        if cuisine is not None:
+            response = response + "-----"+str(cuisine)
+        if price_range is not None:
+            response = response +"-----"+ str(price_range)
+        if mail is not None:
+            response = response +"-----"+ str(mail)
         dispatcher.utter_message("-----"+response)
         return [SlotSet('location',loc)]
 
