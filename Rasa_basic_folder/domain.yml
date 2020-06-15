@@ -17,11 +17,11 @@ entities:
 - location
 - price
 intents:
-- affirm
-- restaurant_search
 - price_info
 - contact_id
+- restaurant_search
 - greet
+- affirm
 - deny
 - goodbye
 - stop

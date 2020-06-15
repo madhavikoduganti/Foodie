@@ -13,6 +13,7 @@
 - sounds really good
 - thanks
 - Thanks
+- yes. please send it
 
 ## intent:deny
 - no
@@ -37,13 +38,25 @@
 - [LT300](price)
 - [MT700](price)
 - [300To700](price)
+- [Less than Rs. 300]{"entity": "price", "value": "LT300"}
+- [less than 300]{"entity": "price", "value": "LT300"}
+- [Less than 300]{"entity": "price", "value": "LT300"}
+- [300]{"entity": "price", "value": "LT300"}
+- [<300]{"entity": "price", "value": "LT300"}
+- [< 300]{"entity": "price", "value": "LT300"}
 - [Lesser than Rs. 300]{"entity": "price", "value": "LT300"}
-- [Rs. 300 to 700]{"entity": "price", "value": "300To700"}
-- [More than 700]{"entity": "price", "value": "MT700"}
+- [below 300]{"entity": "price", "value": "LT300"}
 - [300-700]{"entity": "price", "value": "300To700"} range
 - [between 300 and 700]{"entity": "price", "value": "300To700"}
-- [below 300]{"entity": "price", "value": "LT300"}
+- [Rs. 300 to 700]{"entity": "price", "value": "300To700"}
+- [300 to 700]{"entity": "price", "value": "300To700"}
+- from [300 to 700]{"entity": "price", "value": "300To700"}
+- in range [300 and 700]{"entity": "price", "value": "300To700"}
+- [More than 700]{"entity": "price", "value": "MT700"}
+- [Above 700]{"entity": "price", "value": "MT700"}
 - [above 700]{"entity": "price", "value": "MT700"}
+- [> 700]{"entity": "price", "value": "MT700"}
+- [>700]{"entity": "price", "value": "MT700"}
 - [MT700](price)
 
 ## intent:goodbye
@@ -72,23 +85,35 @@
 - Hola
 - hey buddy
 - Hey
+- heyyy
 
 ## intent:contact_id
-- My email id is [maxmeier@firma.de](contact_email)
-- email id is [maxmeier@firma.de](contact_email)
-- send it to [maxmeier@firma.de](contact_email)
-- to [maxmeier@firma.de](contact_email)
-- Send it to [maxmeier@firma.de](contact_email)
+- My email id is [maxmeier@gmail.com](contact_email)
+- email id is [maxmeier@gmail.com](contact_email)
+- email id is [abc@gmail.com](contact_email)
+- email id is [abc@yahoo.com](contact_email)
+- email id is [abc@rediff.com](contact_email)
+- email id is [abc@upgrad.com](contact_email)
+- email id is [abc@outlook.com](contact_email)
+- email id is [abc@outlook.pq](contact_email)
+- email id is [abc@xyz.pqr](contact_email)
+- yes, email id is [maxmeier@gmail.com](contact_email)
+- send it to [maxmeier@gmail.com](contact_email)
+- to [maxmeier@gmail.com](contact_email)
+- Send it to [maxmeier@gmail.com](contact_email)
 - [maxmeier@firma.de](contact_email)
-- [bot-fan@bots.com](contact_email)
-- madhavi.koduganti@gmail.com[]{"entity": "contact_email", "value": "madhavi.koduganti@gmail.com"}
-- johndoe@amazon.com[]{"entity": "contact_email", "value": "johndoe@amazon.com"}
-- ygndgf1233@yyrt.de[]{"entity": "contact_email", "value": "ygndgf1233@yyrt.de"}
-- manasa.koduganti@gmail.c[om]{"entity": "contact_email", "value": "manasa.koduganti@gmail.com"}
-- yes, my email id is madhavi.koduganti@gmail.com[]{"entity": "contact_email", "value": "madhavi.koduganti@gmail.com"}
-- yes. Please send it to [xyz@sth.edu](contact_email)
+- yes. Please send it to [xyz@gmail.com](contact_email)
 - it is [manmanman@madhavi.com](contact_email)
 - [madhavi.kodu@yahoo.com](contact_email)
+- hello, the id is [jgerffr@gmail.com](contact_email)
+- my id is [madhavi.koduganti@gmail.com](contact_email)
+- my mail id is [r123@ttsi.cos](contact_email)
+- [wwstei@grrr.wgo](contact_email)
+- [iieta@ttya.com](contact_email)
+- email id is [aagt@yytad.coww](contact_email)
+- yes send it to [madhavi.koduganti@gmail.com](contact_email)
+- send it to [happyhappybro@wasssuupp.co](contact_email)
+- [blablablew@puppyinc.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -155,12 +180,26 @@
 - Can you suggest some good restaurants in [Rishikesh](location)
 - Can you suggest some good restaurants in [Kolkata](location)
 - Can you suggest some good restaurants in [kolkata](location)
-- [Italian](cuisine)
+- Can you show me some good [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Kurnool](location)
+- can you show me restaurants in [below 300]{"entity": "price", "value": "LT300"}
+- can you show me some [chinese](cuisine) restaurants
+- in [Dehradun](location)
+- can you show me some restaurants in [Vadodara](location)
+- Can you show me some [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in price range [above 700]{"entity": "price", "value": "MT700"} in [Calicut]{"entity": "location", "value": "Kozhikode"}
+- I want to know about some healthy [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants in [Vadodara](location) for price range [between 300 and 700]{"entity": "price", "value": "300To700"}
+- can you show me some great restaurants for price [less than 300]{"entity": "price", "value": "LT300"}
+- in [Mysore](location)
+- Can you show me some of my favourite non vegetarian [american]{"entity": "cuisine", "value": "American"} restaurants in [Maikala]{"entity": "location", "value": "Mangalore"} for the price range in [300 700]{"entity": "price", "value": "300To700"}?
+- hello there. Show me some restaurants from [Chennai](location)
+- [South Indian]{"entity": "cuisine", "value": "SIndian"}
 
 ## synonym:300To700
-- Rs. 300 to 700
 - 300-700
 - between 300 and 700
+- Rs. 300 to 700
+- 300 to 700
+- 300 and 700
+- 300 700
 
 ## synonym:4
 - four
@@ -187,8 +226,8 @@
 
 ## synonym:American
 - North American
-- america
 - american
+- america
 - America
 
 ## synonym:Amravati
@@ -336,6 +375,12 @@
 - Kandanavolu
 
 ## synonym:LT300
+- Less than Rs. 300
+- less than 300
+- Less than 300
+- 300
+- <300
+- < 300
 - Lesser than Rs. 300
 - below 300
 
@@ -344,7 +389,10 @@
 
 ## synonym:MT700
 - More than 700
+- Above 700
 - above 700
+- > 700
+- >700
 
 ## synonym:Madurai
 - Koodal
@@ -353,12 +401,12 @@
 - Thirualavai
 
 ## synonym:Mangalore
+- Maikala
 - Kudla
 - Mangalooru
 - Mangalapuram
 - Kodeyaala
 - Kodial
-- Maikala
 - Manjarun
 
 ## synonym:Mathura
