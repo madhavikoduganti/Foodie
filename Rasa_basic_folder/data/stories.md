@@ -22,6 +22,7 @@
     - slot{"location": "Tiruchirapalli"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -43,6 +44,7 @@
     - slot{"location": "chandigarh"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -68,6 +70,7 @@
     - slot{"location": "Mumbai"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -87,6 +90,7 @@
     - utter_ask_send_details
 * deny
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -102,6 +106,7 @@
     - utter_ask_send_details
 * deny
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -121,6 +126,7 @@
     - utter_ask_send_details
 * deny
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -146,6 +152,7 @@
     - slot{"location": "bengaluru"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -161,6 +168,7 @@
     - utter_ask_send_details
 * deny
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -182,6 +190,7 @@
     - slot{"location": "Rishikesh"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -205,6 +214,7 @@
     - slot{"location": "Kolkata"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -228,6 +238,7 @@
     - slot{"location": "Lucknow"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -251,6 +262,7 @@
     - slot{"location": "kolkata"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
  
 
@@ -274,6 +286,7 @@
     - slot{"contact_email": "madhavi.koduganti@gmail.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -291,6 +304,7 @@
     - utter_ask_send_details
 * deny
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -312,6 +326,7 @@
     - slot{"contact_email": "r123@ttsi.cos"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -335,6 +350,7 @@
     - slot{"contact_email": "wwstei@grrr.wgo"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -354,6 +370,7 @@
     - slot{"contact_email": "iieta@ttya.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -373,6 +390,7 @@
     - slot{"contact_email": "aagt@yytad.coww"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -394,6 +412,7 @@
     - slot{"contact_email": "madhavi.koduganti@gmail.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -411,6 +430,7 @@
     - slot{"contact_email": "happyhappybro@wasssuupp.co"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * restaurant_search{"location": "Chennai"}
@@ -430,6 +450,7 @@
     - slot{"contact_email": "blablablew@puppyinc.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * restaurant_search{"cuisine": "Mexican", "location": "Chennai", "price": "MT700"}
@@ -445,6 +466,7 @@
     - slot{"contact_email": "witty@humour.inc"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * restaurant_search{"location": "Bangalore"}
@@ -460,6 +482,7 @@
     - utter_ask_send_details
 * deny
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -481,6 +504,7 @@
     - slot{"contact_email": "wwrtey@rediff.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -504,6 +528,7 @@
     - slot{"contact_email": "wwalia@upgrad.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -525,6 +550,7 @@
     - slot{"contact_email": "vikram@twitter.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -548,6 +574,7 @@
     - slot{"contact_email": "whoswho@gmail.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * restaurant_search{"cuisine": "Mexican", "location": "Aligarh"}
@@ -565,6 +592,7 @@
     - slot{"contact_email": "mkd@yahoo.co.in"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * restaurant_search{"location": "Indore"}
@@ -584,6 +612,7 @@
     - slot{"contact_email": "mybutler@yahoo.co.in"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -606,6 +635,7 @@
     - slot{"contact_email": "madhavi.koduganti@gmail.com"}
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
 
 ## interactive_story_1
 * restaurant_search{"cuisine": "American", "location": "Hyderabad"}
@@ -621,3 +651,183 @@
     - utter_ask_send_details
 * deny
     - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Chandigarh"}
+    - slot{"location": "Chandigarh"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "chandigarh"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "rreywif"}
+    - slot{"location": "rreywif"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Bhilai"}
+    - slot{"location": "Bhilai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "bhilai"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "ggfgeurgedfg"}
+    - slot{"location": "ggfgeurgedfg"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "Mexican", "location": "Hyderabad", "price": "MT700"}
+    - slot{"cuisine": "Mexican"}
+    - slot{"location": "Hyderabad"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "hyderabad"}
+    - slot{"cuisine": "Mexican"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price_range
+* price_info{"price": "300To700"}
+    - slot{"price": "300To700"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "300To700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Vijayawada", "price": "LT300", "cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"location": "Vijayawada"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Cuttack"}
+    - slot{"location": "Cuttack"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "cuttack"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* out_of_context
+    - utter_default
+
+## interactive_story_1
+* greet
+    - utter_greet
+* out_of_context
+    - utter_default
+
+## interactive_story_1
+* greet
+    - utter_greet
+* out_of_context
+    - utter_default
+
+## interactive_story_1
+* greet
+    - utter_greet
+* out_of_context
+    - utter_default

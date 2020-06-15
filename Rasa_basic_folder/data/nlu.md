@@ -62,7 +62,6 @@
 - [less than 300]{"entity": "price", "value": "LT300"} is my budget
 - my budget is < [300]{"entity": "contact_email", "value": "LT300"}
 - I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
-- [300To700](price)
 
 ## intent:goodbye
 - bye
@@ -93,6 +92,8 @@
 - heyyy
 - hello there honey
 - hello there
+- hello honey
+- hellow
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -136,12 +137,19 @@
 - yes. send it to [mkd@yahoo.co.in](contact_email)
 - send it over to my butler's mail id. i think it is [mybutler@yahoo.co.in](contact_email)
 - mail id is [madhavi.koduganti@gmail.com](contact_email)
+- [madhavi.koduganti@gmail.com](contact_email)
+- send it to [madhavi.koduganti@gmail.com](contact_email)
+- please send it over to [madhavi.koduganti@gmail.com](contact_email)
+- [manasa.koduganti@gmail.com](contact_email)
+- please send it to me at [manasa.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
 - [NIndian](cuisine)
 - [Mexican](cuisine)
 - [American](cuisine)
+- [chinese](cuisine)
+- [Italian](cuisine)
 - [North American]{"entity": "cuisine", "value": "American"}
 - [South Indian]{"entity": "cuisine", "value": "SIndian"}
 - [South indian]{"entity": "cuisine", "value": "SIndian"}
@@ -151,9 +159,7 @@
 - [North indian]{"entity": "cuisine", "value": "NIndian"}
 - [north Indian]{"entity": "cuisine", "value": "NIndian"}
 - [north indian]{"entity": "cuisine", "value": "NIndian"}
-- [Italian](cuisine)
 - [Chinese]{"entity": "cuisine", "value": "chinese"}
-- [chinese](cuisine)
 - [mumbai](location)
 - [Lithuania](location)
 - in [Gurgaon](location)
@@ -173,7 +179,6 @@
 - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me a [mexican](cuisine) place in the [centre](location)
-- i am looking for an [indian](cuisine) spot called olaolaolaolaolaola
 - anywhere in the [west](location)
 - I am looking for [asian fusion](cuisine) food
 - I am looking a restaurant in [294328](location)
@@ -181,8 +186,86 @@
 - I am looking for [mexican indian fusion](cuisine)
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurant in [bangalore](location)
+- get me a restaurant in [chennai](location)
+- get me a restaurant in [Delhi](location)
+- get me a restaurant in [Mangalore](location)
+- get me a restaurant in [Kozhikode](location)
+- get me [chinese](cuisine) restaurant in [abcd](location)
+- get me [chinese](cuisine) restaurant in [efqins](location)
+- get me [chinese](cuisine) restaurant in [fghawWE](location)
+- get me [chinese](cuisine) restaurant in [Bsdhwep](location)
+- get me [chinese](cuisine) restaurant in [Kozhikode](location)
+- get me [Mexican](cuisine) restaurant in [chennai](location)
+- get me [Mexican](cuisine) restaurant in [bangalore](location)
+- get me [Mexican](cuisine) restaurant in [delhi](location)
+- get me [Mexican](cuisine) restaurant in [Mangalore](location)
+- get me [Mexican](cuisine) restaurant in [Kozhikode](location)
+- get me [mexican](cuisine) restaurant in [chennai](location)
+- get me [south indian]{"entity": "cuisine", "value": "SIndian"} restaurant in [bangalore](location)
+- get me [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurant in [delhi](location)
+- get me [italinan]{"entity": "cuisine", "value": "Italian"} restaurant in [Mangalore](location)
+- get me [american]{"entity": "cuisine", "value": "American"} restaurant in [Kozhikode](location)
+- get me a [chinese](cuisine) restaurant
+- Please show me some hotels in [bangalore](location)
+- Please show me some dine-outs in [chennai](location)
+- Please show me some hotels in [Delhi](location)
+- Please show me some dine-outs in [Mangalore](location)
+- Please show me some hotels in [Kozhikode](location)
+- please show me some [chinese](cuisine) hotels in [chennai](location)
+- please show me some [chinese](cuisine) hotels in [bangalore](location)
+- please show me some [chinese](cuisine) dine-outs in [delhi](location)
+- please show me some [chinese](cuisine) hotels in [Mangalore](location)
+- please show me some [chinese](cuisine) dine-outs in [Kozhikode](location)
+- please show me some [Mexican](cuisine) eateries in [chennai](location)
+- please show me some [Mexican](cuisine) dine-outs in [bangalore](location)
+- please show me some [Mexican](cuisine) eateries in [delhi](location)
+- please show me some [Mexican](cuisine) dine-outs in [Mangalore](location)
+- please show me some [Mexican](cuisine) eateries in [Kozhikode](location)
+- please show me some [mexican](cuisine) eateries in [chennai](location)
+- please show me some [south indian]{"entity": "cuisine", "value": "SIndian"} hotels in [bangalore](location)
+- please show me some [north Indian]{"entity": "cuisine", "value": "NIndian"} eateries in [delhi](location)
+- please show me some [italinan]{"entity": "cuisine", "value": "Italian"} dine-outs in [Mangalore](location)
+- please show me some [american]{"entity": "cuisine", "value": "American"} hotels in [Kozhikode](location)
+- Please find me a restaurant in [chennai](location)
+- Please find me a restaurant in [Delhi](location)
+- Please find me a restaurant in [Mangalore](location)
+- Please find me a restaurant in [Kozhikode](location)
+- please find me [chinese](cuisine) restaurant in [chennai](location)
+- please find me [chinese](cuisine) restaurant in [bangalore](location)
 - please find me [chinese](cuisine) restaurant in [delhi](location)
+- please find me [chinese](cuisine) restaurant in [Mangalore](location)
+- please find me [chinese](cuisine) restaurant in [Kozhikode](location)
+- please find me [Mexican](cuisine) restaurant in [chennai](location)
+- please find me [Mexican](cuisine) restaurant in [bangalore](location)
+- please find me [Mexican](cuisine) restaurant in [delhi](location)
+- please find me [Mexican](cuisine) restaurant in [Mangalore](location)
+- please find me [Mexican](cuisine) restaurant in [Kozhikode](location)
+- please find me [mexican](cuisine) restaurant in [chennai](location)
+- please find me [south indian]{"entity": "cuisine", "value": "SIndian"} restaurant in [bangalore](location)
+- please find me [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurant in [delhi](location)
+- please find me [italinan]{"entity": "cuisine", "value": "Italian"} restaurant in [Mangalore](location)
+- please find me [american]{"entity": "cuisine", "value": "American"} restaurant in [Kozhikode](location)
 - can you find me a [chinese](cuisine) restaurant
+- Please show me some restaurants in [bangalore](location)
+- Please show me some restaurants in [chennai](location)
+- Please show me some restaurants in [Delhi](location)
+- Please show me some restaurants in [Mangalore](location)
+- Please show me some restaurants in [Kozhikode](location)
+- please show me some [chinese](cuisine) restaurantS in [chennai](location)
+- please show me some [chinese](cuisine) restaurants in [bangalore](location)
+- please show me some [chinese](cuisine) restaurants in [delhi](location)
+- please show me some [chinese](cuisine) restaurants in [Mangalore](location)
+- please show me some [chinese](cuisine) restaurants in [Kozhikode](location)
+- please show me some [Mexican](cuisine) restaurants in [chennai](location)
+- please show me some [Mexican](cuisine) restaurants in [bangalore](location)
+- please show me some [Mexican](cuisine) restaurants in [delhi](location)
+- please show me some [Mexican](cuisine) restaurants in [Mangalore](location)
+- please show me some [Mexican](cuisine) restaurants in [Kozhikode](location)
+- please show me some [mexican](cuisine) restaurants in [chennai](location)
+- please show me some [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [bangalore](location)
+- please show me some [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurants in [delhi](location)
+- please show me some [italinan]{"entity": "cuisine", "value": "Italian"} restaurants in [Mangalore](location)
+- please show me some [american]{"entity": "cuisine", "value": "American"} restaurants in [Kozhikode](location)
 - please find me a restaurant in [ahmedabad](location)
 - please show me a few [italian](cuisine) restaurants in [bangalore](location)
 - get me [italian](cuisine) restaurants in [bangalore](location)
@@ -223,6 +306,48 @@
 - Want to go to a dineout in [Holkar]{"entity": "location", "value": "Indore"}
 - Can you please show me some hotels from [Chennai](location)
 - can you please help me fine some [American](cuisine)  restaurants in [Hyderabad](location)?
+- Please show me some restaurants in [Chandigarh](location)
+- I am very very hungry and I want to eat. I am sitting in [rreywif](location)
+- Can you please show me some restaurants in [Bhilai](location)
+- Can you please show me some restaurants in [ggfgeurgedfg](location)
+- I want find some [mexican]{"entity": "cuisine", "value": "Mexican"} eateries in [Hyderabad](location) in range [more than 700]{"entity": "price", "value": "MT700"}
+- my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My blood pressure and glucose is going so down that I can faint right now.
+- my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My vitals are going down and I am about to fall down. I am not that rich so please show me [below 300]{"entity": "price", "value": "LT300"}. Also I have not seen world much either so I am going to stick to my local [north indian]{"entity": "cuisine", "value": "NIndian"}. Please help me out.
+- get me some top restaurants from [Cuttack](location)
+
+## intent:out_of_context
+- Tell me about weather today
+- how is sun orange?
+- how are plants green
+- how are planets so big?
+- What is the meaning of life
+- why are roses red
+- Why is earth round?
+- Why am I not a super man
+- Why is super man a super man?
+- Why are the leaves green? 
+- Why is the ocean blue?
+- Does aliens exist
+- Does dogs dislike humans?
+- Does syrians want to be underground
+- Does God exist
+- Does US really like oil so much?
+- Is this flower pretty
+- Isn't this flower pretty
+- Is all of this a joke?
+- Is this a secret survey
+- Is this all a fiction
+- Do you like disney movies?
+- Do you like hot water?
+- Do you know linear algebra
+- Do you enjoy icecream
+- Do your kids enjoy desserts
+- Do you wanna be a president
+- Do you like my kids
+- Do you know history
+- I bet you are a psychic
+- I am good at physics 
+
 
 ## synonym:300To700
 - 300-700
@@ -346,6 +471,7 @@
 - Holkar
 
 ## synonym:Italian
+- italinan
 - italy
 - italian
 - Italy

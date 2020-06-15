@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 from rasa_sdk import Action
 from rasa_sdk.events import SlotSet
-
+from rasa_core_sdk.events import Restarted
 import zomatopy
 import send_mail
 import json
@@ -13,15 +13,33 @@ import re
 
 
 class ActionSearchRestaurants(Action):
+    city_list = []
+    
+    def __init__(self):
+        my_file = open("CityList.txt", "r")
+        self.city_list = [line.rstrip('\n').lower() for line in my_file]
+        super(ActionSearchRestaurants, self).__init__()
+        
     def name(self):
         return 'action_search_restaurants'
 
     def run(self, dispatcher, tracker, domain):
         config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
+        price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
         zomato = zomatopy.initialize_app(config)
         loc = tracker.get_slot('location')
         cuisine = tracker.get_slot('cuisine')
         prc = tracker.get_slot('price')
+        loc = loc.rstrip().lower()
+        loc = loc.lstrip().lower()
+        if loc not in self.city_list:
+            print(loc," not found in city_list")
+            message = "We do not operate in location:"
+            message = message+str(loc)
+            message = message+" yet. Sorry!"
+            dispatcher.utter_message(message)
+            return [Restarted()]
+            
         location_detail=zomato.get_location(loc, 1)
         d1 = json.loads(location_detail)
         lat=d1["location_suggestions"][0]["latitude"]
@@ -50,7 +68,7 @@ class ActionSearchRestaurants(Action):
             else:
                 rest_df_filter = rest_df[(rest_df['avg_cost_for2']>700)]
             rest_df_sorted = rest_df_filter.sort_values(by=['rating'], ascending=False)
-            dispatcher.utter_message("-----Here are the top " + cuisine + " restaurants in " + loc + " with avg. budget of " + prc + " Rs. for 2 people-----")
+            dispatcher.utter_message("-----Here are the top " + cuisine + " restaurants in " + loc + " with avg. budget of " + price_abbrv[prc] + " Rs. for 2 people-----")
             for row in rest_df_sorted.head(5).iterrows():
                 dispatcher.utter_message(row[1]['name']+" in "+row[1]['location']+" has been rated "+row[1]['rating']+"\n")
         return [SlotSet('location',loc),SlotSet('cuisine',cuisine),SlotSet('price',prc)]
@@ -58,16 +76,33 @@ class ActionSearchRestaurants(Action):
 
 
 class ActionSendEmail(Action):
+    city_list = []
+    
+    def __init__(self):
+        my_file = open("CityList.txt", "r")
+        self.city_list = [line.rstrip('\n').lower() for line in my_file]
+        super(ActionSendEmail, self).__init__()
+        
     def name(self):
         return 'action_send_mail'
 
     def run(self, dispatcher, tracker, domain):
         config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
+        price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
         zomato = zomatopy.initialize_app(config)
         loc = tracker.get_slot('location')
         cuisine = tracker.get_slot('cuisine')
         prc = tracker.get_slot('price')
         emailid = tracker.get_slot('contact_email')
+        loc = loc.rstrip().lower()
+        loc = loc.lstrip().lower()
+        if loc not in self.city_list:
+            print(loc," not found in city_list")
+            message = "We do not operate in location:"
+            message = message+str(loc)
+            message = message+" yet. Sorry!"
+            dispatcher.utter_message(message)
+            return [Restarted()]
         location_detail=zomato.get_location(loc, 1)
         d1 = json.loads(location_detail)
         lat=d1["location_suggestions"][0]["latitude"]
@@ -88,17 +123,25 @@ class ActionSendEmail(Action):
             rest_budg_list = [restaurant['restaurant']['average_cost_for_two'] for restaurant in d['restaurants']]
             pd.set_option('display.max_colwidth', -1)
             rest_df = pd.DataFrame({'name':rest_name_list, 'location':rest_location_list, 'rating':rest_rating_list, 'avg_cost_for2':rest_budg_list})
-            if prc == "less than 300":
-                rest_df_filter = rest_df[rest_df['avg_cost_for2']<300]
+            if "300" in prc and "700" in prc:
+               rest_df_filter = rest_df[(rest_df['avg_cost_for2']>=300) & (rest_df['avg_cost_for2']<=700)]
             elif prc == "300 to 700":
-                rest_df_filter = rest_df[(rest_df['avg_cost_for2']>=300) & (rest_df['avg_cost_for2']<=700)]
+               rest_df_filter = rest_df[rest_df['avg_cost_for2']<300]
             else:
-                rest_df_filter = rest_df[(rest_df['avg_cost_for2']>700)]
+               rest_df_filter = rest_df[(rest_df['avg_cost_for2']>700)]
+
             rest_df_sorted = rest_df_filter.sort_values(by=['rating'], ascending=False)
-            
-        rest_df_html = rest_df_sorted.head(10).to_html(index=False)
-        html_msg = "<p>Hi!<br>Here are the top %s restaurants in %s for budget of %s<br><br>"%(cuisine,loc,prc)+rest_df_html+"</p>"
-        send_mail.mail_results(emailid, html_msg)
+            rest_df_html = rest_df_sorted.head(10).to_html(index=False)
+            html_msg = "<p>Hi!<br>Here are the top %s restaurants in %s for budget of %s<br><br>"%(cuisine,loc,price_abbrv[prc])+rest_df_html+"</p>"
+            send_mail.mail_results(emailid, html_msg)
+
 
         
-        
+
+class ActionRestartChatHelper(Action):
+    def name(self):
+        return 'action_restart_chat_helper'
+    def run(self, dispatcher, tracker, domain):
+        return [Restarted()]
+
+
