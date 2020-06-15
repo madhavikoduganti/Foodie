@@ -584,3 +584,40 @@
     - slot{"contact_email": "mybutler@yahoo.co.in"}
     - utter_sent_mail
     - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Chennai"}
+    - slot{"location": "Chennai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* restaurant_search{"cuisine": "American", "location": "Hyderabad"}
+    - slot{"cuisine": "American"}
+    - slot{"location": "Hyderabad"}
+    - utter_ask_price_range
+* price_info{"price": "300To700"}
+    - slot{"price": "300To700"}
+    - action_search_restaurants
+    - slot{"location": "Hyderabad"}
+    - slot{"cuisine": "American"}
+    - slot{"price": "300To700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye

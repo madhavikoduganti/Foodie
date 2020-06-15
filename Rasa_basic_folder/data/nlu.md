@@ -62,6 +62,7 @@
 - [less than 300]{"entity": "price", "value": "LT300"} is my budget
 - my budget is < [300]{"entity": "contact_email", "value": "LT300"}
 - I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
+- [300To700](price)
 
 ## intent:goodbye
 - bye
@@ -91,6 +92,7 @@
 - Hey
 - heyyy
 - hello there honey
+- hello there
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -133,6 +135,7 @@
 - send it to [whoswho@gmail.com](contact_email)
 - yes. send it to [mkd@yahoo.co.in](contact_email)
 - send it over to my butler's mail id. i think it is [mybutler@yahoo.co.in](contact_email)
+- mail id is [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -218,7 +221,8 @@
 - I am hungry. I wanna know about nearby dineouts
 - I wanna go to a [mexican]{"entity": "cuisine", "value": "Mexican"} restaurant in [Kohl]{"entity": "location", "value": "Aligarh"}
 - Want to go to a dineout in [Holkar]{"entity": "location", "value": "Indore"}
-- [North Indian]{"entity": "cuisine", "value": "NIndian"}
+- Can you please show me some hotels from [Chennai](location)
+- can you please help me fine some [American](cuisine)  restaurants in [Hyderabad](location)?
 
 ## synonym:300To700
 - 300-700

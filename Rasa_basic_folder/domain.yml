@@ -17,12 +17,12 @@ entities:
 - location
 - price
 intents:
-- contact_id
 - restaurant_search
-- price_info
-- affirm
-- greet
 - deny
+- price_info
+- greet
+- contact_id
+- affirm
 - goodbye
 - stop
 responses:
