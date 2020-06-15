@@ -920,3 +920,57 @@
     - utter_sent_mail
     - utter_goodbye
     - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"location": "Vijayawada", "price": "LT300"}
+    - slot{"location": "Vijayawada"}
+    - slot{"price": "LT300"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"location": "Vijayawada", "price": "LT300"}
+    - slot{"location": "Vijayawada"}
+    - slot{"price": "LT300"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "SIndian"}
+    - slot{"cuisine": "SIndian"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "SIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "NIndian", "location": "chennai", "price": "MT700"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"location": "chennai"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper

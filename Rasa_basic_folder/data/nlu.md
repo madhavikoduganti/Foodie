@@ -64,7 +64,6 @@
 - I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
 - I am so rich that I can go far [beyond 700]{"entity": "price", "value": "MT700"}
 - I can do [more than just 700]{"entity": "price", "value": "MT700"}
-- [MT700](price)
 
 ## intent:goodbye
 - bye
@@ -147,6 +146,7 @@
 - please send it to me at [manasa.koduganti@gmail.com](contact_email)
 - send it to [manasa.koduganti@gmail.com](contact_email)
 - [madhavi.koduganti@gmail.com](contact_email) is my mail
+- send it to [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -324,7 +324,8 @@
 - Show me restaurants from [hyderabad](location)
 - I want [American](cuisine)
 - Get me restaurants from [Vizag]{"entity": "location", "value": "Visakhapatnam"}
-- [North Indian]{"entity": "cuisine", "value": "NIndian"}
+- Please tell me about hotels in [Vijayawada](location) with avg. budget of [less than 300]{"entity": "price", "value": "LT300"}
+- show me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [chennai](location) [above 700]{"entity": "price", "value": "MT700"}
 
 ## intent:out_of_context
 - Tell me about weather today
