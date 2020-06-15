@@ -14,6 +14,7 @@
 - thanks
 - Thanks
 - yes. please send it
+- [Prayagraj]{"entity": "location", "value": "Allahabad"}
 
 ## intent:deny
 - no
@@ -57,7 +58,10 @@
 - [above 700]{"entity": "price", "value": "MT700"}
 - [> 700]{"entity": "price", "value": "MT700"}
 - [>700]{"entity": "price", "value": "MT700"}
-- [MT700](price)
+- I can do [more than 700]{"entity": "price", "value": "MT700"}
+- [less than 300]{"entity": "price", "value": "LT300"} is my budget
+- my budget is < [300]{"entity": "contact_email", "value": "LT300"}
+- I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
 
 ## intent:goodbye
 - bye
@@ -86,6 +90,7 @@
 - hey buddy
 - Hey
 - heyyy
+- hello there honey
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -97,6 +102,13 @@
 - email id is [abc@outlook.com](contact_email)
 - email id is [abc@outlook.pq](contact_email)
 - email id is [abc@xyz.pqr](contact_email)
+- email id is [abc@gmail.co.in](contact_email)
+- email id is [abc@yahoo.co.in](contact_email)
+- email id is [abc@rediff.co.in](contact_email)
+- email id is [abc@upgrad.co.in](contact_email)
+- email id is [abc@outlook.co.in](contact_email)
+- email id is [abc@outlook.pq.in](contact_email)
+- email id is [abc@xyz.pqr.in](contact_email)
 - yes, email id is [maxmeier@gmail.com](contact_email)
 - send it to [maxmeier@gmail.com](contact_email)
 - to [maxmeier@gmail.com](contact_email)
@@ -114,6 +126,13 @@
 - yes send it to [madhavi.koduganti@gmail.com](contact_email)
 - send it to [happyhappybro@wasssuupp.co](contact_email)
 - [blablablew@puppyinc.com](contact_email)
+- [witty@humour.inc](contact_email)
+- send it to [wwrtey@rediff.com](contact_email)
+- my email ID is [wwalia@upgrad.com](contact_email)
+- send it to [vikram@twitter.com](contact_email)
+- send it to [whoswho@gmail.com](contact_email)
+- yes. send it to [mkd@yahoo.co.in](contact_email)
+- send it over to my butler's mail id. i think it is [mybutler@yahoo.co.in](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -191,7 +210,15 @@
 - in [Mysore](location)
 - Can you show me some of my favourite non vegetarian [american]{"entity": "cuisine", "value": "American"} restaurants in [Maikala]{"entity": "location", "value": "Mangalore"} for the price range in [300 700]{"entity": "price", "value": "300To700"}?
 - hello there. Show me some restaurants from [Chennai](location)
-- [South Indian]{"entity": "cuisine", "value": "SIndian"}
+- Get me [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants from [Chennai](location) in price range [above 700]{"entity": "price", "value": "MT700"}
+- I wanna see hotels from [Bangalore](location)
+- show me restaurants from [Ghaziabad](location)
+- can you show me some hotels from [Indore](location)?
+- can you show me some hotels from [Allahabad](location)
+- I am hungry. I wanna know about nearby dineouts
+- I wanna go to a [mexican]{"entity": "cuisine", "value": "Mexican"} restaurant in [Kohl]{"entity": "location", "value": "Aligarh"}
+- Want to go to a dineout in [Holkar]{"entity": "location", "value": "Indore"}
+- [North Indian]{"entity": "cuisine", "value": "NIndian"}
 
 ## synonym:300To700
 - 300-700
@@ -220,8 +247,8 @@
 - Aligar
 
 ## synonym:Allahabad
-- Prayag
 - Prayagraj
+- Prayag
 - Illahabad
 
 ## synonym:American
@@ -393,6 +420,7 @@
 - above 700
 - > 700
 - >700
+- more than 700
 
 ## synonym:Madurai
 - Koodal

@@ -1,12 +1,24 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import unicode_literals
-import re
 
 from rasa_sdk import Action
 from rasa_sdk.events import SlotSet
 #import zomatopy
 import json
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import unicode_literals
+
+from rasa_core.actions.action import Action
+from rasa_core.events import SlotSet
+from rasa_core.events import AllSlotsReset
+import zomatopy
+import send_mail
+import json
+import pandas as pd
+import re
+
 
 class ActionSearchRestaurants(Action):
     def name(self):

@@ -430,3 +430,157 @@
     - slot{"contact_email": "blablablew@puppyinc.com"}
     - utter_sent_mail
     - utter_goodbye
+
+## interactive_story_1
+* restaurant_search{"cuisine": "Mexican", "location": "Chennai", "price": "MT700"}
+    - slot{"cuisine": "Mexican"}
+    - slot{"location": "Chennai"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "Chennai"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "witty@humour.inc"}
+    - slot{"contact_email": "witty@humour.inc"}
+    - action_send_mail
+    - slot{"contact_email": "witty@humour.inc"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* restaurant_search{"location": "Bangalore"}
+    - slot{"location": "Bangalore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "Bangalore"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Ghaziabad"}
+    - slot{"location": "Ghaziabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "Ghaziabad"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "wwrtey@rediff.com"}
+    - slot{"contact_email": "wwrtey@rediff.com"}
+    - action_send_mail
+    - slot{"contact_email": "wwrtey@rediff.com"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Indore"}
+    - slot{"location": "Indore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "SIndian"}
+    - slot{"cuisine": "SIndian"}
+    - utter_ask_price_range
+* price_info{"price": "300To700"}
+    - slot{"price": "300To700"}
+    - action_search_restaurants
+    - slot{"location": "Indore"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "wwalia@upgrad.com"}
+    - slot{"contact_email": "wwalia@upgrad.com"}
+    - action_send_mail
+    - slot{"contact_email": "wwalia@upgrad.com"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Allahabad"}
+    - slot{"location": "Allahabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "Allahabad"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "vikram@twitter.com"}
+    - slot{"contact_email": "vikram@twitter.com"}
+    - action_send_mail
+    - slot{"contact_email": "vikram@twitter.com"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* affirm{"location": "Allahabad"}
+    - slot{"location": "Allahabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "SIndian"}
+    - slot{"cuisine": "SIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "Allahabad"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "whoswho@gmail.com"}
+    - slot{"contact_email": "whoswho@gmail.com"}
+    - action_send_mail
+    - slot{"contact_email": "whoswho@gmail.com"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* restaurant_search{"cuisine": "Mexican", "location": "Aligarh"}
+    - slot{"cuisine": "Mexican"}
+    - slot{"location": "Aligarh"}
+    - utter_ask_price_range
+* price_info{"contact_email": "LT300"}
+    - slot{"contact_email": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "Aligarh"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "mkd@yahoo.co.in"}
+    - slot{"contact_email": "mkd@yahoo.co.in"}
+    - action_send_mail
+    - slot{"contact_email": "mkd@yahoo.co.in"}
+    - utter_sent_mail
+    - utter_goodbye
+
+## interactive_story_1
+* restaurant_search{"location": "Indore"}
+    - slot{"location": "Indore"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "Indore"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "mybutler@yahoo.co.in"}
+    - slot{"contact_email": "mybutler@yahoo.co.in"}
+    - action_send_mail
+    - slot{"contact_email": "mybutler@yahoo.co.in"}
+    - utter_sent_mail
+    - utter_goodbye
