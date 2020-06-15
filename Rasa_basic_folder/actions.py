@@ -89,6 +89,7 @@ class ActionSendEmail(Action):
     def run(self, dispatcher, tracker, domain):
         config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
         price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
+        cuisine_abbrv = {"nindian":"North Indian", "sindian":"South Indian","american":"American","mexican":"Mexican", "chinese":"Chinese", "italian":"Italian"}
         zomato = zomatopy.initialize_app(config)
         loc = tracker.get_slot('location')
         cuisine = tracker.get_slot('cuisine')
@@ -132,7 +133,11 @@ class ActionSendEmail(Action):
 
             rest_df_sorted = rest_df_filter.sort_values(by=['rating'], ascending=False)
             rest_df_html = rest_df_sorted.head(10).to_html(index=False)
-            html_msg = "<p>Hi!<br>Here are the top %s restaurants in %s for budget of %s<br><br>"%(cuisine,loc,price_abbrv[prc])+rest_df_html+"</p>"
+            if cuisine in cuisine_abbrv:
+                cuisine_name = cuisine_abbrv[cuisine]
+            else:
+                cuisine_name = cuisine
+            html_msg = "<p>Hi!<br>Here are the top %s restaurants in %s for budget of %s<br><br>"%(cuisine_name,loc,price_abbrv[prc])+rest_df_html+"</p>"
             send_mail.mail_results(emailid, html_msg)
 
 

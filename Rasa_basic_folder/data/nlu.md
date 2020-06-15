@@ -62,6 +62,9 @@
 - [less than 300]{"entity": "price", "value": "LT300"} is my budget
 - my budget is < [300]{"entity": "contact_email", "value": "LT300"}
 - I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
+- I am so rich that I can go far [beyond 700]{"entity": "price", "value": "MT700"}
+- I can do [more than just 700]{"entity": "price", "value": "MT700"}
+- [MT700](price)
 
 ## intent:goodbye
 - bye
@@ -142,6 +145,8 @@
 - please send it over to [madhavi.koduganti@gmail.com](contact_email)
 - [manasa.koduganti@gmail.com](contact_email)
 - please send it to me at [manasa.koduganti@gmail.com](contact_email)
+- send it to [manasa.koduganti@gmail.com](contact_email)
+- [madhavi.koduganti@gmail.com](contact_email) is my mail
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -314,6 +319,12 @@
 - my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My blood pressure and glucose is going so down that I can faint right now.
 - my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My vitals are going down and I am about to fall down. I am not that rich so please show me [below 300]{"entity": "price", "value": "LT300"}. Also I have not seen world much either so I am going to stick to my local [north indian]{"entity": "cuisine", "value": "NIndian"}. Please help me out.
 - get me some top restaurants from [Cuttack](location)
+- I am hungry. I need to eat. I am in [Guntur](location)
+- Show me restaurants from [Hyderabad](location)
+- Show me restaurants from [hyderabad](location)
+- I want [American](cuisine)
+- Get me restaurants from [Vizag]{"entity": "location", "value": "Visakhapatnam"}
+- [North Indian]{"entity": "cuisine", "value": "NIndian"}
 
 ## intent:out_of_context
 - Tell me about weather today
@@ -325,7 +336,7 @@
 - Why is earth round?
 - Why am I not a super man
 - Why is super man a super man?
-- Why are the leaves green? 
+- Why are the leaves green?
 - Why is the ocean blue?
 - Does aliens exist
 - Does dogs dislike humans?
@@ -346,8 +357,14 @@
 - Do you like my kids
 - Do you know history
 - I bet you are a psychic
-- I am good at physics 
-
+- I am good at physics
+- How are you feeling?
+- Why are you blue?
+- Are you dumb?
+- You are impossible
+- I don't know
+- are you there
+- It is useless talking to you
 
 ## synonym:300To700
 - 300-700
@@ -551,6 +568,8 @@
 - > 700
 - >700
 - more than 700
+- beyond 700
+- more than just 700
 
 ## synonym:Madurai
 - Koodal

@@ -831,3 +831,92 @@
     - utter_greet
 * out_of_context
     - utter_default
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Guntur"}
+    - slot{"location": "Guntur"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "guntur"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* out_of_context
+    - utter_default
+* out_of_context
+    - utter_default
+* greet
+    - utter_greet
+* out_of_context
+    - utter_default
+* out_of_context
+    - utter_default
+* restaurant_search{"location": "Hyderabad"}
+    - slot{"location": "Hyderabad"}
+    - utter_ask_cuisine
+* out_of_context
+* out_of_context
+    - utter_default
+* out_of_context
+    - utter_default
+* restaurant_search{"location": "hyderabad"}
+    - slot{"location": "hyderabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "American"}
+    - slot{"cuisine": "American"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "hyderabad"}
+    - slot{"cuisine": "American"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Visakhapatnam"}
+    - slot{"location": "Visakhapatnam"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "visakhapatnam"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper

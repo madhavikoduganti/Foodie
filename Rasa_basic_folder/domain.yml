@@ -18,13 +18,13 @@ entities:
 - location
 - price
 intents:
-- greet
-- out_of_context
-- restaurant_search
-- deny
-- price_info
-- contact_id
 - affirm
+- out_of_context
+- contact_id
+- restaurant_search
+- price_info
+- greet
+- deny
 - goodbye
 - stop
 responses:
