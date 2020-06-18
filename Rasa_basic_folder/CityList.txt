@@ -40,7 +40,8 @@ Gwalior
 Gurgaon
 Guwahati
 Hamirpur
-Hubli–Dharwad
+Hubli
+Dharwad
 Indore
 Jabalpur
 Jaipur
@@ -97,7 +98,8 @@ Ujjain
 Bijapur
 Vadodara
 Varanasi
-Vasai-Virar City
+Vasai
+Virar
 Vijayawada
 Visakhapatnam
 Vellore

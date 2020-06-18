@@ -2,6 +2,7 @@ actions:
 - action_restart_chat_helper
 - action_search_restaurants
 - action_send_mail
+- out_of_scope
 - utter_ask_cuisine
 - utter_ask_howcanhelp
 - utter_ask_id
@@ -18,13 +19,13 @@ entities:
 - location
 - price
 intents:
-- contact_id
-- restaurant_search
-- affirm
 - deny
-- out_of_context
-- price_info
+- restaurant_search
 - greet
+- price_info
+- contact_id
+- affirm
+- out_of_context
 - goodbye
 - stop
 responses:

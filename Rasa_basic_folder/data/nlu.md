@@ -64,6 +64,7 @@
 - I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
 - I am so rich that I can go far [beyond 700]{"entity": "price", "value": "MT700"}
 - I can do [more than just 700]{"entity": "price", "value": "MT700"}
+- in [Sonalpur]{"entity": "location", "value": "Solapur"}
 
 ## intent:goodbye
 - bye
@@ -146,7 +147,9 @@
 - please send it to me at [manasa.koduganti@gmail.com](contact_email)
 - send it to [manasa.koduganti@gmail.com](contact_email)
 - [madhavi.koduganti@gmail.com](contact_email) is my mail
-- send it to [madhavi.koduganti@gmail.com](contact_email)
+- yes. Send it to [madhavi.koduganti@gmail.com](contact_email)
+- send it to [jhaappy885@gmail.com](contact_email)
+- [jhaappy885@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -326,8 +329,41 @@
 - Get me restaurants from [Vizag]{"entity": "location", "value": "Visakhapatnam"}
 - Please tell me about hotels in [Vijayawada](location) with avg. budget of [less than 300]{"entity": "price", "value": "LT300"}
 - show me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [chennai](location) [above 700]{"entity": "price", "value": "MT700"}
+- Please help me find som erestaurants
+- Get me some restaurants
+- [Sonalpur]{"entity": "location", "value": "Solapur"}
+- [Rachi]{"entity": "location", "value": "Ranchi"}
+- Can you please show me some [Italian](cuisine) restaurants from [Nasik]{"entity": "location", "value": "Nashik"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Coimbatore](location) for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Koyampuththoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Koyamputhoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Kovai]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Kodial]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Maikala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Mangalooru]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Kodeyaala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Manjarun]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Mangalapuram]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Mangalore](location) for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [mangalore](location) for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Patna](location) for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [Italian](cuisine) restaurants from [Palibothra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [Pataliputra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [south Indian]{"entity": "cuisine", "value": "SIndian"} restaurants from [Pushpapura]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [American](cuisine) restaurants from [Kusumpur]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
+- hi. Get me some [chinese](cuisine) restaurants from [Azimabad]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
+- Hi, Get me some [Italian](cuisine) restaurants from [Kathiawad]{"entity": "location", "value": "Bhavnagar"} for price [more than 700]{"entity": "price", "value": "MT700"}
+- Please get me some restaurants from [Chakra Kshetra]{"entity": "location", "value": "Bhubaneswar"}
+- Please get me some restaurants from [Ekamra Kanan]{"entity": "location", "value": "Bhubaneswar"}
+- Please get me some restaurants from [Ekamra Kshetra]{"entity": "location", "value": "Bhubaneswar"}
+- Please get me some restaurants from [Mandira Malini Nagari]{"entity": "location", "value": "Bhubaneswar"}
+- Please get me some restaurants from [Malligai Maanagar]{"entity": "location", "value": "Madurai"}
+- Please get me some restaurants from [Turmeric City]{"entity": "location", "value": "Erode"}
+- Please get me some restaurants from [Pink City]{"entity": "location", "value": "Jaipur"}
+- Please show me some restaurants from [Pital Nagri]{"entity": "location", "value": "Moradabad"}
+- hi. Please get me some [North Indian]{"entity": "cuisine", "value": "NIndian"} restaurants for price [under 300]{"entity": "price", "value": "LT300"} in [Nath Nagri]{"entity": "location", "value": "Bareilly"}
 
-## intent:out_of_context
+## intent:out_of_scope
 - Tell me about weather today
 - how is sun orange?
 - how are plants green
@@ -420,22 +456,22 @@
 - Belgaon
 
 ## synonym:Bhavnagar
-- Kathiawar
 - Kathiawad
+- Kathiawar
 - Bhaavnagar
 - Bhaav nagar
 - Bhav nagar
 
 ## synonym:Bhubaneswar
+- Chakra Kshetra
+- Ekamra Kanan
+- Ekamra Kshetra
+- Mandira Malini Nagari
 - Bhuvaneswar
 - Toshali
 - Kalinga
 - Kalinga Nagar
 - Nagar Kalinga
-- Chakra Kshetra
-- Ekamra Kanan
-- Ekamra Kshetra
-- Mandira Malini Nagari
 - Mandira Malini Nagar
 
 ## synonym:Bijapur
@@ -446,9 +482,9 @@
 - Madras
 
 ## synonym:Coimbatore
-- Kovai
 - Koyampuththoor
 - Koyamputhoor
+- Kovai
 
 ## synonym:Dehradun
 - Dera Doon
@@ -458,8 +494,8 @@
 - Dilli
 
 ## synonym:Erode
-- Yellow City
 - Turmeric City
+- Yellow City
 
 ## synonym:Firozabad
 - Chandwar nager
@@ -573,19 +609,19 @@
 - more than just 700
 
 ## synonym:Madurai
-- Koodal
 - Malligai Maanagar
+- Koodal
 - Naanmadakoodal
 - Thirualavai
 
 ## synonym:Mangalore
 - Maikala
-- Kudla
-- Mangalooru
-- Mangalapuram
-- Kodeyaala
 - Kodial
+- Mangalooru
+- Kodeyaala
 - Manjarun
+- Mangalapuram
+- Kudla
 
 ## synonym:Mathura
 - Madhupura
@@ -598,8 +634,8 @@
 - mexico
 
 ## synonym:Moradabad
-- Brass City
 - Pital Nagri
+- Brass City
 
 ## synonym:Mumbai
 - Bombay
@@ -621,14 +657,14 @@
 - Nagpore
 
 ## synonym:Nashik
-- Gulshanabad
 - Nasik
+- Gulshanabad
 
 ## synonym:Patna
-- Pataliputra
 - Palibothra
-- Kusumpur
+- Pataliputra
 - Pushpapura
+- Kusumpur
 - Azimabad
 
 ## synonym:Pondicherry
@@ -667,8 +703,8 @@
 - Sahagalli
 
 ## synonym:Solapur
-- Sandalpur
 - Sonalpur
+- Sandalpur
 
 ## synonym:Srinagar
 - Pravasenpur

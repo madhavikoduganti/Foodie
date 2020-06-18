@@ -808,29 +808,6 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* greet
-    - utter_greet
-* out_of_context
-    - utter_default
-
-## interactive_story_1
-* greet
-    - utter_greet
-* out_of_context
-    - utter_default
-
-## interactive_story_1
-* greet
-    - utter_greet
-* out_of_context
-    - utter_default
-
-## interactive_story_1
-* greet
-    - utter_greet
-* out_of_context
-    - utter_default
 
 ## interactive_story_1
 * greet
@@ -855,46 +832,7 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* greet
-    - utter_greet
-* out_of_context
-    - utter_default
-* out_of_context
-    - utter_default
-* greet
-    - utter_greet
-* out_of_context
-    - utter_default
-* out_of_context
-    - utter_default
-* restaurant_search{"location": "Hyderabad"}
-    - slot{"location": "Hyderabad"}
-    - utter_ask_cuisine
-* out_of_context
-* out_of_context
-    - utter_default
-* out_of_context
-    - utter_default
-* restaurant_search{"location": "hyderabad"}
-    - slot{"location": "hyderabad"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "American"}
-    - slot{"cuisine": "American"}
-    - utter_ask_price_range
-* price_info{"price": "MT700"}
-    - slot{"price": "MT700"}
-    - action_search_restaurants
-    - slot{"location": "hyderabad"}
-    - slot{"cuisine": "American"}
-    - slot{"price": "MT700"}
-    - utter_ask_send_details
-* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
-    - slot{"contact_email": "manasa.koduganti@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - utter_goodbye
-    - action_restart_chat_helper
+
 
 ## interactive_story_1
 * greet
@@ -972,5 +910,162 @@
     - slot{"contact_email": "madhavi.koduganti@gmail.com"}
     - action_send_mail
     - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search
+    - utter_ask_location
+* price_info{"location": "Solapur"}
+    - slot{"location": "Solapur"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "solapur"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Solapur"}
+    - slot{"location": "Solapur"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "NIndian"}
+    - slot{"cuisine": "NIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "solapur"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+
+## interactive_story_2
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Ranchi"}
+    - slot{"location": "Ranchi"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "SIndian"}
+    - slot{"cuisine": "SIndian"}
+    - utter_ask_price_range
+* price_info{"price": "LT300"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "ranchi"}
+    - slot{"cuisine": "SIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "Italian", "location": "Nashik", "price": "MT700"}
+    - slot{"cuisine": "Italian"}
+    - slot{"location": "Nashik"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "nashik"}
+    - slot{"cuisine": "Italian"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "Mexican", "location": "Coimbatore", "price": "MT700"}
+    - slot{"cuisine": "Mexican"}
+    - slot{"location": "Coimbatore"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "coimbatore"}
+    - slot{"cuisine": "Mexican"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "Italian", "location": "Bhavnagar", "price": "MT700"}
+    - slot{"cuisine": "Italian"}
+    - slot{"location": "Bhavnagar"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "bhavnagar"}
+    - slot{"cuisine": "Italian"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Moradabad"}
+    - slot{"location": "Moradabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "American"}
+    - slot{"cuisine": "American"}
+    - utter_ask_price_range
+* price_info{"price": "MT700"}
+    - slot{"price": "MT700"}
+    - action_search_restaurants
+    - slot{"location": "moradabad"}
+    - slot{"cuisine": "American"}
+    - slot{"price": "MT700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "NIndian", "price": "LT300", "location": "Bareilly"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"location": "Bareilly"}
+    - slot{"price": "LT300"}
+    - action_search_restaurants
+    - slot{"location": "bareilly"}
+    - slot{"cuisine": "NIndian"}
+    - slot{"price": "LT300"}
+    - utter_ask_send_details
+* deny
     - utter_goodbye
     - action_restart_chat_helper

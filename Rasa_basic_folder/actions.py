@@ -40,12 +40,12 @@ class ActionSearchRestaurants(Action):
             cuisine = tracker.get_slot('cuisine')
             cuisine_name = Validator().validateAndGetCuisine(tracker.get_slot('cuisine'))
             prc = tracker.get_slot('price')
-            loc = loc.lstrip().rstrip().lower()
+            loc = loc.rstrip().lower()
             if loc not in self.city_list:
                 print(loc," not found in city_list")
                 message = "We do not operate in location:"
                 message = message+str(loc)
-                message = message+" yet. Sorry!"
+                message = message+" yet. Please check if the location you have provided is either a Sorry!"
                 dispatcher.utter_message(message)
                 return [Restarted()]
                 
@@ -117,7 +117,7 @@ class ActionSendEmail(Action):
             cuisine_name = Validator().validateAndGetCuisine(tracker.get_slot('cuisine'))
             prc = tracker.get_slot('price')
             emailid = tracker.get_slot('contact_email')
-            loc = loc.lstrip().rstrip().lower()
+            loc = loc.rstrip().lower()
             if loc not in self.city_list:
                 print(loc," not found in city_list")
                 message = "We do not operate in location:"
