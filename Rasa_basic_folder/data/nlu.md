@@ -14,7 +14,6 @@
 - thanks
 - Thanks
 - yes. please send it
-- [Prayagraj]{"entity": "location", "value": "Allahabad"}
 
 ## intent:deny
 - no
@@ -65,6 +64,8 @@
 - I am so rich that I can go far [beyond 700]{"entity": "price", "value": "MT700"}
 - I can do [more than just 700]{"entity": "price", "value": "MT700"}
 - in [Sonalpur]{"entity": "location", "value": "Solapur"}
+- in [Bla](location) bla lo
+- in [Bangalore](location)
 
 ## intent:goodbye
 - bye
@@ -97,6 +98,15 @@
 - hello there
 - hello honey
 - hellow
+- bello
+- Yo
+- yo
+- Wassup
+- wassup
+- 'ssup
+- wassupp
+- yooooooooooooo
+- yoo honey
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -149,6 +159,7 @@
 - [madhavi.koduganti@gmail.com](contact_email) is my mail
 - yes. Send it to [madhavi.koduganti@gmail.com](contact_email)
 - send it to [jhaappy885@gmail.com](contact_email)
+- [jhaappy885@gmail.com](contact_email)
 - [jhaappy885@gmail.com](contact_email)
 
 ## intent:restaurant_search
@@ -362,6 +373,33 @@
 - Please get me some restaurants from [Pink City]{"entity": "location", "value": "Jaipur"}
 - Please show me some restaurants from [Pital Nagri]{"entity": "location", "value": "Moradabad"}
 - hi. Please get me some [North Indian]{"entity": "cuisine", "value": "NIndian"} restaurants for price [under 300]{"entity": "price", "value": "LT300"} in [Nath Nagri]{"entity": "location", "value": "Bareilly"}
+- so sooo hungry
+- [gibberland](location)
+- hungry
+- [transylvania](location)
+- [Sydney](location)
+- [London](location)
+- very very hungry
+- [Pulivendla](location)
+- got to eat
+- [urilugia](location)
+- gotta eat
+- in [uhnwr](location)
+- [blablaland](location)
+- in [blablaland](location)
+- [pqrst](location)
+- in [pqrst](location)
+- [bellobello](location)
+- in [bellobello](location)
+- [landlanda](location)
+- in [landlanda](location)
+- [neverland](location)
+- in [neverland](location)
+- wanna eat
+- [uilaps](location)
+- I wanna eat [chinese](cuisine)
+- in [Bangalore]{"entity": "location", "value": "bangalore"}
+- looking for [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Goa](location) for price [less than 300]{"entity": "price", "value": "LT300"}
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -594,6 +632,7 @@
 - < 300
 - Lesser than Rs. 300
 - below 300
+- under 300
 
 ## synonym:Lucknow
 - Lakhanpur
@@ -772,6 +811,7 @@
 - Omatikonda
 
 ## synonym:bangalore
+- Bangalore
 - Bengaluru
 
 ## synonym:chinese

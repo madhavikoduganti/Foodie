@@ -2,6 +2,7 @@ actions:
 - action_restart_chat_helper
 - action_search_restaurants
 - action_send_mail
+- action_validate_location
 - out_of_scope
 - utter_ask_cuisine
 - utter_ask_howcanhelp
@@ -19,11 +20,11 @@ entities:
 - location
 - price
 intents:
-- deny
 - restaurant_search
+- contact_id
 - greet
 - price_info
-- contact_id
+- deny
 - affirm
 - out_of_context
 - goodbye
@@ -53,6 +54,10 @@ responses:
   - text: Can you tell me your email_id?
   utter_ask_location:
   - text: In what location?
+  - text: In which location?
+  - text: Where do you wanna eat?
+  - text: Where would you like to eat?
+  - text: Where are you right now?
   utter_ask_price_range:
   - buttons:
     - payload: LT300

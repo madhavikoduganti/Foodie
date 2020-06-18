@@ -17,13 +17,44 @@ import logging
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
-class ActionSearchRestaurants(Action):
+
+class Validator:
     city_list = []
-    
+
     def __init__(self):
         my_file = open("CityList.txt", "r")
         self.city_list = [line.rstrip('\n').lower() for line in my_file]
-        super(ActionSearchRestaurants, self).__init__()
+        
+    def validateAndGetCuisine(self, cuisine):
+        cuisine_abbrv = {"nindian":"North Indian", "sindian":"South Indian","american":"American","mexican":"Mexican", "chinese":"Chinese", "italian":"Italian"}
+        if cuisine.lower() in cuisine_abbrv:
+            cuisine_name = cuisine_abbrv[cuisine.lower()]
+        else:
+            cuisine_name = cuisine
+        return cuisine_name
+
+
+class ActionValidateLocation(Action):
+    def name(self):
+        return "action_validate_location"
+    def run(self, dispatcher, tracker, domain):
+        validator = Validator()
+        loc = tracker.get_slot('location')
+        if loc is not None:
+            loc = loc.lstrip().rstrip().lower()
+            if loc not in validator.city_list:
+                print(loc," not found in city_list")
+                message = "We do not operate in location:"
+                message = message+str(loc)
+                message = message+" yet. Sorry!"
+                dispatcher.utter_message(message)
+                return [Restarted()]
+        else:
+            return [Restarted()]
+
+
+class ActionSearchRestaurants(Action):
+
         
     def name(self):
         return 'action_search_restaurants'
@@ -32,16 +63,18 @@ class ActionSearchRestaurants(Action):
 
     def run(self, dispatcher, tracker, domain):
         try:
+            validator = Validator()
+
             cuisine_abbrv = {"nindian":"North Indian", "sindian":"South Indian","american":"American","mexican":"Mexican", "chinese":"Chinese", "italian":"Italian"}
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
             price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
             zomato = zomatopy.initialize_app(config)
             loc = tracker.get_slot('location')
             cuisine = tracker.get_slot('cuisine')
-            cuisine_name = Validator().validateAndGetCuisine(tracker.get_slot('cuisine'))
+            cuisine_name = validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
             prc = tracker.get_slot('price')
             loc = loc.rstrip().lower()
-            if loc not in self.city_list:
+            if loc not in validator.city_list:
                 print(loc," not found in city_list")
                 message = "We do not operate in location:"
                 message = message+str(loc)
@@ -67,7 +100,7 @@ class ActionSearchRestaurants(Action):
                 rest_location_list = [restaurant['restaurant']['location']['address'] for restaurant in d['restaurants']]
                 rest_rating_list = [restaurant['restaurant']['user_rating']['aggregate_rating'] for restaurant in d['restaurants']]
                 rest_budg_list = [restaurant['restaurant']['average_cost_for_two'] for restaurant in d['restaurants']]
-                pd.set_option('display.max_colwidth', -1)
+                pd.set_option('display.max_colwidth', None)
                 rest_df = pd.DataFrame({'name':rest_name_list, 'location':rest_location_list, 'rating':rest_rating_list, 'avg_cost_for2':rest_budg_list})
                 if "300" in prc and "700" in prc:
                     rest_df_filter = rest_df[(rest_df['avg_cost_for2']>=300) & (rest_df['avg_cost_for2']<=700)]
@@ -83,42 +116,28 @@ class ActionSearchRestaurants(Action):
         except Exception as error:
             logger.exception(error)
             dispatcher.utter_message("Sorry! there was an error on our side. Try again later.")
+            return [Restarted()]
 
-class Validator:
-    def validateAndGetCuisine(self, cuisine):
-        cuisine_abbrv = {"nindian":"North Indian", "sindian":"South Indian","american":"American","mexican":"Mexican", "chinese":"Chinese", "italian":"Italian"}
-        if cuisine.lower() in cuisine_abbrv:
-            cuisine_name = cuisine_abbrv[cuisine.lower()]
-        else:
-            cuisine_name = cuisine
-        return cuisine_name
 
 
 class ActionSendEmail(Action):
-    city_list = []
-    
-    def __init__(self):
-        my_file = open("CityList.txt", "r")
-        self.city_list = [line.rstrip('\n').lower() for line in my_file]
-        super(ActionSendEmail, self).__init__()
         
     def name(self):
         return 'action_send_mail'
     
 
-
-
     def run(self, dispatcher, tracker, domain):
         try:
+            validator = Validator()
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
             price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
             zomato = zomatopy.initialize_app(config)
             loc = tracker.get_slot('location')
-            cuisine_name = Validator().validateAndGetCuisine(tracker.get_slot('cuisine'))
+            cuisine_name = validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
             prc = tracker.get_slot('price')
             emailid = tracker.get_slot('contact_email')
             loc = loc.rstrip().lower()
-            if loc not in self.city_list:
+            if loc not in validator.city_list:
                 print(loc," not found in city_list")
                 message = "We do not operate in location:"
                 message = message+str(loc)
@@ -159,10 +178,12 @@ class ActionSendEmail(Action):
                     send_mail.mail_results(emailid, html_msg)
                 except Exception as error1:
                     logger.exception(error1)
-                    dispatcher.utter_message("Sorry! there was an error on our side. Please do check if the email provided is correct.")
+                    dispatcher.utter_message("Sorry! there was an error on our side. Please do check if the email provided is correct and try again.")
+                    return [Restarted()]
         except Exception as error:
             logger.exception(error)
             dispatcher.utter_message("Sorry! there was an error on our side. Try again later.")
+            return [Restarted()]
 
             
 
