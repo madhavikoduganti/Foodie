@@ -49,6 +49,8 @@ class ActionValidateLocation(Action):
                 message = message+" yet. Sorry!"
                 dispatcher.utter_message(message)
                 return [Restarted()]
+            else:
+                return [SlotSet('location',loc)]
         else:
             return [Restarted()]
 
@@ -162,7 +164,7 @@ class ActionSendEmail(Action):
                 rest_location_list = [restaurant['restaurant']['location']['address'] for restaurant in d['restaurants']]
                 rest_rating_list = [restaurant['restaurant']['user_rating']['aggregate_rating'] for restaurant in d['restaurants']]
                 rest_budg_list = [restaurant['restaurant']['average_cost_for_two'] for restaurant in d['restaurants']]
-                pd.set_option('display.max_colwidth', -1)
+                pd.set_option('display.max_colwidth', None)
                 rest_df = pd.DataFrame({'name':rest_name_list, 'location':rest_location_list, 'rating':rest_rating_list, 'avg_cost_for2':rest_budg_list})
                 if "300" in prc and "700" in prc:
                    rest_df_filter = rest_df[(rest_df['avg_cost_for2']>=300) & (rest_df['avg_cost_for2']<=700)]

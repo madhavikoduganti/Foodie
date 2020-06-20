@@ -13,7 +13,7 @@
 - sounds really good
 - thanks
 - Thanks
-- yes. please send it
+- on my couch
 
 ## intent:deny
 - no
@@ -33,39 +33,66 @@
 - no. not needed
 - don't send
 - why? it is not necessary
+- nnnno
+- n
+- noppy
 
 ## intent:price_info
 - [LT300](price)
 - [MT700](price)
 - [300To700](price)
+- I can't do more than [300]{"entity": "price", "value": "LT300"}
+- I cannot pay more than [300]{"entity": "price", "value": "LT300"}
+- I can not go more than [300]{"entity": "price", "value": "LT300"}
+- I can not go beyond [300]{"entity": "price", "value": "LT300"}
+- My budget is [300]{"entity": "price", "value": "LT300"}
 - [Less than Rs. 300]{"entity": "price", "value": "LT300"}
 - [less than 300]{"entity": "price", "value": "LT300"}
+- [lesser than 300]{"entity": "price", "value": "LT300"}
 - [Less than 300]{"entity": "price", "value": "LT300"}
 - [300]{"entity": "price", "value": "LT300"}
 - [<300]{"entity": "price", "value": "LT300"}
 - [< 300]{"entity": "price", "value": "LT300"}
 - [Lesser than Rs. 300]{"entity": "price", "value": "LT300"}
 - [below 300]{"entity": "price", "value": "LT300"}
+- I have [not more than 300]{"entity": "price", "value": "LT300"}
+- I can do [not more than 300]{"entity": "price", "value": "LT300"}
+- budget is [not more than 300]{"entity": "price", "value": "LT300"}
+- My budget is [not more than 300]{"entity": "price", "value": "LT300"}
 - [300-700]{"entity": "price", "value": "300To700"} range
 - [between 300 and 700]{"entity": "price", "value": "300To700"}
 - [Rs. 300 to 700]{"entity": "price", "value": "300To700"}
 - [300 to 700]{"entity": "price", "value": "300To700"}
 - from [300 to 700]{"entity": "price", "value": "300To700"}
+- about [300 to 700]{"entity": "price", "value": "300To700"}
 - in range [300 and 700]{"entity": "price", "value": "300To700"}
+- I have [not more than 700]{"entity": "price", "value": "300To700"}
+- I can do [not more than 700]{"entity": "price", "value": "300To700"}
+- I [can't do more than 700]{"entity": "price", "value": "300To700"}
+- I [cannot do more than 700]{"entity": "price", "value": "300To700"}
+- budget is [not more than 700]{"entity": "price", "value": "300To700"}
+- My budget is [not more than 700]{"entity": "price", "value": "300To700"}
+- My budget is [700]{"entity": "price", "value": "300To700"}
 - [More than 700]{"entity": "price", "value": "MT700"}
+- [more than 700]{"entity": "price", "value": "MT700"}
 - [Above 700]{"entity": "price", "value": "MT700"}
 - [above 700]{"entity": "price", "value": "MT700"}
 - [> 700]{"entity": "price", "value": "MT700"}
 - [>700]{"entity": "price", "value": "MT700"}
+- I want budget [more than 700]{"entity": "price", "value": "MT700"}
 - I can do [more than 700]{"entity": "price", "value": "MT700"}
 - [less than 300]{"entity": "price", "value": "LT300"} is my budget
-- my budget is < [300]{"entity": "contact_email", "value": "LT300"}
+- my budget is [< 300]{"entity": "contact_email", "value": "LT300"}
 - I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
 - I am so rich that I can go far [beyond 700]{"entity": "price", "value": "MT700"}
 - I can do [more than just 700]{"entity": "price", "value": "MT700"}
-- in [Sonalpur]{"entity": "location", "value": "Solapur"}
-- in [Bla](location) bla lo
-- in [Bangalore](location)
+- [beyond 700]{"entity": "price", "value": "MT700"}
+- [more than 700]{"entity": "price", "value": "MT700"} rupees please
+- within [300 and 700]{"entity": "price", "value": "300To700"}
+- I cannot do more than [300]{"entity": "price", "value": "LT300"}
+- I have < [700]{"entity": "price", "value": "300To700"}
+- I have [only 300]{"entity": "price", "value": "LT300"} rupees
+- I can do [no more than 700]{"entity": "price", "value": "300To700"}
 
 ## intent:goodbye
 - bye
@@ -107,6 +134,8 @@
 - wassupp
 - yooooooooooooo
 - yoo honey
+- in [dehradoon]{"entity": "location", "value": "Dehradun"}
+- get me [south]{"entity": "cuisine", "value": "SIndian"}
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -136,6 +165,7 @@
 - hello, the id is [jgerffr@gmail.com](contact_email)
 - my id is [madhavi.koduganti@gmail.com](contact_email)
 - my mail id is [r123@ttsi.cos](contact_email)
+- mail id is [madhavi.koduganti@gmail.com](contact_email)
 - [wwstei@grrr.wgo](contact_email)
 - [iieta@ttya.com](contact_email)
 - email id is [aagt@yytad.coww](contact_email)
@@ -145,22 +175,21 @@
 - [witty@humour.inc](contact_email)
 - send it to [wwrtey@rediff.com](contact_email)
 - my email ID is [wwalia@upgrad.com](contact_email)
+- send it to [jhaappy885@gmail.com](contact_email)
 - send it to [vikram@twitter.com](contact_email)
 - send it to [whoswho@gmail.com](contact_email)
+- send it to [manasa.koduganti@gmail.com](contact_email)
+- send it to [madhavi.koduganti@gmail.com](contact_email)
 - yes. send it to [mkd@yahoo.co.in](contact_email)
 - send it over to my butler's mail id. i think it is [mybutler@yahoo.co.in](contact_email)
-- mail id is [madhavi.koduganti@gmail.com](contact_email)
-- [madhavi.koduganti@gmail.com](contact_email)
-- send it to [madhavi.koduganti@gmail.com](contact_email)
-- please send it over to [madhavi.koduganti@gmail.com](contact_email)
-- [manasa.koduganti@gmail.com](contact_email)
-- please send it to me at [manasa.koduganti@gmail.com](contact_email)
-- send it to [manasa.koduganti@gmail.com](contact_email)
 - [madhavi.koduganti@gmail.com](contact_email) is my mail
+- [madhavi.koduganti@gmail.com](contact_email)
+- please send it over to [madhavi.koduganti@gmail.com](contact_email)
+- please send it to me at [manasa.koduganti@gmail.com](contact_email)
 - yes. Send it to [madhavi.koduganti@gmail.com](contact_email)
-- send it to [jhaappy885@gmail.com](contact_email)
+- [manasa.koduganti@gmail.com](contact_email)
 - [jhaappy885@gmail.com](contact_email)
-- [jhaappy885@gmail.com](contact_email)
+- to [manasa.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -170,19 +199,10 @@
 - [chinese](cuisine)
 - [Italian](cuisine)
 - [North American]{"entity": "cuisine", "value": "American"}
-- [South Indian]{"entity": "cuisine", "value": "SIndian"}
-- [South indian]{"entity": "cuisine", "value": "SIndian"}
-- [south Indian]{"entity": "cuisine", "value": "SIndian"}
-- [south indian]{"entity": "cuisine", "value": "SIndian"}
-- [North Indian]{"entity": "cuisine", "value": "NIndian"}
-- [North indian]{"entity": "cuisine", "value": "NIndian"}
-- [north Indian]{"entity": "cuisine", "value": "NIndian"}
-- [north indian]{"entity": "cuisine", "value": "NIndian"}
 - [Chinese]{"entity": "cuisine", "value": "chinese"}
 - [mumbai](location)
 - [Lithuania](location)
 - in [Gurgaon](location)
-- Oh, sorry, in [Italy](location)
 - in [delhi](location)
 - [delhi](location)
 - [central](location) [indian](cuisine) restaurant
@@ -400,6 +420,72 @@
 - I wanna eat [chinese](cuisine)
 - in [Bangalore]{"entity": "location", "value": "bangalore"}
 - looking for [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Goa](location) for price [less than 300]{"entity": "price", "value": "LT300"}
+- hungry in [surat](location)
+- I wanna eat [chines]{"entity": "cuisine", "value": "chinese"} for  [above Rs. 700]{"entity": "price", "value": "MT700"} in [roURkeLa](location)
+- I want to eat [iTaLIaN]{"entity": "cuisine", "value": "Italian"}
+- in [JaLaNDHaR](location)
+- Please find me some [mexico]{"entity": "cuisine", "value": "Mexican"} restaurants
+- in [JalaNDhaR](location)
+- I want to eat at [Pital Nagri]{"entity": "location", "value": "Moradabad"}
+- I want [mexcan]{"entity": "cuisine", "value": "Mexican"}
+- hi. I want to eat [China]{"entity": "cuisine", "value": "chinese"}
+- hi I want to eat [china]{"entity": "cuisine", "value": "chinese"}
+- in [Rachi]{"entity": "location", "value": "Ranchi"}
+- I want eat [south]{"entity": "cuisine", "value": "SIndian"}
+- in [Sandalpur]{"entity": "location", "value": "Solapur"}
+- in [Malligai Maanagar]{"entity": "location", "value": "Madurai"}
+- I want to eat [north]{"entity": "cuisine", "value": "NIndian"}
+- I want to eat [south]{"entity": "cuisine", "value": "SIndian"}
+- I want to eat [america]{"entity": "cuisine", "value": "American"}
+- I want to eat [mexico]{"entity": "cuisine", "value": "Mexican"}
+- show me [north]{"entity": "cuisine", "value": "NIndian"} restaurants
+- show me [south]{"entity": "cuisine", "value": "SIndian"} restaurants
+- show me [america]{"entity": "cuisine", "value": "American"} restaurants
+- show me [mexico]{"entity": "cuisine", "value": "Mexican"} restaurants
+- show me [north]{"entity": "cuisine", "value": "NIndian"} hotels
+- show me [south]{"entity": "cuisine", "value": "SIndian"} hotels
+- show me [america]{"entity": "cuisine", "value": "American"} hotels
+- show me [mexico]{"entity": "cuisine", "value": "Mexican"} hotels
+- show me [north]{"entity": "cuisine", "value": "NIndian"} dine-outs
+- show me [south]{"entity": "cuisine", "value": "SIndian"} dine outs
+- show me [america]{"entity": "cuisine", "value": "American"} eateries
+- show me [mexico]{"entity": "cuisine", "value": "Mexican"} eatery
+- show me [abcg](cuisine) eatery
+- show me [pqrs](cuisine) hotel
+- show me [xyza](cuisine) restaurant
+- show me [abcg](cuisine) eateries
+- show me [pqrs](cuisine) hotels
+- show me [xyza](cuisine) restaurants
+- please show me [abcg](cuisine) eatery
+- please show me [qrs](cuisine) hotel
+- please show me [xyza](cuisine) restaurant
+- please show me [cg](cuisine) eateries
+- please show me [pqrs](cuisine) hotels
+- please show me [pqrst](cuisine) hotels
+- please show me [pqrstu](cuisine) hotels
+- please show me [US]{"entity": "cuisine", "value": "American"} hotels
+- please show me [xyza](cuisine) restaurants
+- I want to eat [abcd](cuisine)
+- I want to eat [aerjhf](cuisine)
+- I want to eat [WEYDF](cuisine)
+- I want to eat at [mhwfe](cuisine) hotel
+- I want to eat at [abcd](cuisine) restaurant
+- I want to eat at [aerjhf](cuisine) dineout
+- I want to eat at [WEYDF](cuisine) dine-out
+- I want to eat at [mwfe](cuisine) dine out
+- I want to eat at [sajehg](cuisine) dine out
+- I want to eat at [erwedjgw](cuisine) restaurants
+- I want to eat at [weyuew](cuisine) restaurant
+- I want to eat [us]{"entity": "cuisine", "value": "American"} within [300 and 700]{"entity": "price", "value": "300To700"} in [bambai]{"entity": "location", "value": "Mumbai"}
+- I want to eat in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
+- I want to eat [us]{"entity": "cuisine", "value": "American"}
+- [South Indian]{"entity": "cuisine", "value": "SIndian"}
+- with my brother in [Guntur](location)
+- in [Ranchi](location)
+- I would like [america]{"entity": "cuisine", "value": "America"}
+- I wanna eat for [more than 700]{"entity": "price", "value": "MT700"}
+- in [Chandigarh](location)
+- I wanna eat [mexico]{"entity": "cuisine", "value": "Mexican"}
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -440,6 +526,9 @@
 - I don't know
 - are you there
 - It is useless talking to you
+- on the floor
+- I dont know
+- do whatever you want to do
 
 ## synonym:300To700
 - 300-700
@@ -447,27 +536,52 @@
 - Rs. 300 to 700
 - 300 to 700
 - 300 and 700
+- not more than 700
+- can't do more than 700
+- cannot do more than 700
+- 700
+- no more than 700
 - 300 700
+- not above 700
+- not beyond 700
+- not above Rs. 700
+- not more than Rs. 700
+- not beyond Rs. 700
+- upto 700
+- less than 700
+- maximum 700
+- limit 700
+- limit is 700
+- limit to 700
 
 ## synonym:4
 - four
 
 ## synonym:Ahmedabad
+- ahmedabad
+- amdabad
+- amdbad
+- amdabaad
+- ahmdabad
 - Amdavad
 
 ## synonym:Ajmer
+- ajmer
 - Ajmeer
 - Ajmir
+- ajmir
 - Azmer
 
 ## synonym:Aligarh
 - Kohl
+- aligarh
 - Koil
 - Aligad
 - Aligadh
 - Aligar
 
 ## synonym:Allahabad
+- allahabad
 - Prayagraj
 - Prayag
 - Illahabad
@@ -476,22 +590,33 @@
 - North American
 - american
 - america
+- US
+- us
 - America
 
 ## synonym:Amravati
+- amaravati
 - Udumbravati
 - Umbravati
 - Amaravati
 
 ## synonym:Amritsar
+- amritsar
+- Amratsar
 - Ramdaspur
 
 ## synonym:Bareilly
 - Nath Nagri
 - Sanjashya
+- bareilly
+- bareily
+- Bareily
 
 ## synonym:Belgaum
+- belgaum
 - Belgaon
+- Belgao
+- belgao
 
 ## synonym:Bhavnagar
 - Kathiawad
@@ -499,6 +624,7 @@
 - Bhaavnagar
 - Bhaav nagar
 - Bhav nagar
+- bhavnagar
 
 ## synonym:Bhubaneswar
 - Chakra Kshetra
@@ -511,35 +637,67 @@
 - Kalinga Nagar
 - Nagar Kalinga
 - Mandira Malini Nagar
+- bhubaneswar
+- bubaneswar
+- buvaneswar
+- buvanesvar
 
 ## synonym:Bijapur
 - Vijayapura
 - Vijaypura
+- bijapur
+- beejapur
 
 ## synonym:Chennai
 - Madras
+- chennai
+- chenai
+- cheni
+- chenny
+- chennay
 
 ## synonym:Coimbatore
 - Koyampuththoor
 - Koyamputhoor
 - Kovai
+- coimbatore
+- koyambathhuru
+- koyambathuru
+- koyambaturu
 
 ## synonym:Dehradun
+- dehradoon
 - Dera Doon
+- dehradun
+- deradun
+- deradoon
 
 ## synonym:Delhi
 - New Delhi
+- new delhi
 - Dilli
+- nai dilli
+- Nai dilli
 
 ## synonym:Erode
 - Turmeric City
+- erode
+- irode
 - Yellow City
 
 ## synonym:Firozabad
 - Chandwar nager
+- firozabad
+- firojabad
+- Firojabad
 
 ## synonym:Ghaziabad
 - Ghaziuddinnagar
+- ghaziabad
+- gajiabad
+- Gajiabad
+- Gajiabaad
+- Gajiabaadu
 
 ## synonym:Goa
 - Sindapur
@@ -559,11 +717,18 @@
 - Dharwad
 - Hubballi
 
+## synonym:Hyderabad
+- hyderabad
+- Hyderabaad
+- hyderabaad
+- hyderbaad
+
 ## synonym:Indore
 - Holkar
 
 ## synonym:Italian
 - italinan
+- iTaLIaN
 - italy
 - italian
 - Italy
@@ -611,7 +776,12 @@
 - Colapore
 
 ## synonym:Kolkata
+- kolkata
 - Calcutta
+- calcutta
+- calacutta
+- kolkaata
+- kolkatta
 
 ## synonym:Kollam
 - Quilon
@@ -624,28 +794,43 @@
 - Kandanavolu
 
 ## synonym:LT300
+- 300
 - Less than Rs. 300
 - less than 300
+- lesser than 300
 - Less than 300
-- 300
 - <300
 - < 300
 - Lesser than Rs. 300
 - below 300
+- not more than 300
+- only 300
 - under 300
+- not above 300
+- no more than 300
+- not beyond 300
+- not above Rs. 300
+- not more than Rs. 300
+- not beyond Rs. 300
+- upto 300
+- maximum 300
+- limit 300
+- limit is 300
+- limit to 300
 
 ## synonym:Lucknow
 - Lakhanpur
 
 ## synonym:MT700
 - More than 700
+- more than 700
 - Above 700
 - above 700
 - > 700
 - >700
-- more than 700
 - beyond 700
 - more than just 700
+- above Rs. 700
 
 ## synonym:Madurai
 - Malligai Maanagar
@@ -671,6 +856,9 @@
 ## synonym:Mexican
 - mexican
 - mexico
+- mexcan
+- Mexico
+- Mexcan
 
 ## synonym:Moradabad
 - Pital Nagri
@@ -678,6 +866,12 @@
 
 ## synonym:Mumbai
 - Bombay
+- bambai
+- mumbai
+- mumbaai
+- mumba
+- mumbayi
+- bombay
 - Bambai
 
 ## synonym:Mysore
@@ -685,12 +879,12 @@
 - Maisuru
 
 ## synonym:NIndian
-- North Indian
-- North indian
 - north Indian
 - north indian
-- North
+- North Indian
 - north
+- North indian
+- North
 
 ## synonym:Nagpur
 - Nagpore
@@ -711,6 +905,9 @@
 - Pondy
 
 ## synonym:Pune
+- pune
+- poone
+- Poone
 - poona
 
 ## synonym:Rajahmundry
@@ -727,16 +924,16 @@
 
 ## synonym:Rourkela
 - Steel City
-- spat Mahanagar
+- Mahanagar
 - Engineering Hub
 
 ## synonym:SIndian
+- south
+- south indian
+- south Indian
 - South Indian
 - South indian
-- south Indian
-- south indian
 - South
-- south
 
 ## synonym:Sangli
 - Sahagalli
@@ -813,16 +1010,18 @@
 ## synonym:bangalore
 - Bangalore
 - Bengaluru
+- bengaluru
+- bengalooru
+- Bengalooru
+- Bangalor
+- bengalur
 
 ## synonym:chinese
 - Chinese
 - chines
-- Chines
-- china
 - China
-
-## synonym:manasa.koduganti@gmail.com
-- om
+- china
+- Chines
 
 ## synonym:mid
 - moderate

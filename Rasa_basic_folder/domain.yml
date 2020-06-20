@@ -20,12 +20,13 @@ entities:
 - location
 - price
 intents:
-- restaurant_search
-- contact_id
 - greet
-- price_info
+- restaurant_search
 - deny
+- price_info
 - affirm
+- contact_id
+- out_of_scope
 - out_of_context
 - goodbye
 - stop
@@ -81,17 +82,24 @@ responses:
   utter_goodbye:
   - text: goodbye :(
   - text: Bye-bye
+  - text: It was nice talking to you. Have a great time! :)
+  - text: It was nice talking to you. Bye!! :)
+  - text: May our paths cross again :) Tata!!
+  - text: Adios amigo!! Happy meal to you :)
+  - text: Adios! Take care. Keep smiling :)
+  - text: Bye buddy :)
   utter_greet:
-  - text: hey there! How may i help you
+  - text: Hey there! How may I help you?
   - text: Hi, How can I help you!
-  - text: Hey, How is it going. How May I help you Today
+  - text: Hey, How is it going. How may I help you today?
+  - text: Wassup buddy. How can I help you today?
   utter_sent_mail:
   - text: Sent you the mail :)
   - text: Sending.... Sending... Sent you the mail :)
-  - text: Open your mail and be amazed at my awesomeness!
+  - text: Sent. Open your mail and be amazed at my awesomeness!
 session_config:
-  carry_over_slots_to_new_session: true
-  session_expiration_time: 0
+  carry_over_slots_to_new_session: false
+  session_expiration_time: 3
 slots:
   contact_email:
     type: text
