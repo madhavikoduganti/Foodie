@@ -20,11 +20,25 @@ logger = logging.getLogger(__name__)
 
 class Validator:
     city_list = []
-
+    city_set = {}
+    
     def __init__(self):
         my_file = open("CityList.txt", "r")
         self.city_list = [line.rstrip('\n').lower() for line in my_file]
+        for city in self.city_list:
+            self.city_set[city.lower()] = set([ch for ch in city.lower()] )
         
+    def fetch_nearest_cities(self, location, n=1):
+        possible_city_suggestions = []
+        location_set = set([ch for ch in location.lower()])
+        for city in self.city_set:
+            possible_city_set = self.city_set[city]
+            if len(location_set.difference(possible_city_set)) <= n and len(possible_city_set.difference(location_set)) <= n:
+                possible_city_suggestions.append(city)
+        print("for city:",location," "," possible suggestions:", possible_city_suggestions)
+        return possible_city_suggestions
+            
+            
     def validateAndGetCuisine(self, cuisine):
         cuisine_abbrv = {"nindian":"North Indian", "sindian":"South Indian","american":"American","mexican":"Mexican", "chinese":"Chinese", "italian":"Italian"}
         if cuisine.lower() in cuisine_abbrv:
@@ -35,20 +49,36 @@ class Validator:
 
 
 class ActionValidateLocation(Action):
+    validator=None
     def name(self):
         return "action_validate_location"
+        
+    def __init__(self):
+          self.validator = Validator()
+          super(Action, self).__init__()
+          
     def run(self, dispatcher, tracker, domain):
-        validator = Validator()
         loc = tracker.get_slot('location')
         if loc is not None:
             loc = loc.lstrip().rstrip().lower()
-            if loc not in validator.city_list:
+            if loc not in self.validator.city_list:
                 print(loc," not found in city_list")
-                message = "We do not operate in location:"
-                message = message+str(loc)
-                message = message+" yet. Sorry!"
-                dispatcher.utter_message(message)
-                return [Restarted()]
+                nearest_cities = self.validator.fetch_nearest_cities(loc.lower())
+                if not nearest_cities:
+                    message = "We do not operate in location:"
+                    message = message+str(loc)
+                    message = message+" yet. Sorry!"
+                    dispatcher.utter_message(message)
+                    return [Restarted()]
+                else:
+                    message = "We do not operate in location:"
+                    message = message+str(loc)
+                    message = message+" yet. But, did you mean any of the following?"
+                    for nearest_city in nearest_cities:
+                        message += " "
+                        message += nearest_city
+                    dispatcher.utter_message(message)
+                    return [SlotSet('location',None)]
             else:
                 return [SlotSet('location',loc)]
         else:
@@ -57,26 +87,31 @@ class ActionValidateLocation(Action):
 
 class ActionSearchRestaurants(Action):
 
-        
+    validator=None
+
     def name(self):
         return 'action_search_restaurants'
-    
-    
 
+        
+    def __init__(self):
+          self.validator = Validator()
+          super(Action, self).__init__()
+          
     def run(self, dispatcher, tracker, domain):
         try:
-            validator = Validator()
-
-            cuisine_abbrv = {"nindian":"North Indian", "sindian":"South Indian","american":"American","mexican":"Mexican", "chinese":"Chinese", "italian":"Italian"}
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
             price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
             zomato = zomatopy.initialize_app(config)
             loc = tracker.get_slot('location')
             cuisine = tracker.get_slot('cuisine')
-            cuisine_name = validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
             prc = tracker.get_slot('price')
+            
+            if(cuisine is None or prc is None or loc is None):
+                return [SlotSet('location',loc),SlotSet('cuisine',cuisine),SlotSet('price',prc)]
+                
+            cuisine_name = self.validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
             loc = loc.rstrip().lower()
-            if loc not in validator.city_list:
+            if loc not in self.validator.city_list:
                 print(loc," not found in city_list")
                 message = "We do not operate in location:"
                 message = message+str(loc)
@@ -123,23 +158,28 @@ class ActionSearchRestaurants(Action):
 
 
 class ActionSendEmail(Action):
-        
+
+    validator=None
+
     def name(self):
         return 'action_send_mail'
-    
+        
+    def __init__(self):
+          self.validator = Validator()
+          super(Action, self).__init__()
+          
 
     def run(self, dispatcher, tracker, domain):
         try:
-            validator = Validator()
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
             price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
             zomato = zomatopy.initialize_app(config)
             loc = tracker.get_slot('location')
-            cuisine_name = validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
+            cuisine_name = self.validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
             prc = tracker.get_slot('price')
             emailid = tracker.get_slot('contact_email')
             loc = loc.rstrip().lower()
-            if loc not in validator.city_list:
+            if loc not in self.validator.city_list:
                 print(loc," not found in city_list")
                 message = "We do not operate in location:"
                 message = message+str(loc)

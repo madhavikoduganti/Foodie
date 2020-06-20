@@ -14,6 +14,8 @@
 - thanks
 - Thanks
 - on my couch
+- in [kozikode](location)
+- in [kozhikode](location)
 
 ## intent:deny
 - no
@@ -36,6 +38,7 @@
 - nnnno
 - n
 - noppy
+- in [kakinada](location)
 
 ## intent:price_info
 - [LT300](price)
@@ -93,6 +96,9 @@
 - I have < [700]{"entity": "price", "value": "300To700"}
 - I have [only 300]{"entity": "price", "value": "LT300"} rupees
 - I can do [no more than 700]{"entity": "price", "value": "300To700"}
+- my budget is [less than 300]{"entity": "price", "value": "LT300"}
+- I can do no more than [300]{"entity": "price", "value": "LT300"}
+- [below 300]{"entity": "price", "value": "LT300"}
 
 ## intent:goodbye
 - bye
@@ -136,6 +142,7 @@
 - yoo honey
 - in [dehradoon]{"entity": "location", "value": "Dehradun"}
 - get me [south]{"entity": "cuisine", "value": "SIndian"}
+- in [hyderbad](location)
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -486,6 +493,30 @@
 - I wanna eat for [more than 700]{"entity": "price", "value": "MT700"}
 - in [Chandigarh](location)
 - I wanna eat [mexico]{"entity": "cuisine", "value": "Mexican"}
+- I am hungry
+- I am hungry in [Kakiada](location)
+- I am in [Bijayawada](location)
+- in [Vijayawafa](location)
+- in [Vijayawada](location)
+- I would like to eat [south]{"entity": "cuisine", "value": "SIndian"}
+- I am hungry in [pijayawada](location) and want to eat at [chines]{"entity": "cuisine", "value": "chinese"} hotel for [less than 300]{"entity": "price", "value": "LT300"}
+- in [vijYwafa](location)
+- I am hungry in [durnool](location)
+- in [furnool](location)
+- in [kurnool](location)
+- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} for [more than 700]{"entity": "price", "value": "MT700"} budget in [pyderbad](location)
+- I am looking at [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants [under 300]{"entity": "price", "value": "LT300"} budget in [lumbai](location)
+- I meant in [mumbai]{"entity": "location", "value": "Mumbai"}
+- I am looking for some restaurants
+- I am looking for hotels [under 300]{"entity": "price", "value": "LT300"}
+- In [Kakinada](location)
+- cuisine is [chines]{"entity": "cuisine", "value": "chinese"}
+- cuisine is [american]{"entity": "cuisine", "value": "American"}
+- cuisine is [mexican]{"entity": "cuisine", "value": "Mexican"}
+- cuisine is [Mexican](cuisine)
+- wanna eat [chines]{"entity": "cuisine", "value": "chinese"}
+- anywhere in [Almedabad](location)
+- [ahmedabad]{"entity": "location", "value": "Ahmedabad"}
 
 ## intent:out_of_scope
 - Tell me about weather today

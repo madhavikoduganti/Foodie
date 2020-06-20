@@ -20,12 +20,12 @@ entities:
 - location
 - price
 intents:
-- greet
-- restaurant_search
 - deny
 - price_info
-- affirm
+- restaurant_search
+- greet
 - contact_id
+- affirm
 - out_of_scope
 - out_of_context
 - goodbye
