@@ -1955,3 +1955,42 @@
 * deny
     - utter_goodbye
     - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "Mexican", "location": "Byderbad"}
+    - slot{"cuisine": "Mexican"}
+    - slot{"location": "Byderbad"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* restaurant_search{"location": "Vylarabad"}
+    - slot{"location": "Vylarabad"}
+    - action_validate_location
+
+## interactive_story_2
+* restaurant_search{"cuisine": "chinese", "location": "Varoda"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "Varoda"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* restaurant_search{"location": "paranasi"}
+    - slot{"location": "paranasi"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* restaurant_search{"location": "tiruchirapali"}
+    - slot{"location": "tiruchirapali"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* restaurant_search{"location": "piruchirapalli"}
+    - slot{"location": "piruchirapalli"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* deny{"location": "soupkela"}
+    - slot{"location": "soupkela"}
+    - action_validate_location

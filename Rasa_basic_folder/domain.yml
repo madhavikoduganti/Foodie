@@ -21,9 +21,9 @@ entities:
 - price
 intents:
 - deny
-- price_info
-- restaurant_search
 - greet
+- restaurant_search
+- price_info
 - contact_id
 - affirm
 - out_of_scope

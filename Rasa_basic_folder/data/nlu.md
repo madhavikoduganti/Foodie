@@ -39,6 +39,7 @@
 - n
 - noppy
 - in [kakinada](location)
+- in [soupkela](location)
 
 ## intent:price_info
 - [LT300](price)
@@ -98,7 +99,6 @@
 - I can do [no more than 700]{"entity": "price", "value": "300To700"}
 - my budget is [less than 300]{"entity": "price", "value": "LT300"}
 - I can do no more than [300]{"entity": "price", "value": "LT300"}
-- [below 300]{"entity": "price", "value": "LT300"}
 
 ## intent:goodbye
 - bye
@@ -517,6 +517,12 @@
 - wanna eat [chines]{"entity": "cuisine", "value": "chinese"}
 - anywhere in [Almedabad](location)
 - [ahmedabad]{"entity": "location", "value": "Ahmedabad"}
+- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} in [Byderbad](location)
+- in [Vylarabad](location)
+- Please show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants in [Varoda](location)
+- in [paranasi](location)
+- in [tiruchirapali](location)
+- in [piruchirapalli](location)
 
 ## intent:out_of_scope
 - Tell me about weather today
