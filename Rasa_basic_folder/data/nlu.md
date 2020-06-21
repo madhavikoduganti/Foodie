@@ -14,6 +14,8 @@
 - thanks
 - Thanks
 - on my couch
+- yes please
+- oh yeah totally
 
 ## intent:deny
 - no
@@ -103,7 +105,6 @@
 - show me restaurants in range [300 and 700]{"entity": "price", "value": "300to700"}
 - I can do [less than 300]{"entity": "price", "value": "lt300"}
 - so much [more than 700]{"entity": "price", "value": "mt700"}
-- [300to700](price)
 
 ## intent:goodbye
 - bye
@@ -208,7 +209,10 @@
 - [jhappy885@gmail.com](contact_email)
 - mail to [madhavi.koduganti@gmail.com](contact_email)
 - yes. to [manasa.koduganti@gmail.com](contact_email)
-- [madhavi.koduganti@gmail.com](contact_email)
+- it is [madhavi.koduganti@gmail.com](contact_email)
+- it is [manasa.koduganti@gmail.com](contact_email)
+- to [madhavi.koduganti@gmail.com](contact_email)
+- to [maddykoduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [sindian](cuisine)
@@ -643,6 +647,24 @@
 - Please show me some [mexican](cuisine) restaurants [under 700]{"entity": "price", "value": "300to700"} in [Bijapur](location)
 - Show me [chinese](cuisine)
 - in [bengaluru]{"entity": "location", "value": "bangalore"}
+- Show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants
+- show me some [chinese](cuisine) restaurants
+- [Ghaziabad](location)
+- show me [mexican](cuisine) restaurants for [more than 700]{"entity": "price", "value": "mt700"}
+- [Kurnool](location)
+- Please show me some [Italian]{"entity": "cuisine", "value": "italian"} restaurants for budget [300 to 700]{"entity": "price", "value": "300to700"}
+- I am looking for some [mexican](cuisine) restaurants
+- I am looking for some [mexican](cuisine) restaurants [under 300]{"entity": "price", "value": "lt300"} rupees
+- in [Ahmedabad](location)
+- Looking for some [south]{"entity": "cuisine", "value": "sindian"} restaurants for budget in range of [300 and 700]{"entity": "price", "value": "300to700"}
+- I am looking for some [south]{"entity": "cuisine", "value": "sindian"} restaurants for budget in range of [300 and 700]{"entity": "price", "value": "300to700"}
+- in [Bhubaneswat](location)
+- [bhubaneswar]{"entity": "location", "value": "Bhubaneswar"}
+- in [Ghaziabad](location)
+- show me [chinese](cuisine) restaurants [under 300]{"entity": "price", "value": "lt300"}
+- in [Sonalpur]{"entity": "location", "value": "Solapur"}
+- please show me [chinese](cuisine) restaurants for [less than 300]{"entity": "price", "value": "lt300"}
+- in [Patna](location)
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -781,13 +803,13 @@
 - Ekamra Kanan
 - Ekamra Kshetra
 - Mandira Malini Nagari
+- bhubaneswar
 - Bhuvaneswar
 - Toshali
 - Kalinga
 - Kalinga Nagar
 - Nagar Kalinga
 - Mandira Malini Nagar
-- bhubaneswar
 - bubaneswar
 - buvaneswar
 - buvanesvar
@@ -1086,8 +1108,8 @@
 
 ## synonym:bangalore
 - Bangalore
-- Bengaluru
 - bengaluru
+- Bengaluru
 - bengalooru
 - Bengalooru
 - Bangalor

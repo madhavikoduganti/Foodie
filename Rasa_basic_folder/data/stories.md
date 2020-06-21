@@ -1281,31 +1281,6 @@
     - slot{"price": "mt700"}
     - action_search_restaurants
 
-## interactive_story_2
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - utter_ask_price_range
-* price_info{"price": "300to700"}
-    - slot{"price": "300to700"}
-    - utter_ask_location
-* restaurant_search{"location": "Ranchi"}
-    - slot{"location": "Ranchi"}
-    - action_validate_location
-    - slot{"location": "ranchi"}
-    - action_search_restaurants
-    - slot{"location": "ranchi"}
-    - slot{"cuisine": "chinese"}
-    - slot{"price": "300to700"}
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
-    - slot{"contact_email": "manasa.koduganti@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - utter_goodbye
-    - action_restart_chat_helper
-
 ## interactive_story_1
 * greet
     - utter_greet
@@ -1349,7 +1324,7 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* price_info{"price": "lt300"}
+* restaurant_search{"price": "lt300"}
     - slot{"price": "lt300"}
     - utter_ask_location
 * restaurant_search{"location": "Vijayawada"}
@@ -1372,15 +1347,15 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* price_info{"price": "300to700"}
+* restaurant_search{"price": "300to700"}
     - slot{"price": "300to700"}
     - utter_ask_location
-* greet{"location": "Dehradun"}
+* restaurant_search{"location": "Dehradun"}
     - slot{"location": "Dehradun"}
     - action_validate_location
     - slot{"location": "dehradun"}
     - utter_ask_cuisine
-* greet{"cuisine": "sindian"}
+* restaurant_search{"cuisine": "sindian"}
     - slot{"cuisine": "sindian"}
     - action_search_restaurants
     - slot{"location": "dehradun"}
@@ -1394,41 +1369,10 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* price_info{"price": "lt300"}
-    - slot{"price": "lt300"}
-    - utter_ask_location
-* affirm
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "sindian"}
-    - slot{"cuisine": "sindian"}
-    - utter_ask_location
-* out_of_scope
-    - utter_ask_location
-* restaurant_search{"location": "Guntur"}
-    - slot{"location": "Guntur"}
-    - action_validate_location
-    - slot{"location": "guntur"}
-    - action_search_restaurants
-    - slot{"location": "guntur"}
-    - slot{"cuisine": "sindian"}
-    - slot{"price": "lt300"}
-    - utter_ask_send_details
-* out_of_scope
-    - utter_ask_send_details
-* out_of_scope
-    - utter_ask_send_details
-* affirm
-    - utter_ask_id
-* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
-    - slot{"contact_email": "manasa.koduganti@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - utter_goodbye
-    - action_restart_chat_helper
+
 
 ## interactive_story_1
-* price_info{"price": "300to700"}
+* restaurant_search{"price": "300to700"}
     - slot{"price": "300to700"}
     - utter_ask_location
 * restaurant_search{"location": "Ranchi"}
@@ -1480,11 +1424,11 @@
     - utter_greet
 * restaurant_search
     - utter_ask_location
-* affirm{"location": "kozikode"}
+* restaurant_search{"location": "kozikode"}
     - slot{"location": "kozikode"}
     - action_validate_location
     - slot{"location": null}
-* affirm{"location": "kozhikode"}
+* restaurant_search{"location": "kozhikode"}
     - slot{"location": "kozhikode"}
     - action_validate_location
     - slot{"location": "kozhikode"}
@@ -1511,7 +1455,7 @@
     - action_validate_location
     - slot{"location": null}
     - utter_ask_location
-* deny{"location": "kakinada"}
+* restaurant_search{"location": "kakinada"}
     - slot{"location": "kakinada"}
     - action_validate_location
     - slot{"location": "kakinada"}
@@ -1600,7 +1544,7 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "sindian", "location": "Goa", "price": "lt300"}
+* restaurant_search{"cuisine": "sindian", "location": "poa", "price": "lt300"}
     - slot{"cuisine": "sindian"}
     - slot{"location": "Poa"}
     - slot{"price": "lt300"}
@@ -1951,7 +1895,7 @@
     - action_validate_location
     - slot{"location": null}
     - utter_ask_location
-* deny{"location": "soupkela"}
+* restaurant_search{"location": "soupkela"}
     - slot{"location": "soupkela"}
     - action_validate_location
 
@@ -2045,30 +1989,6 @@
 * deny
     - utter_goodbye
     - action_restart_chat_helper
-
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"cuisine": "sindian", "price": "mt700", "location": "nyderbad"}
-    - slot{"cuisine": "sindian"}
-    - slot{"location": "nyderbad"}
-    - slot{"price": "mt700"}
-    - action_validate_location
-    - slot{"location": null}
-    - utter_ask_location
-* restaurant_search{"location": "wyderbad"}
-    - slot{"location": "wyderbad"}
-    - action_validate_location
-    - slot{"location": null}
-    - utter_ask_location
-* restaurant_search{"location": "pyderbad"}
-    - slot{"location": "pyderbad"}
-    - action_validate_location
-    - slot{"location": null}
-    - utter_ask_location
-* restaurant_search{"location": "qondon"}
-    - slot{"location": "qondon"}
-    - action_validate_location
 
 ## interactive_story_2
 * restaurant_search{"cuisine": "sindian", "price": "mt700", "location": "vhavnagar"}
@@ -2193,32 +2113,6 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "bijayawada"}
-    - slot{"location": "bijayawada"}
-    - action_validate_location
-    - slot{"location": null}
-    - utter_ask_location
-* restaurant_search{"location": "vijayawada"}
-    - slot{"location": "vijayawada"}
-    - action_validate_location
-    - slot{"location": "vijayawada"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - utter_ask_price_range
-* price_info{"price": "lt300"}
-    - slot{"price": "lt300"}
-    - action_search_restaurants
-    - slot{"location": "vijayawada"}
-    - slot{"cuisine": "chinese"}
-    - slot{"price": "lt300"}
-    - utter_ask_send_details
-* deny
-    - utter_goodbye
-    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -2377,14 +2271,6 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "Borivali"}
-    - slot{"location": "Borivali"}
-    - action_validate_location
 
 ## interactive_story_1
 * greet
@@ -2464,29 +2350,6 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search
-    - utter_ask_location
-* restaurant_search{"location": "Varanasi"}
-    - slot{"location": "Varanasi"}
-    - action_validate_location
-    - slot{"location": "varanasi"}
-    - utter_ask_price_range
-* price_info{"price": "mt700"}
-    - slot{"price": "mt700"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "nindian"}
-    - slot{"cuisine": "nindian"}
-    - action_search_restaurants
-    - slot{"location": "varanasi"}
-    - slot{"cuisine": "nindian"}
-    - slot{"price": "mt700"}
-    - utter_ask_send_details
-* deny
-    - utter_goodbye
-    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -2634,7 +2497,7 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* price_info{"price": "300to700"}
+* restaurant_search{"price": "300to700"}
     - slot{"price": "300to700"}
     - utter_ask_location
 * restaurant_search{"location": "Vijayawada"}
@@ -2656,21 +2519,9 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* restaurant_search{"price": "300to700"}
-    - slot{"price": "300to700"}
-    - utter_ask_location
-* restaurant_search{"location": "Rajahmundry"}
-    - slot{"location": "Rajahmundry"}
-    - action_validate_location
-    - slot{"location": "rajahmundry"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "american"}
-    - slot{"cuisine": "american"}
-    - action_search_restaurants
 
 ## interactive_story_2
-* price_info{"price": "300to700"}
+* restaurant_search{"price": "300to700"}
     - slot{"price": "300to700"}
     - utter_ask_location
 * restaurant_search{"location": "Rajkot"}
@@ -2693,7 +2544,7 @@
     - action_restart_chat_helper
 
 ## interactive_story_2
-* price_info{"price": "mt700"}
+* restaurant_search{"price": "mt700"}
     - slot{"price": "mt700"}
     - utter_ask_location
 * restaurant_search{"location": "Vijayawada"}
@@ -2853,52 +2704,7 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"location": "Vijayawada"}
-    - slot{"location": "Vijayawada"}
-    - action_validate_location
-    - slot{"location": "vijayawada"}
-    - utter_ask_price_range
-* price_info{"price": "mt700"}
-    - slot{"price": "mt700"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "sindian"}
-    - slot{"cuisine": "sindian"}
-    - action_search_restaurants
-    - slot{"location": "vijayawada"}
-    - slot{"cuisine": "sindian"}
-    - slot{"price": "mt700"}
-    - utter_ask_send_details
-* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
-    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
-    - action_send_mail
-    - utter_sent_mail
-    - utter_goodbye
-    - action_restart_chat_helper
 
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"location": "bangalore"}
-    - slot{"location": "bangalore"}
-    - action_validate_location
-    - slot{"location": "bangalore"}
-    - utter_ask_price_range
-* price_info{"price": "mt700"}
-    - slot{"price": "mt700"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "chinese"}
-    - slot{"cuisine": "chinese"}
-    - action_search_restaurants
-    - slot{"location": "bangalore"}
-    - slot{"cuisine": "chinese"}
-    - slot{"price": "mt700"}
-    - utter_ask_send_details
-* deny
-    - utter_goodbye
-    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -2934,11 +2740,89 @@
     - utter_goodbye
     - action_restart_chat_helper
 
+
 ## interactive_story_1
 * restaurant_search{"cuisine": "chinese"}
     - slot{"cuisine": "chinese"}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
     - utter_ask_price_range
-* price_info{"price": "300to700"}
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_location
+* restaurant_search{"location": "Ghaziabad"}
+    - slot{"location": "Ghaziabad"}
+    - action_validate_location
+    - slot{"location": "ghaziabad"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "ghaziabad"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "mexican", "price": "mt700"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "mt700"}
+    - utter_ask_location
+* restaurant_search{"location": "Kurnool"}
+    - slot{"location": "Kurnool"}
+    - action_validate_location
+    - slot{"location": "kurnool"}
+    - action_search_restaurants
+    - slot{"location": "kurnool"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "italian", "price": "300to700"}
+    - slot{"cuisine": "italian"}
     - slot{"price": "300to700"}
     - utter_ask_location
 * restaurant_search{"location": "bangalore"}
@@ -2947,12 +2831,247 @@
     - slot{"location": "bangalore"}
     - action_search_restaurants
     - slot{"location": "bangalore"}
-    - slot{"cuisine": "chinese"}
+    - slot{"cuisine": "italian"}
     - slot{"price": "300to700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "mexican", "price": "lt300"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "lt300"}
+    - utter_ask_location
+* restaurant_search{"location": "Ahmedabad"}
+    - slot{"location": "Ahmedabad"}
+    - action_validate_location
+    - slot{"location": "ahmedabad"}
+    - action_search_restaurants
+    - slot{"location": "ahmedabad"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "italian", "price": "lt300"}
+    - slot{"cuisine": "italian"}
+    - slot{"price": "lt300"}
+    - utter_ask_location
+* restaurant_search{"location": "Ahmedabad"}
+    - slot{"location": "Ahmedabad"}
+    - action_validate_location
+    - slot{"location": "ahmedabad"}
+    - action_search_restaurants
+    - slot{"location": "ahmedabad"}
+    - slot{"cuisine": "italian"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "italian", "price": "mt700"}
+    - slot{"cuisine": "italian"}
+    - slot{"price": "mt700"}
+    - utter_ask_location
+* restaurant_search{"location": "Ahmedabad"}
+    - slot{"location": "Ahmedabad"}
+    - action_validate_location
+    - slot{"location": "ahmedabad"}
+    - action_search_restaurants
+    - slot{"location": "ahmedabad"}
+    - slot{"cuisine": "italian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "sindian", "price": "300to700"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+
+## interactive_story_2
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "sindian", "price": "300to700"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_location
+* restaurant_search{"location": "Bhubaneswat"}
+    - slot{"location": "Bhubaneswat"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* restaurant_search{"location": "Bhubaneswar"}
+    - slot{"location": "Bhubaneswar"}
+    - action_validate_location
+    - slot{"location": "bhubaneswar"}
+    - action_search_restaurants
+    - slot{"location": "bhubaneswar"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Ghaziabad"}
+    - slot{"location": "Ghaziabad"}
+    - action_validate_location
+    - slot{"location": "ghaziabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "ghaziabad"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
     - slot{"contact_email": "madhavi.koduganti@gmail.com"}
     - action_send_mail
     - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_2
+* restaurant_search{"cuisine": "sindian", "price": "300to700"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_location
+* restaurant_search{"location": "Bhubaneswar"}
+    - slot{"location": "Bhubaneswar"}
+    - action_validate_location
+    - slot{"location": "bhubaneswar"}
+    - action_search_restaurants
+    - slot{"location": "bhubaneswar"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "chinese", "price": "lt300"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "lt300"}
+    - utter_ask_location
+* restaurant_search{"location": "Solapur"}
+    - slot{"location": "Solapur"}
+    - action_validate_location
+    - slot{"location": "solapur"}
+    - action_search_restaurants
+    - slot{"location": "solapur"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "maddykoduganti@gmail.com"}
+    - slot{"contact_email": "maddykoduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "chinese", "price": "lt300"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "lt300"}
+    - utter_ask_location
+* restaurant_search{"location": "Patna"}
+    - slot{"location": "Patna"}
+    - action_validate_location
+    - slot{"location": "patna"}
+    - action_search_restaurants
+    - slot{"location": "patna"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+
+
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese", "price": "lt300"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "lt300"}
+    - utter_ask_location
+* restaurant_search{"location": "Patna"}
+    - slot{"location": "Patna"}
+    - action_validate_location
+    - slot{"location": "patna"}
+    - action_search_restaurants
+    - slot{"location": "patna"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+
+
+
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "mexican", "price": "lt300"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "lt300"}
+    - utter_ask_location
+* restaurant_search{"location": "pune"}
+    - slot{"location": "pune"}
+    - action_validate_location
+    - slot{"location": "pune"}
+    - action_search_restaurants
+    - slot{"location": "pune"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* deny
     - utter_goodbye
     - action_restart_chat_helper
