@@ -2,14 +2,12 @@ actions:
 - action_restart_chat_helper
 - action_search_restaurants
 - action_send_mail
-- action_validate_location
-- out_of_scope
+- stop
 - utter_ask_cuisine
 - utter_ask_howcanhelp
 - utter_ask_id
 - utter_ask_location
 - utter_ask_price
-- utter_ask_price_range
 - utter_ask_send_details
 - utter_default
 - utter_goodbye
@@ -28,16 +26,15 @@ entities:
 forms:
 - restaurant_form
 intents:
-- contact_id
+- stop
 - restaurant_search
 - affirm
+- contact_id
 - price_info
 - greet
 - deny
-- out_of_scope
 - out_of_context
 - goodbye
-- stop
 responses:
   utter_ask_cuisine:
   - buttons:
@@ -53,9 +50,7 @@ responses:
       title: Mexican
     - payload: american
       title: American
-    text: what kind of cuisine would you like?
-  utter_ask_howcanhelp:
-  - text: how can I help you?
+    text: Which cuisine would you like to search for?
   utter_ask_id:
   - text: What is your email id?
   - text: Can you please share your email id?
@@ -96,6 +91,7 @@ responses:
   - text: May our paths cross again :) Tata!!
   - text: Adios amigo!! Happy meal to you :)
   - text: Adios! Take care. Keep smiling :)
+  - text: Bye bye! Phir milenge chalte chalte :)
   - text: Bye buddy :)
   utter_greet:
   - text: Hey there! How may I help you?
@@ -106,8 +102,6 @@ responses:
   - text: Sent you the mail :)
   - text: Sending.... Sending... Sent you the mail :)
   - text: Sent. Open your mail and be amazed at my awesomeness!
-  utter_slots_values:
-  - text: I am going to run a restaurant search
   utter_submit:
   - text: Thanks. I got all the information I needed :)
   utter_wrong_cuisine:
@@ -115,7 +109,8 @@ responses:
   utter_wrong_location:
   - text: I am still learning. Can you please help me by selecting right location?
   utter_wrong_price:
-  - text: I am still learning. Can you please help me by selecting right price?
+  - text: I am still learning. Can you please help me by selecting right price in
+      format less than 300, in range 300 and 700,  more than 700
 session_config:
   carry_over_slots_to_new_session: false
   session_expiration_time: 3

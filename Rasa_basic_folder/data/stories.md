@@ -137,8 +137,6 @@
     - slot{"price": "300to700"}
     - form{"name": null}
     - slot{"requested_slot": null}
-    - action_validate_location
-    - slot{"location": "patna"}
     - action_search_restaurants
     - slot{"location": "patna"}
     - slot{"cuisine": "sindian"}
@@ -424,4 +422,72 @@
     - action_send_mail
     - utter_sent_mail
     - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "mexican", "location": "Chennai"}
+    - slot{"cuisine": "mexican"}
+    - slot{"location": "Chennai"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "mexican"}
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "mexican"}
+    - slot{"requested_slot": "price"}
+* form: price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - form: restaurant_form
+    - slot{"price": "mt700"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_search_restaurants
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "chinese", "price": "300to700", "location": "Vadodara"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "Vadodara"}
+    - slot{"price": "300to700"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": "vadodara"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "300to700"}
+    - slot{"location": "vadodara"}
+    - slot{"cuisine": "chinese"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_search_restaurants
+    - slot{"location": "vadodara"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* affirm
+    - utter_ask_id
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - slot{"requested_slot": "location"}
+* stop
     - action_restart_chat_helper

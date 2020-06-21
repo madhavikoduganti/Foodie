@@ -227,7 +227,6 @@
 - my email id is [jhaappy885@gmail.com](contact_email)
 - my id is [manasa.koduganti@gmail.com](contact_email)
 - my email ID is [madhavi.koduganti@gmail.com](contact_email)
-- [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [sindian](cuisine)
@@ -714,9 +713,32 @@
 - Show me some restaurants for [more than 700]{"entity": "price", "value": "mt700"}
 - I am in [Sandalpur]{"entity": "location", "value": "Solapur"}
 - I would like Americannooo
-- I would like [American]{"entity": "cuisine", "value": "american"}
+- Show me [mexican](cuisine) restaurants from [Chennai](location)
+- show me [chines]{"entity": "cuisine", "value": "chinese"} hotels for price [between 300 and 700]{"entity": "price", "value": "300to700"} in [Baroda]{"entity": "location", "value": "Vadodara"}
+- Show me [mexican](cuisine) hotels
 
-## intent:out_of_scope
+## intent:stop
+- ok then you cant help me
+- that was shit, you're not helping
+- you can't help me
+- you can't help me with what i need
+- i guess you can't help me then
+- ok i guess you can't help me
+- that's not what i want
+- ok, but that doesnt help me
+- this is leading to nothing
+- this conversation is not really helpful
+- you cannot help me with what I want
+- I think you cant help me
+- hm i don't think you can do what i want
+- stop
+- stop go back
+- do you get anything?
+- and you call yourself bot company? pff
+- and that's it?
+- nothing else?
+
+## intent:out_of_context
 - Tell me about weather today
 - how is sun orange?
 - how are plants green
@@ -769,32 +791,6 @@
 - please tell me who created you
 - tell me more about your creators
 - tell me more about your founders
-- Ahoy matey how are you?
-- are you alright
-- are you having a good day
-- Are you ok?
-- are you okay
-- Do you feel good?
-- how are things going
-- how are things with you?
-- How are things?
-- how are you
-- how are you doing
-- how are you doing this morning
-- how are you feeling
-- how are you today
-- How are you?
-- How is the weather today?
-- What's the weather like?
-- How is the weather?
-- What is the weather at your place?
-- Do you have good weather?
-- Is it raining?
-- What's it like out there?
-- Is it hot or cold?
-- Beautiful day, isn't it?
-- What's the weather forecast?
-- Is it quite breezy outside?
 
 ## synonym:300to700
 - 300-700
