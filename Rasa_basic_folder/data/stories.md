@@ -7,8 +7,8 @@
     - slot{"location": "Tiruchirapalli"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "300to700"}
     - slot{"price": "300to700"}
@@ -58,8 +58,8 @@
     - slot{"location": "Mumbai"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "American"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -85,8 +85,8 @@
     - slot{"location": "Madurai"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
@@ -123,8 +123,8 @@
     - slot{"location": "mumbai"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -165,8 +165,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "NIndian", "location": "Kozhikode"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian", "location": "Kozhikode"}
+    - slot{"cuisine": "nindian"}
     - slot{"location": "Kozhikode"}
     - action_validate_location    
     - utter_ask_price_range
@@ -186,8 +186,8 @@
     - slot{"location": "Rishikesh"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "American"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
@@ -209,8 +209,8 @@
     - slot{"location": "Kolkata"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -234,8 +234,8 @@
     - slot{"location": "Lucknow"}
     - action_validate_location    
     - utter_ask_cuisine
-* None{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
+* None{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
     - utter_ask_price_range
 * None{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -259,8 +259,8 @@
     - slot{"location": "kolkata"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -282,8 +282,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "SIndian", "location": "Kurnool"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian", "location": "Kurnool"}
+    - slot{"cuisine": "sindian"}
     - slot{"location": "Kurnool"}
     - action_validate_location    
     - utter_ask_price_range
@@ -351,8 +351,8 @@
     - slot{"location": "Vadodara"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
@@ -372,8 +372,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "SIndian", "price": "mt700", "location": "Kozhikode"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian", "price": "mt700", "location": "Kozhikode"}
+    - slot{"cuisine": "sindian"}
     - slot{"location": "Kozhikode"}
     - slot{"price": "mt700"}
     - action_validate_location    
@@ -393,8 +393,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Mexican", "location": "Vadodara", "price": "300to700"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "location": "Vadodara", "price": "300to700"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "Vadodara"}
     - slot{"price": "300to700"}
     - action_validate_location    
@@ -421,8 +421,8 @@
 * restaurant_search{"location": "Mysore"}
     - slot{"location": "Mysore"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
     - action_search_restaurants
     - slot{"location": "Mysore"}
     - utter_ask_send_details
@@ -437,8 +437,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "American", "location": "Mangalore", "price": "300to700"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american", "location": "Mangalore", "price": "300to700"}
+    - slot{"cuisine": "american"}
     - slot{"location": "Mangalore"}
     - slot{"price": "300to700"}
     - action_validate_location    
@@ -458,8 +458,8 @@
     - slot{"location": "Chennai"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -475,8 +475,8 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "Mexican", "location": "Chennai", "price": "mt700"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "location": "Chennai", "price": "mt700"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "Chennai"}
     - slot{"price": "mt700"}
     - action_validate_location    
@@ -496,8 +496,8 @@
     - slot{"location": "Bangalore"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
@@ -515,8 +515,8 @@
     - slot{"location": "Ghaziabad"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
@@ -538,8 +538,8 @@
     - slot{"location": "Indore"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "300to700"}
     - slot{"price": "300to700"}
@@ -563,8 +563,8 @@
     - slot{"location": "Allahabad"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -588,8 +588,8 @@
     - slot{"location": "Allahabad"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
@@ -605,8 +605,8 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "Mexican", "location": "Aligarh"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "location": "Aligarh"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "Aligarh"}
     - action_validate_location    
     - utter_ask_price_range
@@ -628,8 +628,8 @@
     - slot{"location": "Indore"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -651,8 +651,8 @@
     - slot{"location": "Chennai"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -669,8 +669,8 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "American", "location": "Hyderabad"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american", "location": "Hyderabad"}
+    - slot{"cuisine": "american"}
     - slot{"location": "Hyderabad"}
     - action_validate_location    
     - utter_ask_price_range
@@ -678,7 +678,7 @@
     - slot{"price": "300to700"}
     - action_search_restaurants
     - slot{"location": "Hyderabad"}
-    - slot{"cuisine": "American"}
+    - slot{"cuisine": "american"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * deny
@@ -692,14 +692,14 @@
     - slot{"location": "Chandigarh"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
     - action_search_restaurants
     - slot{"location": "chandigarh"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
@@ -724,14 +724,14 @@
     - slot{"location": "Bhilai"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
     - action_search_restaurants
     - slot{"location": "bhilai"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
@@ -751,14 +751,14 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Mexican", "location": "Hyderabad", "price": "mt700"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "location": "Hyderabad", "price": "mt700"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "Hyderabad"}
     - slot{"price": "mt700"}
     - action_validate_location    
     - action_search_restaurants
     - slot{"location": "hyderabad"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
@@ -795,14 +795,14 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"location": "Vijayawada", "price": "lt300", "cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"location": "Vijayawada", "price": "lt300", "cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - slot{"location": "Vijayawada"}
     - slot{"price": "lt300"}
     - action_validate_location    
     - action_search_restaurants
     - slot{"location": "vijayawada"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "manasa.koduganti@gmail.com"}
@@ -819,14 +819,14 @@
     - slot{"location": "Cuttack"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "cuttack"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -841,14 +841,14 @@
     - slot{"location": "Guntur"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "guntur"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
@@ -867,14 +867,14 @@
     - slot{"location": "Visakhapatnam"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "visakhapatnam"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * affirm
@@ -892,11 +892,11 @@
     - slot{"price": "lt300"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - action_search_restaurants
     - slot{"location": "vijayawada"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * deny
@@ -909,11 +909,11 @@
     - slot{"price": "lt300"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - action_search_restaurants
     - slot{"location": "vijayawada"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * affirm
@@ -926,14 +926,14 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "NIndian", "location": "chennai", "price": "mt700"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian", "location": "chennai", "price": "mt700"}
+    - slot{"cuisine": "nindian"}
     - slot{"location": "chennai"}
     - slot{"price": "mt700"}
     - action_validate_location    
     - action_search_restaurants
     - slot{"location": "chennai"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
@@ -950,14 +950,14 @@
     - slot{"location": "Solapur"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
     - action_search_restaurants
     - slot{"location": "solapur"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * deny
@@ -971,14 +971,14 @@
     - slot{"location": "Solapur"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
     - action_search_restaurants
     - slot{"location": "solapur"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * deny
@@ -995,14 +995,14 @@
     - slot{"location": "Ranchi"}
     - action_validate_location    
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
     - action_search_restaurants
     - slot{"location": "ranchi"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
@@ -1015,14 +1015,14 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Italian", "location": "Nashik", "price": "mt700"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "italian", "location": "Nashik", "price": "mt700"}
+    - slot{"cuisine": "italian"}
     - slot{"location": "Nashik"}
     - slot{"price": "mt700"}
     - action_validate_location
     - action_search_restaurants
     - slot{"location": "nashik"}
-    - slot{"cuisine": "Italian"}
+    - slot{"cuisine": "italian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "jhaappy885@gmail.com"}
@@ -1033,14 +1033,14 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "Mexican", "location": "Coimbatore", "price": "mt700"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "location": "Coimbatore", "price": "mt700"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "Coimbatore"}
     - slot{"price": "mt700"}
     - action_validate_location
     - action_search_restaurants
     - slot{"location": "coimbatore"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "jhaappy885@gmail.com"}
@@ -1051,14 +1051,14 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "Italian", "location": "Bhavnagar", "price": "mt700"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "italian", "location": "Bhavnagar", "price": "mt700"}
+    - slot{"cuisine": "italian"}
     - slot{"location": "Bhavnagar"}
     - slot{"price": "mt700"}
     - action_validate_location
     - action_search_restaurants
     - slot{"location": "bhavnagar"}
-    - slot{"cuisine": "Italian"}
+    - slot{"cuisine": "italian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * affirm
@@ -1077,14 +1077,14 @@
     - slot{"location": "Moradabad"}
     - action_validate_location
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "American"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "moradabad"}
-    - slot{"cuisine": "American"}
+    - slot{"cuisine": "american"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1094,14 +1094,14 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "NIndian", "price": "lt300", "location": "Bareilly"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian", "price": "lt300", "location": "Bareilly"}
+    - slot{"cuisine": "nindian"}
     - slot{"location": "Bareilly"}
     - slot{"price": "lt300"}
     - action_validate_location
     - action_search_restaurants
     - slot{"location": "bareilly"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * deny
@@ -1170,14 +1170,14 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "SIndian", "location": "Goa", "price": "lt300"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian", "location": "Goa", "price": "lt300"}
+    - slot{"cuisine": "sindian"}
     - slot{"location": "Goa"}
     - slot{"price": "lt300"}
     - action_validate_location
     - action_search_restaurants
     - slot{"location": "goa"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "jhaappy885@gmail.com"}
@@ -1194,14 +1194,14 @@
     - slot{"location": "surat"}
     - action_validate_location
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "surat"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * affirm
@@ -1233,8 +1233,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
     - utter_ask_location
 * restaurant_search{"location": "JaLaNDHaR"}
     - slot{"location": "JaLaNDHaR"}
@@ -1244,7 +1244,7 @@
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "jalandhar"}
-    - slot{"cuisine": "Italian"}
+    - slot{"cuisine": "italian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1254,8 +1254,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - utter_ask_location
 * restaurant_search{"location": "JalaNDhaR"}
     - slot{"location": "JalaNDhaR"}
@@ -1266,7 +1266,7 @@
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "jalandhar"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1281,14 +1281,14 @@
     - action_validate_location
     - slot{"location": "moradabad"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - utter_ask_price_range
 * price_info{"price": "300to700"}
     - slot{"price": "300to700"}
     - action_search_restaurants
     - slot{"location": "moradabad"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * deny
@@ -1331,8 +1331,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_location
 * restaurant_search{"location": "Solapur"}
     - slot{"location": "Solapur"}
@@ -1343,7 +1343,7 @@
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "solapur"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1351,8 +1351,8 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "NIndian"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
@@ -1363,7 +1363,7 @@
     - slot{"location": "madurai"}
     - action_search_restaurants
     - slot{"location": "madurai"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1373,15 +1373,15 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "American", "price": "300to700", "location": "Mumbai"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american", "price": "300to700", "location": "Mumbai"}
+    - slot{"cuisine": "american"}
     - slot{"location": "Mumbai"}
     - slot{"price": "300to700"}
     - action_validate_location
     - slot{"location": "mumbai"}
     - action_search_restaurants
     - slot{"location": "mumbai"}
-    - slot{"cuisine": "American"}
+    - slot{"cuisine": "american"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * deny
@@ -1397,11 +1397,11 @@
     - action_validate_location
     - slot{"location": "vijayawada"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "American"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
     - action_search_restaurants
     - slot{"location": "vijayawada"}
-    - slot{"cuisine": "American"}
+    - slot{"cuisine": "american"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "jhaappy885@gmail.com"}
@@ -1420,11 +1420,11 @@
     - action_validate_location
     - slot{"location": "dehradun"}
     - utter_ask_cuisine
-* greet{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* greet{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - action_search_restaurants
     - slot{"location": "dehradun"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "manasa.koduganti@gmail.com"}
@@ -1440,8 +1440,8 @@
     - utter_ask_location
 * affirm
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_location
 * out_of_scope
     - utter_ask_location
@@ -1451,7 +1451,7 @@
     - slot{"location": "guntur"}
     - action_search_restaurants
     - slot{"location": "guntur"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * out_of_scope
@@ -1476,11 +1476,11 @@
     - action_validate_location
     - slot{"location": "ranchi"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "America"}
-    - slot{"cuisine": "America"}
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
     - action_search_restaurants
     - slot{"location": "ranchi"}
-    - slot{"cuisine": "America"}
+    - slot{"cuisine": "american"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * deny
@@ -1498,11 +1498,11 @@
     - action_validate_location
     - slot{"location": "chandigarh"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - action_search_restaurants
     - slot{"location": "chandigarh"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1529,14 +1529,14 @@
     - action_validate_location
     - slot{"location": "kozhikode"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "kozhikode"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1593,14 +1593,14 @@
     - action_validate_location
     - slot{"location": "vijayawada"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "lt300"}
     - slot{"price": "lt300"}
     - action_search_restaurants
     - slot{"location": "vijayawada"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "manasa.koduganti@gmail.com"}
@@ -1640,8 +1640,8 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "SIndian", "location": "Goa", "price": "lt300"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian", "location": "Goa", "price": "lt300"}
+    - slot{"cuisine": "sindian"}
     - slot{"location": "Poa"}
     - slot{"price": "lt300"}
     - action_validate_location
@@ -1652,7 +1652,7 @@
     - action_validate_location
     - action_search_restaurants
     - slot{"location": "goa"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * contact_id{"contact_email": "jhaappy885@gmail.com"}
@@ -1674,14 +1674,14 @@
     - slot{"location": "surat"}
     - action_validate_location
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "surat"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * affirm
@@ -1718,8 +1718,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
     - utter_ask_location
 * restaurant_search{"location": "BaLaNDHaR"}
     - slot{"location": "BaLaNDHaR"}
@@ -1735,7 +1735,7 @@
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "jalandhar"}
-    - slot{"cuisine": "Italian"}
+    - slot{"cuisine": "italian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -1809,8 +1809,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Mexican", "price": "mt700", "location": "pyderbad"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "price": "mt700", "location": "pyderbad"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "pyderbad"}
     - slot{"price": "mt700"}
     - action_validate_location
@@ -1852,7 +1852,7 @@
     - slot{"location": "hyderabad"}
     - action_search_restaurants
     - slot{"location": "hyderabad"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "manasa.koduganti@gmail.com"}
@@ -1863,8 +1863,8 @@
     - action_restart_chat_helper
 
 ## interactive_story_1
-* restaurant_search{"cuisine": "SIndian", "price": "lt300", "location": "lumbai"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian", "price": "lt300", "location": "lumbai"}
+    - slot{"cuisine": "sindian"}
     - slot{"location": "lumbai"}
     - slot{"price": "lt300"}
     - action_validate_location
@@ -1876,7 +1876,7 @@
     - slot{"location": "mumbai"}
     - action_search_restaurants
     - slot{"location": "mumbai"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "lt300"}
     - utter_ask_send_details
 * deny
@@ -1959,8 +1959,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Mexican", "location": "Byderbad"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "location": "Byderbad"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "Byderbad"}
     - action_validate_location
     - slot{"location": null}
@@ -2005,14 +2005,14 @@
     - action_validate_location
     - slot{"location": "moradabad"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "moradabad"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -2029,14 +2029,14 @@
     - action_validate_location
     - slot{"location": "vellore"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "American"}
-    - slot{"cuisine": "American"}
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "vellore"}
-    - slot{"cuisine": "American"}
+    - slot{"cuisine": "american"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "jhaappy885@gmail.com"}
@@ -2049,15 +2049,15 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "NIndian", "price": "mt700", "location": "Bhavnagar"}
-    - slot{"cuisine": "NIndian"}
+* restaurant_search{"cuisine": "nindian", "price": "mt700", "location": "Bhavnagar"}
+    - slot{"cuisine": "nindian"}
     - slot{"location": "Bhavnagar"}
     - slot{"price": "mt700"}
     - action_validate_location
     - slot{"location": "bhavnagar"}
     - action_search_restaurants
     - slot{"location": "bhavnagar"}
-    - slot{"cuisine": "NIndian"}
+    - slot{"cuisine": "nindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -2093,8 +2093,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "SIndian", "price": "mt700", "location": "nyderbad"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian", "price": "mt700", "location": "nyderbad"}
+    - slot{"cuisine": "sindian"}
     - slot{"location": "nyderbad"}
     - slot{"price": "mt700"}
     - action_validate_location
@@ -2115,8 +2115,8 @@
     - action_validate_location
 
 ## interactive_story_2
-* restaurant_search{"cuisine": "SIndian", "price": "mt700", "location": "vhavnagar"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian", "price": "mt700", "location": "vhavnagar"}
+    - slot{"cuisine": "sindian"}
     - slot{"location": "vhavnagar"}
     - slot{"price": "mt700"}
     - action_validate_location
@@ -2158,7 +2158,7 @@
     - slot{"location": "bhavnagar"}
     - action_search_restaurants
     - slot{"location": "bhavnagar"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
@@ -2223,14 +2223,14 @@
     - action_validate_location
     - slot{"location": "vijayawada"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "Italian"}
-    - slot{"cuisine": "Italian"}
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
     - utter_ask_price_range
 * price_info{"price": "mt700"}
     - slot{"price": "mt700"}
     - action_search_restaurants
     - slot{"location": "vijayawada"}
-    - slot{"cuisine": "Italian"}
+    - slot{"cuisine": "italian"}
     - slot{"price": "mt700"}
     - utter_ask_send_details
 * deny
@@ -2272,14 +2272,14 @@
     - action_validate_location
     - slot{"location": "rajahmundry"}
     - utter_ask_cuisine
-* restaurant_search{"cuisine": "SIndian"}
-    - slot{"cuisine": "SIndian"}
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
     - utter_ask_price_range
 * price_info{"price": "300to700"}
     - slot{"price": "300to700"}
     - action_search_restaurants
     - slot{"location": "rajahmundry"}
-    - slot{"cuisine": "SIndian"}
+    - slot{"cuisine": "sindian"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "manasa.koduganti@gmail.com"}
@@ -2292,8 +2292,8 @@
 ## interactive_story_1
 * greet
     - utter_greet
-* restaurant_search{"cuisine": "Mexican"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
     - utter_ask_location
 * restaurant_search{"location": "Vijayawada"}
     - slot{"location": "Vijayawada"}
@@ -2304,7 +2304,7 @@
     - slot{"price": "300to700"}
     - action_search_restaurants
     - slot{"location": "vijayawada"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * deny
@@ -2312,15 +2312,15 @@
     - action_restart_chat_helper
 
 ## interactive_story_2
-* restaurant_search{"cuisine": "Mexican", "price": "300to700", "location": "Hyderabad"}
-    - slot{"cuisine": "Mexican"}
+* restaurant_search{"cuisine": "mexican", "price": "300to700", "location": "Hyderabad"}
+    - slot{"cuisine": "mexican"}
     - slot{"location": "Hyderabad"}
     - slot{"price": "300to700"}
     - action_validate_location
     - slot{"location": "hyderabad"}
     - action_search_restaurants
     - slot{"location": "hyderabad"}
-    - slot{"cuisine": "Mexican"}
+    - slot{"cuisine": "mexican"}
     - slot{"price": "300to700"}
     - utter_ask_send_details
 * contact_id{"contact_email": "madhavi.koduganti@gmail.com"}

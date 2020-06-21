@@ -201,20 +201,19 @@
 - [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
-- [SIndian](cuisine)
-- [NIndian](cuisine)
-- [Mexican](cuisine)
-- [American](cuisine)
+- [sindian](cuisine)
+- [nindian](cuisine)
+- [mexican](cuisine)
+- [american](cuisine)
 - [chinese](cuisine)
-- [Italian](cuisine)
-- [North American]{"entity": "cuisine", "value": "American"}
+- [italian](cuisine)
+- [North American]{"entity": "cuisine", "value": "american"}
 - [Chinese]{"entity": "cuisine", "value": "chinese"}
 - [mumbai](location)
 - [Lithuania](location)
 - in [Gurgaon](location)
 - in [delhi](location)
 - [delhi](location)
-- [central](location) [indian](cuisine) restaurant
 - show me restaurants
 - i'm looking for a place to eat
 - I want to grab lunch
@@ -227,11 +226,8 @@
 - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me a [mexican]{"entity": "cuisine", "value": "Mexican"} place in the [centre](location)
-- anywhere in the [west](location)
-- I am looking for [asian fusion](cuisine) food
-- I am looking a restaurant in [294328](location)
 - I am looking for some restaurants in [Mumbai](location)
-- I am looking for [mexican indian fusion](cuisine)
+- I am looking for [mexican indian fusion](cuisine:mexican)
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurant in [bangalore](location)
 - get me a restaurant in [chennai](location)
@@ -243,16 +239,16 @@
 - get me [chinese](cuisine) restaurant in [fghawWE](location)
 - get me [chinese](cuisine) restaurant in [Bsdhwep](location)
 - get me [chinese](cuisine) restaurant in [Kozhikode](location)
-- get me [Mexican](cuisine) restaurant in [chennai](location)
-- get me [Mexican](cuisine) restaurant in [bangalore](location)
-- get me [Mexican](cuisine) restaurant in [delhi](location)
-- get me [Mexican](cuisine) restaurant in [Mangalore](location)
-- get me [Mexican](cuisine) restaurant in [Kozhikode](location)
 - get me [mexican](cuisine) restaurant in [chennai](location)
-- get me [south indian]{"entity": "cuisine", "value": "SIndian"} restaurant in [bangalore](location)
-- get me [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurant in [delhi](location)
-- get me [italinan]{"entity": "cuisine", "value": "Italian"} restaurant in [Mangalore](location)
-- get me [american]{"entity": "cuisine", "value": "American"} restaurant in [Kozhikode](location)
+- get me [mexican](cuisine) restaurant in [bangalore](location)
+- get me [mexican](cuisine) restaurant in [delhi](location)
+- get me [mexican](cuisine) restaurant in [Mangalore](location)
+- get me [mexican](cuisine) restaurant in [Kozhikode](location)
+- get me [mexican](cuisine) restaurant in [chennai](location)
+- get me [south indian]{"entity": "cuisine", "value": "sindian"} restaurant in [bangalore](location)
+- get me [north Indian]{"entity": "cuisine", "value": "nindian"} restaurant in [delhi](location)
+- get me [italinan]{"entity": "cuisine", "value": "italian"} restaurant in [Mangalore](location)
+- get me [american](cuisine) restaurant in [Kozhikode](location)
 - get me a [chinese](cuisine) restaurant
 - Please show me some hotels in [bangalore](location)
 - Please show me some dine-outs in [chennai](location)
@@ -264,16 +260,16 @@
 - please show me some [chinese](cuisine) dine-outs in [delhi](location)
 - please show me some [chinese](cuisine) hotels in [Mangalore](location)
 - please show me some [chinese](cuisine) dine-outs in [Kozhikode](location)
-- please show me some [Mexican](cuisine) eateries in [chennai](location)
-- please show me some [Mexican](cuisine) dine-outs in [bangalore](location)
-- please show me some [Mexican](cuisine) eateries in [delhi](location)
-- please show me some [Mexican](cuisine) dine-outs in [Mangalore](location)
-- please show me some [Mexican](cuisine) eateries in [Kozhikode](location)
-- please show me some [mexican]{"entity": "cuisine", "value": "Mexican"} eateries in [chennai](location)
-- please show me some [south indian]{"entity": "cuisine", "value": "SIndian"} hotels in [bangalore](location)
-- please show me some [north Indian]{"entity": "cuisine", "value": "NIndian"} eateries in [delhi](location)
-- please show me some [italinan]{"entity": "cuisine", "value": "Italian"} dine-outs in [Mangalore](location)
-- please show me some [american]{"entity": "cuisine", "value": "American"} hotels in [Kozhikode](location)
+- please show me some [mexican](cuisine) eateries in [chennai](location)
+- please show me some [mexican](cuisine) dine-outs in [bangalore](location)
+- please show me some [mexican](cuisine) eateries in [delhi](location)
+- please show me some [mexican](cuisine) dine-outs in [Mangalore](location)
+- please show me some [mexican](cuisine) eateries in [Kozhikode](location)
+- please show me some [mexican](cuisine) eateries in [chennai](location)
+- please show me some [south indian]{"entity": "cuisine", "value": "sindian"} hotels in [bangalore](location)
+- please show me some [north Indian]{"entity": "cuisine", "value": "nindian"} eateries in [delhi](location)
+- please show me some [italinan]{"entity": "cuisine", "value": "italian"} dine-outs in [Mangalore](location)
+- please show me some [American]{"entity": "cuisine", "value": "american"} hotels in [Kozhikode](location)
 - Please find me a restaurant in [chennai](location)
 - Please find me a restaurant in [Delhi](location)
 - Please find me a restaurant in [Mangalore](location)
@@ -283,16 +279,16 @@
 - please find me [chinese](cuisine) restaurant in [delhi](location)
 - please find me [chinese](cuisine) restaurant in [Mangalore](location)
 - please find me [chinese](cuisine) restaurant in [Kozhikode](location)
-- please find me [Mexican](cuisine) restaurant in [chennai](location)
-- please find me [Mexican](cuisine) restaurant in [bangalore](location)
-- please find me [Mexican](cuisine) restaurant in [delhi](location)
-- please find me [Mexican](cuisine) restaurant in [Mangalore](location)
-- please find me [Mexican](cuisine) restaurant in [Kozhikode](location)
-- please find me [mexican]{"entity": "cuisine", "value": "Mexican"} restaurant in [chennai](location)
-- please find me [south indian]{"entity": "cuisine", "value": "SIndian"} restaurant in [bangalore](location)
-- please find me [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurant in [delhi](location)
-- please find me [italinan]{"entity": "cuisine", "value": "Italian"} restaurant in [Mangalore](location)
-- please find me [american]{"entity": "cuisine", "value": "American"} restaurant in [Kozhikode](location)
+- please find me [mexican](cuisine) restaurant in [chennai](location)
+- please find me [mexican](cuisine) restaurant in [bangalore](location)
+- please find me [mexican](cuisine) restaurant in [delhi](location)
+- please find me [mexican](cuisine) restaurant in [Mangalore](location)
+- please find me [mexican](cuisine) restaurant in [Kozhikode](location)
+- please find me [Mexican]{"entity": "cuisine", "value": "mexican"} restaurant in [chennai](location)
+- please find me [south indian]{"entity": "cuisine", "value": "sindian"} restaurant in [bangalore](location)
+- please find me [north Indian]{"entity": "cuisine", "value": "nindian"} restaurant in [delhi](location)
+- please find me [italinan]{"entity": "cuisine", "value": "italian"} restaurant in [Mangalore](location)
+- please find me [American]{"entity": "cuisine", "value": "american"} restaurant in [Kozhikode](location)
 - can you find me a [chinese](cuisine) restaurant
 - Please show me some restaurants in [bangalore](location)
 - Please show me some restaurants in [chennai](location)
@@ -304,20 +300,20 @@
 - please show me some [chinese](cuisine) restaurants in [delhi](location)
 - please show me some [chinese](cuisine) restaurants in [Mangalore](location)
 - please show me some [chinese](cuisine) restaurants in [Kozhikode](location)
-- please show me some [Mexican](cuisine) restaurants in [chennai](location)
-- please show me some [Mexican](cuisine) restaurants in [bangalore](location)
-- please show me some [Mexican](cuisine) restaurants in [delhi](location)
-- please show me some [Mexican](cuisine) restaurants in [Mangalore](location)
-- please show me some [Mexican](cuisine) restaurants in [Kozhikode](location)
-- please show me some [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants in [chennai](location)
-- please show me some [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [bangalore](location)
-- please show me some [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurants in [delhi](location)
-- please show me some [italinan]{"entity": "cuisine", "value": "Italian"} restaurants in [Mangalore](location)
-- please show me some [american]{"entity": "cuisine", "value": "American"} restaurants in [Kozhikode](location)
+- please show me some [Mexican](cuisine:mexican) restaurants in [chennai](location)
+- please show me some [Mexican](cuisine:mexican) restaurants in [bangalore](location)
+- please show me some [Mexican](cuisine:mexican) restaurants in [delhi](location)
+- please show me some [Mexican](cuisine:mexican) restaurants in [Mangalore](location)
+- please show me some [Mexican](cuisine:mexican) restaurants in [Kozhikode](location)
+- please show me some [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants in [chennai](location)
+- please show me some [south indian]{"entity": "cuisine", "value": "sindian"} restaurants in [bangalore](location)
+- please show me some [north Indian]{"entity": "cuisine", "value": "sindian"} restaurants in [delhi](location)
+- please show me some [italinan]{"entity": "cuisine", "value": "italian"} restaurants in [Mangalore](location)
+- please show me some [American]{"entity": "cuisine", "value": "american"} restaurants in [Kozhikode](location)
 - please find me a restaurant in [ahmedabad](location)
-- please show me a few [italian]{"entity": "cuisine", "value": "Italian"} restaurants in [bangalore](location)
-- get me [italian]{"entity": "cuisine", "value": "Italian"} restaurants in [bangalore](location)
-- get me [italian](cuisineItalian) restaurants from [bangalore](location)
+- please show me a few [italian](cuisine) restaurants in [bangalore](location)
+- get me [italian](cuisine) restaurants in [bangalore](location)
+- get me [Italian](cuisine:italian) restaurants from [bangalore](location)
 - get me restaurants from [bangalore](location)
 - please show me restaurants from Quilon[]{"entity": "location", "value": "Quilon"}
 - I’m hungry. Looking out for some good restaurants
@@ -329,70 +325,70 @@
 - In [Madurai](location)
 - in [mumbai](location)
 - bengaluru[]{"entity": "location", "value": "bengaluru"}
-- I cannot tell you how hungry I am right now. I can totally devour a big elephant. I really need to find some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants in [Calicut]{"entity": "location", "value": "Kozhikode"}
+- I cannot tell you how hungry I am right now. I can totally devour a big elephant. I really need to find some [north indian]{"entity": "cuisine", "value": "nindian"} restaurants in [Calicut]{"entity": "location", "value": "Kozhikode"}
 - Can you suggest some good restaurants in [Rishikesh](location)
 - Can you suggest some good restaurants in [Kolkata](location)
 - Can you suggest some good restaurants in [kolkata](location)
-- Can you show me some good [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Kurnool](location)
+- Can you show me some good [south indian]{"entity": "cuisine", "value": "sindian"} restaurants in [Kurnool](location)
 - can you show me restaurants in [below 300]{"entity": "price", "value": "lt300"}
 - can you show me some [chinese](cuisine) restaurants
 - in [Dehradun](location)
 - can you show me some restaurants in [Vadodara](location)
-- Can you show me some [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in price range [above 700]{"entity": "price", "value": "mt700"} in [Calicut]{"entity": "location", "value": "Kozhikode"}
-- I want to know about some healthy [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants in [Vadodara](location) for price range [between 300 and 700]{"entity": "price", "value": "300to700"}
+- Can you show me some [south indian]{"entity": "cuisine", "value": "sindian"} restaurants in price range [above 700]{"entity": "price", "value": "mt700"} in [Calicut]{"entity": "location", "value": "Kozhikode"}
+- I want to know about some healthy [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants in [Vadodara](location) for price range [between 300 and 700]{"entity": "price", "value": "300to700"}
 - can you show me some great restaurants for price [less than 300]{"entity": "price", "value": "lt300"}
 - in [Mysore](location)
-- Can you show me some of my favourite non vegetarian [american]{"entity": "cuisine", "value": "American"} restaurants in [Maikala]{"entity": "location", "value": "Mangalore"} for the price range in [300 700]{"entity": "price", "value": "300to700"}?
+- Can you show me some of my favourite non vegetarian [American]{"entity": "cuisine", "value": "american"} restaurants in [Maikala]{"entity": "location", "value": "Mangalore"} for the price range in [300 700]{"entity": "price", "value": "300to700"}?
 - hello there. Show me some restaurants from [Chennai](location)
-- Get me [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants from [Chennai](location) in price range [above 700]{"entity": "price", "value": "mt700"}
+- Get me [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants from [Chennai](location) in price range [above 700]{"entity": "price", "value": "mt700"}
 - I wanna see hotels from [Bangalore](location)
 - show me restaurants from [Ghaziabad](location)
 - can you show me some hotels from [Indore](location)?
 - can you show me some hotels from [Allahabad](location)
 - I am hungry. I wanna know about nearby dineouts
-- I wanna go to a [mexican]{"entity": "cuisine", "value": "Mexican"} restaurant in [Kohl]{"entity": "location", "value": "Aligarh"}
+- I wanna go to a [Mexican]{"entity": "cuisine", "value": "mexican"} restaurant in [Kohl]{"entity": "location", "value": "Aligarh"}
 - Want to go to a dineout in [Holkar]{"entity": "location", "value": "Indore"}
 - Can you please show me some hotels from [Chennai](location)
-- can you please help me fine some [American](cuisine)  restaurants in [Hyderabad](location)?
+- can you please help me fine some [American](cuisine:american)  restaurants in [Hyderabad](location)?
 - Please show me some restaurants in [Chandigarh](location)
 - I am very very hungry and I want to eat. I am sitting in [rreywif](location)
 - Can you please show me some restaurants in [Bhilai](location)
 - Can you please show me some restaurants in [ggfgeurgedfg](location)
-- I want find some [mexican]{"entity": "cuisine", "value": "Mexican"} eateries in [Hyderabad](location) in range [more than 700]{"entity": "price", "value": "mt700"}
+- I want find some [Mexican]{"entity": "cuisine", "value": "mexican"} eateries in [Hyderabad](location) in range [more than 700]{"entity": "price", "value": "mt700"}
 - my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My blood pressure and glucose is going so down that I can faint right now.
-- my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My vitals are going down and I am about to fall down. I am not that rich so please show me [below 300]{"entity": "price", "value": "lt300"}. Also I have not seen world much either so I am going to stick to my local [north indian]{"entity": "cuisine", "value": "NIndian"}. Please help me out.
+- my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My vitals are going down and I am about to fall down. I am not that rich so please show me [below 300]{"entity": "price", "value": "lt300"}. Also I have not seen world much either so I am going to stick to my local [north indian]{"entity": "cuisine", "value": "nindian"}. Please help me out.
 - get me some top restaurants from [Cuttack](location)
 - I am hungry. I need to eat. I am in [Guntur](location)
 - Show me restaurants from [Hyderabad](location)
 - Show me restaurants from [hyderabad](location)
-- I want [American](cuisine)
+- I want [american](cuisine)
 - Get me restaurants from [Vizag]{"entity": "location", "value": "Visakhapatnam"}
 - Please tell me about hotels in [Vijayawada](location) with avg. budget of [less than 300]{"entity": "price", "value": "lt300"}
-- show me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [chennai](location) [above 700]{"entity": "price", "value": "mt700"}
+- show me some [north indian]{"entity": "cuisine", "value": "nindian"} restaurants from [chennai](location) [above 700]{"entity": "price", "value": "mt700"}
 - Please help me find som erestaurants
 - Get me some restaurants
 - [Sonalpur]{"entity": "location", "value": "Solapur"}
 - [Rachi]{"entity": "location", "value": "Ranchi"}
-- Can you please show me some [Italian](cuisine) restaurants from [Nasik]{"entity": "location", "value": "Nashik"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Coimbatore](location) for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Koyampuththoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Koyamputhoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Kovai]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Kodial]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Maikala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Mangalooru]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Kodeyaala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Manjarun]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Mangalapuram]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Mangalore](location) for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [mangalore](location) for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Patna](location) for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [Italian](cuisine) restaurants from [Palibothra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [Pataliputra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [south Indian]{"entity": "cuisine", "value": "SIndian"} restaurants from [Pushpapura]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
-- hi. Get me some [American](cuisine) restaurants from [Kusumpur]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- Can you please show me some [italian](cuisine) restaurants from [Nasik]{"entity": "location", "value": "Nashik"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Coimbatore](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Koyampuththoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Koyamputhoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Kovai]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Kodial]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Maikala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Mangalooru]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Kodeyaala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Manjarun]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Mangalapuram]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Mangalore](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [mangalore](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [mexican](cuisine) restaurants from [Patna](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [italian](cuisine) restaurants from [Palibothra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [north indian]{"entity": "cuisine", "value": "nindian"} restaurants from [Pataliputra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [south Indian]{"entity": "cuisine", "value": "sindian"} restaurants from [Pushpapura]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [american](cuisine) restaurants from [Kusumpur]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
 - hi. Get me some [chinese](cuisine) restaurants from [Azimabad]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
-- Hi, Get me some [Italian](cuisine) restaurants from [Kathiawad]{"entity": "location", "value": "Bhavnagar"} for price [more than 700]{"entity": "price", "value": "mt700"}
+- Hi, Get me some [italian](cuisine) restaurants from [Kathiawad]{"entity": "location", "value": "Bhavnagar"} for price [more than 700]{"entity": "price", "value": "mt700"}
 - Please get me some restaurants from [Chakra Kshetra]{"entity": "location", "value": "Bhubaneswar"}
 - Please get me some restaurants from [Ekamra Kanan]{"entity": "location", "value": "Bhubaneswar"}
 - Please get me some restaurants from [Ekamra Kshetra]{"entity": "location", "value": "Bhubaneswar"}
@@ -401,7 +397,7 @@
 - Please get me some restaurants from [Turmeric City]{"entity": "location", "value": "Erode"}
 - Please get me some restaurants from [Pink City]{"entity": "location", "value": "Jaipur"}
 - Please show me some restaurants from [Pital Nagri]{"entity": "location", "value": "Moradabad"}
-- hi. Please get me some [North Indian]{"entity": "cuisine", "value": "NIndian"} restaurants for price [under 300]{"entity": "price", "value": "lt300"} in [Nath Nagri]{"entity": "location", "value": "Bareilly"}
+- hi. Please get me some [North Indian]{"entity": "cuisine", "value": "nindian"} restaurants for price [under 300]{"entity": "price", "value": "lt300"} in [Nath Nagri]{"entity": "location", "value": "Bareilly"}
 - so sooo hungry
 - [gibberland](location)
 - hungry
@@ -428,10 +424,10 @@
 - [uilaps](location)
 - I wanna eat [chinese](cuisine)
 - in [Bangalore]{"entity": "location", "value": "bangalore"}
-- looking for [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Goa](location) for price [less than 300]{"entity": "price", "value": "lt300"}
+- looking for [south indian]{"entity": "cuisine", "value": "sindian"} restaurants in [Goa](location) for price [less than 300]{"entity": "price", "value": "lt300"}
 - hungry in [surat](location)
 - I wanna eat [chines]{"entity": "cuisine", "value": "chinese"} for  [above Rs. 700]{"entity": "price", "value": "mt700"} in [roURkeLa](location)
-- I want to eat [iTaLIaN]{"entity": "cuisine", "value": "Italian"}
+- I want to eat [iTaLIaN]{"entity": "cuisine", "value": "italian"}
 - in [JaLaNDHaR](location)
 - Please find me some [mexico]{"entity": "cuisine", "value": "Mexican"} restaurants
 - in [JalaNDhaR](location)
@@ -440,24 +436,24 @@
 - hi. I want to eat [China]{"entity": "cuisine", "value": "chinese"}
 - hi I want to eat [china]{"entity": "cuisine", "value": "chinese"}
 - in [Rachi]{"entity": "location", "value": "Ranchi"}
-- I want eat [south]{"entity": "cuisine", "value": "SIndian"}
+- I want eat [south]{"entity": "cuisine", "value": "sindian"}
 - in [Sandalpur]{"entity": "location", "value": "Solapur"}
 - in [Malligai Maanagar]{"entity": "location", "value": "Madurai"}
-- I want to eat [north]{"entity": "cuisine", "value": "NIndian"}
-- I want to eat [south]{"entity": "cuisine", "value": "SIndian"}
-- I want to eat [america]{"entity": "cuisine", "value": "American"}
+- I want to eat [north]{"entity": "cuisine", "value": "nindian"}
+- I want to eat [south]{"entity": "cuisine", "value": "sindian"}
+- I want to eat [America]{"entity": "cuisine", "value": "american"}
 - I want to eat [mexico]{"entity": "cuisine", "value": "Mexican"}
-- show me [north]{"entity": "cuisine", "value": "NIndian"} restaurants
-- show me [south]{"entity": "cuisine", "value": "SIndian"} restaurants
-- show me [america]{"entity": "cuisine", "value": "American"} restaurants
+- show me [north]{"entity": "cuisine", "value": "nindian"} restaurants
+- show me [south]{"entity": "cuisine", "value": "sindian"} restaurants
+- show me [america]{"entity": "cuisine", "value": "american"} restaurants
 - show me [mexico]{"entity": "cuisine", "value": "Mexican"} restaurants
-- show me [north]{"entity": "cuisine", "value": "NIndian"} hotels
-- show me [south]{"entity": "cuisine", "value": "SIndian"} hotels
-- show me [america]{"entity": "cuisine", "value": "American"} hotels
+- show me [north]{"entity": "cuisine", "value": "nindian"} hotels
+- show me [south]{"entity": "cuisine", "value": "sindian"} hotels
+- show me [america]{"entity": "cuisine", "value": "american"} hotels
 - show me [mexico]{"entity": "cuisine", "value": "Mexican"} hotels
-- show me [north]{"entity": "cuisine", "value": "NIndian"} dine-outs
-- show me [south]{"entity": "cuisine", "value": "SIndian"} dine outs
-- show me [america]{"entity": "cuisine", "value": "American"} eateries
+- show me [north]{"entity": "cuisine", "value": "nindian"} dine-outs
+- show me [south]{"entity": "cuisine", "value": "sindian"} dine outs
+- show me [america]{"entity": "cuisine", "value": "american"} eateries
 - show me [mexico]{"entity": "cuisine", "value": "Mexican"} eatery
 - show me [abcg](cuisine) eatery
 - show me [pqrs](cuisine) hotel
@@ -472,7 +468,7 @@
 - please show me [pqrs](cuisine) hotels
 - please show me [pqrst](cuisine) hotels
 - please show me [pqrstu](cuisine) hotels
-- please show me [US]{"entity": "cuisine", "value": "American"} hotels
+- please show me [US]{"entity": "cuisine", "value": "american"} hotels
 - please show me [xyza](cuisine) restaurants
 - I want to eat [abcd](cuisine)
 - I want to eat [aerjhf](cuisine)
@@ -485,10 +481,10 @@
 - I want to eat at [sajehg](cuisine) dine out
 - I want to eat at [erwedjgw](cuisine) restaurants
 - I want to eat at [weyuew](cuisine) restaurant
-- I want to eat [us]{"entity": "cuisine", "value": "American"} within [300 and 700]{"entity": "price", "value": "300to700"} in [bambai]{"entity": "location", "value": "Mumbai"}
+- I want to eat [us]{"entity": "cuisine", "value": "american"} within [300 and 700]{"entity": "price", "value": "300to700"} in [bambai]{"entity": "location", "value": "Mumbai"}
 - I want to eat in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
-- I want to eat [us]{"entity": "cuisine", "value": "American"}
-- [South Indian]{"entity": "cuisine", "value": "SIndian"}
+- I want to eat [us]{"entity": "cuisine", "value": "american"}
+- [South Indian]{"entity": "cuisine", "value": "sindian"}
 - with my brother in [Guntur](location)
 - in [Ranchi](location)
 - I would like [america]{"entity": "cuisine", "value": "America"}
@@ -500,14 +496,14 @@
 - I am in [Bijayawada](location)
 - in [Vijayawafa](location)
 - in [Vijayawada](location)
-- I would like to eat [south]{"entity": "cuisine", "value": "SIndian"}
+- I would like to eat [south]{"entity": "cuisine", "value": "sindian"}
 - I am hungry in [pijayawada](location) and want to eat at [chines]{"entity": "cuisine", "value": "chinese"} hotel for [less than 300]{"entity": "price", "value": "lt300"}
 - in [vijYwafa](location)
 - I am hungry in [durnool](location)
 - in [furnool](location)
 - in [kurnool](location)
 - I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} for [more than 700]{"entity": "price", "value": "mt700"} budget in [pyderbad](location)
-- I am looking at [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants [under 300]{"entity": "price", "value": "lt300"} budget in [lumbai](location)
+- I am looking at [south indian]{"entity": "cuisine", "value": "sindian"} restaurants [under 300]{"entity": "price", "value": "lt300"} budget in [lumbai](location)
 - I meant in [mumbai]{"entity": "location", "value": "Mumbai"}
 - I am looking for some restaurants
 - I am looking for [chines]{"entity": "cuisine", "value": "chinese"} cuisine hotel
@@ -515,9 +511,9 @@
 - I am looking for hotels [under 300]{"entity": "price", "value": "lt300"}
 - In [Kakinada](location)
 - cuisine is [chines]{"entity": "cuisine", "value": "chinese"}
-- cuisine is [american]{"entity": "cuisine", "value": "American"}
+- cuisine is [American]{"entity": "cuisine", "value": "american"}
 - cuisine is [mexican]{"entity": "cuisine", "value": "Mexican"}
-- cuisine is [Mexican](cuisine)
+- cuisine is [mexican](cuisine)
 - wanna eat [chines]{"entity": "cuisine", "value": "chinese"}
 - anywhere in [Almedabad](location)
 - [ahmedabad]{"entity": "location", "value": "Ahmedabad"}
@@ -531,15 +527,15 @@
 - in [Moradabad](location)
 - please help me find eateries
 - in [Velluru]{"entity": "location", "value": "Vellore"}
-- I am looking for [North Indian]{"entity": "cuisine", "value": "NIndian"} cuisine hotel for [more than 700]{"entity": "price", "value": "mt700"} in [Bhav nagar]{"entity": "location", "value": "Bhavnagar"}
+- I am looking for [North Indian]{"entity": "cuisine", "value": "nindian"} cuisine hotel for [more than 700]{"entity": "price", "value": "mt700"} in [Bhav nagar]{"entity": "location", "value": "Bhavnagar"}
 - I am looking for chines cuisine hotel for [less than 300]{"entity": "price", "value": "lt300"} rupees in [Bhaavnagar]{"entity": "location", "value": "Bhavnagar"}
 - I am looking for [chines]{"entity": "cuisine", "value": "chinese"}  hotel for [less than 300]{"entity": "price", "value": "lt300"} rupees in [Bhaavnaga](location)
 - [bhavnagar]{"entity": "location", "value": "Bhavnagar"}
-- I wan tto eat [south]{"entity": "cuisine", "value": "SIndian"} for [more than 700]{"entity": "price", "value": "mt700"} in [nyderbad](location)
+- I wan tto eat [south]{"entity": "cuisine", "value": "sindian"} for [more than 700]{"entity": "price", "value": "mt700"} in [nyderbad](location)
 - [wyderbad](location)
 - [pyderbad](location)
 - [qondon](location)
-- I want to eat [south]{"entity": "cuisine", "value": "SIndian"} for [more than 700]{"entity": "price", "value": "mt700"} in [vhavnagar](location)
+- I want to eat [south]{"entity": "cuisine", "value": "sindian"} for [more than 700]{"entity": "price", "value": "mt700"} in [vhavnagar](location)
 - [chavnagar](location)
 - [jhavnagar](location)
 - [khavnagar](location)
@@ -571,7 +567,7 @@
 - [zijayawada](location)
 - I love [chinese](cuisine)
 - I wanna eat in [rajahmundry](location)
-- I am looking for [Mexican](cuisine) restaurants
+- I am looking for [mexican](cuisine) restaurants
 - [Vijayawada](location)
 - I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} foor for [less than 700]{"entity": "price", "value": "300to700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
 
@@ -674,9 +670,9 @@
 - Prayag
 - Illahabad
 
-## synonym:American
+## synonym:american
 - North American
-- american
+- American
 - america
 - US
 - us
@@ -814,9 +810,9 @@
 ## synonym:Indore
 - Holkar
 
-## synonym:Italian
+## synonym:italian
 - italinan
-- italian
+- Italian
 - iTaLIaN
 - italy
 - Italy
@@ -944,8 +940,8 @@
 ## synonym:Meerut
 - Meerat
 
-## synonym:Mexican
-- mexican
+## synonym:mexican
+- Mexican
 - mexico
 - mexcan
 - Mexico
@@ -969,7 +965,7 @@
 - Mysuru
 - Maisuru
 
-## synonym:NIndian
+## synonym:nindian
 - north Indian
 - north indian
 - North Indian
@@ -1018,7 +1014,7 @@
 - Mahanagar
 - Engineering Hub
 
-## synonym:SIndian
+## synonym:sindian
 - south indian
 - south Indian
 - south
