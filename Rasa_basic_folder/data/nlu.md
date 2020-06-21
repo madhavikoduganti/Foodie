@@ -16,6 +16,9 @@
 - on my couch
 - yes please
 - oh yeah totally
+- yes please.
+- yes.
+- Yeah buddy
 
 ## intent:deny
 - no
@@ -106,8 +109,7 @@
 - I can do [less than 300]{"entity": "price", "value": "lt300"}
 - so much [more than 700]{"entity": "price", "value": "mt700"}
 - My budget is [less than 300]{"entity": "price", "value": "lt300"}
-- Rs. 300 to 700 [(300to70]{"entity": "price", "value": "300to700"}0)
-- I can do [more than 700]{"entity": "price", "value": "mt700"}
+- Rs. [300 to 700]{"entity": "price", "value": "300to700"}
 
 ## intent:goodbye
 - bye
@@ -220,6 +222,12 @@
 - My mail id is [madhavi.koduganti@gmail.com](contact_email)
 - yes please. Send it to [madhavi.koduganti@gmail.com](contact_email)
 - my email id is [madhavi.koduganti@gmail.com](contact_email)
+- my email id is [madhu.kodu@yahoo.com](contact_email)
+- please send it to [maddykoduganti@gmail.com](contact_email)
+- my email id is [jhaappy885@gmail.com](contact_email)
+- my id is [manasa.koduganti@gmail.com](contact_email)
+- my email ID is [madhavi.koduganti@gmail.com](contact_email)
+- [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [sindian](cuisine)
@@ -690,7 +698,23 @@
 - In [hyderbad](location)
 - in [byderabad](location)
 - [hyderabad]{"entity": "location", "value": "Hyderabad"}
-- I would like [north]{"entity": "cuisine", "value": "nindian"}
+- I am very hungry and I want to eat [mexican](cuisine) food for [more than 700]{"entity": "price", "value": "mt700"} rupees in [Vijayawada](location) right now
+- Looking for [south indian]{"entity": "cuisine", "value": "sindian"} eateries [under 300]{"entity": "price", "value": "lt300"}
+- I am in [Vadodara](location)
+- Please help me find find dine outs in [Vijayavatika]{"entity": "location", "value": "Vijayawada"} for budget in range [300 to 700]{"entity": "price", "value": "300to700"}
+- I would like [Italian]{"entity": "cuisine", "value": "italian"} please
+- Show me some good [mexican](cuisine) restaurants in [Delhi](location)
+- I wanna eat in [Coimbatore](location)
+- I think I will like [chinese](cuisine)
+- yo honey, Please show me some sick restaurnats
+- in [Jamshepur](location)
+- [jamshedpur](location) is the place
+- I think I will eat [americano](cuisine)
+- I would like to have [american](cuisine)
+- Show me some restaurants for [more than 700]{"entity": "price", "value": "mt700"}
+- I am in [Sandalpur]{"entity": "location", "value": "Solapur"}
+- I would like Americannooo
+- I would like [American]{"entity": "cuisine", "value": "american"}
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -783,10 +807,10 @@
 - cannot do more than 700
 - 700
 - no more than 700
-- (300to70
 - 300 700
 - less than 700
 - under 700
+- (300to70
 - not above 700
 - not beyond 700
 - not above Rs. 700
