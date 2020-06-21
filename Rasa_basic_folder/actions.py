@@ -18,6 +18,13 @@ logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
 
+from typing import Dict, Text, Any, List, Union, Optional
+
+from rasa_sdk import Tracker
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.forms import FormAction
+
+
 class Validator:
     city_list = []
     city_set = {}
@@ -288,3 +295,173 @@ class ActionRestartChatHelper(Action):
         return [Restarted()]
 
 
+
+
+class RestaurantForm(FormAction):
+    city_list = []
+    city_set = {}
+
+    def __init__(self):
+        my_file = open("CityList.txt", "r")
+        self.city_list = [line.rstrip('\n').lower() for line in my_file]
+        for city in self.city_list:
+            self.city_set[city.lower()] = set([ch for ch in city.lower()] )
+        super(FormAction, self).__init__()
+
+    """Example of a custom form action"""
+
+    def name(self) -> Text:
+        """Unique identifier of the form"""
+
+        return "restaurant_form"
+
+    @staticmethod
+    def required_slots(tracker: Tracker) -> List[Text]:
+        """A list of required slots that the form has to fill"""
+
+        return ["location", "cuisine", "price"]
+
+    def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+        """A dictionary to map required slots to
+            - an extracted entity
+            - intent: value pairs
+            - a whole message
+            or a list of them, where a first match will be picked"""
+
+        return {
+            "cuisine": self.from_entity(entity="cuisine", intent="restaurant_search"),
+            "location": self.from_entity(entity="location", intent="restaurant_search"),
+            "price": self.from_entity(entity="price", intent=["price_info", "request_restaurant"]),
+        }
+
+    # USED FOR DOCS: do not rename without updating in docs
+    @staticmethod
+    def cuisine_db() -> List[Text]:
+        """Database of supported cuisines"""
+
+        return [
+            "chinese",
+            "sindian",
+            "american",
+            "nindian",
+            "italian",
+            "mexican",
+        ]
+        
+    @staticmethod
+    def price_db() -> List[Text]:
+        """Database of supported cuisines"""
+
+        return [
+            "lt300",
+            "300to700",
+            "mt700"
+        ]
+
+
+    # USED FOR DOCS: do not rename without updating in docs
+    def validate_cuisine(
+        self,
+        value: Text,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if value.lower() in self.cuisine_db():
+            # validation succeeded, set the value of the "cuisine" slot to value
+            dispatcher.utter_message("cuisine Validated")
+            return {"cuisine": value}
+        else:
+            dispatcher.utter_message(template="utter_wrong_cuisine")
+            # validation failed, set this slot to None, meaning the
+            # user will be asked for the slot again
+            return {"cuisine": None}
+
+    # USED FOR DOCS: do not rename without updating in docs
+    def validate_price(
+        self,
+        value: Text,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if value.lower() in self.price_db():
+            dispatcher.utter_message("Price Validated")
+            # validation succeeded, set the value of the "cuisine" slot to value
+            return {"price": value}
+        else:
+            dispatcher.utter_message(template="utter_wrong_price")
+            # validation failed, set this slot to None, meaning the
+            # user will be asked for the slot again
+            return {"price": None}
+
+
+    # USED FOR DOCS: do not rename without updating in docs
+    def validate_location(
+        self,
+        value: Text,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> Dict[Text, Any]:
+        """Validate cuisine value."""
+
+        if value is not None:
+            loc = value.lstrip().rstrip().lower()
+            if loc not in self.city_list:
+                print(loc," not found in city_list")
+                nearest_cities = self.fetch_nearest_cities(loc.lower())
+                if not nearest_cities:
+                    message = "We do not operate in location:"
+                    message = message+str(loc)
+                    message = message+" yet. Sorry!"
+                    dispatcher.utter_message(template="utter_wrong_location")
+                    return {"location": None}
+                else:
+                    message = "We do not operate in location:"
+                    message = message+str(loc)
+                    message = message+" yet. But, did you mean any of the following?"
+                    for nearest_city in nearest_cities:
+                        message += " "
+                        message += nearest_city
+                    dispatcher.utter_message(message)
+                    return {"location": None}
+            dispatcher.utter_message("location Validated")
+            # validation succeeded, set the value of the "cuisine" slot to value
+            return {"location": value}
+        else:
+            dispatcher.utter_message(template="utter_wrong_location")
+            # validation failed, set this slot to None, meaning the
+            # user will be asked for the slot again
+            return {"location": None}
+            
+
+
+    def fetch_nearest_cities(self, location, n=1):
+        possible_city_suggestions = []
+        location_set = set([ch for ch in location.lower()])
+        for city in self.city_set:
+            possible_city_set = self.city_set[city]
+            if len(location_set.difference(possible_city_set)) <= n and len(possible_city_set.difference(location_set)) <= n:
+                possible_city_suggestions.append(city)
+        print("for city:",location," "," possible suggestions:", possible_city_suggestions)
+        return possible_city_suggestions
+            
+
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        """Define what the form has to do
+            after all required slots are filled"""
+
+        # utter submit template
+        dispatcher.utter_message(template="utter_submit")
+        return []

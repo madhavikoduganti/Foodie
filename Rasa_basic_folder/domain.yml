@@ -8,24 +8,32 @@ actions:
 - utter_ask_howcanhelp
 - utter_ask_id
 - utter_ask_location
+- utter_ask_price
 - utter_ask_price_range
 - utter_ask_send_details
 - utter_default
 - utter_goodbye
 - utter_greet
 - utter_sent_mail
+- utter_slots_values
+- utter_submit
+- utter_wrong_cuisine
+- utter_wrong_location
+- utter_wrong_price
 entities:
 - contact_email
 - cuisine
 - location
 - price
+forms:
+- restaurant_form
 intents:
-- deny
-- restaurant_search
 - affirm
-- contact_id
-- greet
 - price_info
+- restaurant_search
+- greet
+- contact_id
+- deny
 - out_of_scope
 - out_of_context
 - goodbye
@@ -59,7 +67,7 @@ responses:
   - text: Where do you wanna eat?
   - text: Where would you like to eat?
   - text: Where are you right now?
-  utter_ask_price_range:
+  utter_ask_price:
   - buttons:
     - payload: lt300
       title: Lesser than Rs. 300
@@ -98,6 +106,16 @@ responses:
   - text: Sent you the mail :)
   - text: Sending.... Sending... Sent you the mail :)
   - text: Sent. Open your mail and be amazed at my awesomeness!
+  utter_slots_values:
+  - text: I am going to run a restaurant search
+  utter_submit:
+  - text: Thanks. I got all the information I needed :)
+  utter_wrong_cuisine:
+  - text: I am still learning. Can you please help me by selecting right cuisine?
+  utter_wrong_location:
+  - text: I am still learning. Can you please help me by selecting right location?
+  utter_wrong_price:
+  - text: I am still learning. Can you please help me by selecting right price?
 session_config:
   carry_over_slots_to_new_session: false
   session_expiration_time: 3
@@ -123,3 +141,5 @@ slots:
     - 300to700
     - mt700
     - __other__
+  requested_slot:
+    type: unfeaturized

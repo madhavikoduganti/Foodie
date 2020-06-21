@@ -105,6 +105,9 @@
 - show me restaurants in range [300 and 700]{"entity": "price", "value": "300to700"}
 - I can do [less than 300]{"entity": "price", "value": "lt300"}
 - so much [more than 700]{"entity": "price", "value": "mt700"}
+- My budget is [less than 300]{"entity": "price", "value": "lt300"}
+- Rs. 300 to 700 [(300to70]{"entity": "price", "value": "300to700"}0)
+- I can do [more than 700]{"entity": "price", "value": "mt700"}
 
 ## intent:goodbye
 - bye
@@ -213,6 +216,10 @@
 - it is [manasa.koduganti@gmail.com](contact_email)
 - to [madhavi.koduganti@gmail.com](contact_email)
 - to [maddykoduganti@gmail.com](contact_email)
+- my email id is [maddykoduganti@gmail.com](contact_email)
+- My mail id is [madhavi.koduganti@gmail.com](contact_email)
+- yes please. Send it to [madhavi.koduganti@gmail.com](contact_email)
+- my email id is [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [sindian](cuisine)
@@ -665,6 +672,25 @@
 - in [Sonalpur]{"entity": "location", "value": "Solapur"}
 - please show me [chinese](cuisine) restaurants for [less than 300]{"entity": "price", "value": "lt300"}
 - in [Patna](location)
+- I am looking for restaurants
+- I would like [Italian]{"entity": "cuisine", "value": "italian"}
+- Please help me with finding restaurants
+- I am in [Ghaziabad](location)
+- Can you please help me find some restaurants
+- [South]{"entity": "location", "value": "sindian"}
+- Can you please help me fine restaurants
+- I would prefer [south]{"entity": "cuisine", "value": "sindian"}
+- I am in [Hyderabad](location)
+- Can you please help me with some hotels?
+- In [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
+- Please help me find some restaurants
+- 2: [South Indian (sindian](cuisine))
+- I would like [south]{"entity": "cuisine", "value": "sindian"}
+- Can you please help me find some good hotels
+- In [hyderbad](location)
+- in [byderabad](location)
+- [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- I would like [north]{"entity": "cuisine", "value": "nindian"}
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -708,6 +734,43 @@
 - on the floor
 - I dont know
 - do whatever you want to do
+- can you share your boss with me?
+- i want to get to know your owner
+- i want to know the company which designed you
+- i want to know the company which generated you
+- i want to know the company which invented you
+- i want to know who invented you
+- May I ask who invented you?
+- please tell me the company who created you
+- please tell me who created you
+- tell me more about your creators
+- tell me more about your founders
+- Ahoy matey how are you?
+- are you alright
+- are you having a good day
+- Are you ok?
+- are you okay
+- Do you feel good?
+- how are things going
+- how are things with you?
+- How are things?
+- how are you
+- how are you doing
+- how are you doing this morning
+- how are you feeling
+- how are you today
+- How are you?
+- How is the weather today?
+- What's the weather like?
+- How is the weather?
+- What is the weather at your place?
+- Do you have good weather?
+- Is it raining?
+- What's it like out there?
+- Is it hot or cold?
+- Beautiful day, isn't it?
+- What's the weather forecast?
+- Is it quite breezy outside?
 
 ## synonym:300to700
 - 300-700
@@ -720,6 +783,7 @@
 - cannot do more than 700
 - 700
 - no more than 700
+- (300to70
 - 300 700
 - less than 700
 - under 700
@@ -1192,8 +1256,8 @@
 - south Indian
 - south
 - South Indian
-- South indian
 - South
+- South indian
 
 ## synonym:vegetarian
 - veggie
