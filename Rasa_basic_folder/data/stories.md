@@ -411,28 +411,6 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* greet
-    - utter_greet
-* restaurant_search{"price": "lt300"}
-    - slot{"price": "lt300"}
-    - action_validate_location    
-    - utter_ask_location
-* restaurant_search{"location": "Mysore"}
-    - slot{"location": "Mysore"}
-    - utter_ask_cuisine
-* restaurant_search{"cuisine": "italian"}
-    - slot{"cuisine": "italian"}
-    - action_search_restaurants
-    - slot{"location": "Mysore"}
-    - utter_ask_send_details
-* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
-    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
-    - action_send_mail
-    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
-    - utter_sent_mail
-    - utter_goodbye
-    - action_restart_chat_helper
 
 ## interactive_story_1
 * greet
@@ -1350,25 +1328,7 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* restaurant_search{"cuisine": "nindian"}
-    - slot{"cuisine": "nindian"}
-    - utter_ask_price_range
-* price_info{"price": "mt700"}
-    - slot{"price": "mt700"}
-    - utter_ask_location
-* restaurant_search{"location": "Madurai"}
-    - slot{"location": "Madurai"}
-    - action_validate_location
-    - slot{"location": "madurai"}
-    - action_search_restaurants
-    - slot{"location": "madurai"}
-    - slot{"cuisine": "nindian"}
-    - slot{"price": "mt700"}
-    - utter_ask_send_details
-* deny
-    - utter_goodbye
-    - action_restart_chat_helper
+
 
 ## interactive_story_1
 * greet
@@ -2064,10 +2024,6 @@
     - utter_goodbye
     - action_restart_chat_helper
 
-## interactive_story_1
-* restaurant_search{"price": "lt300", "location": "Bhavnagar"}
-    - slot{"location": "Bhavnagar"}
-    - slot{"price": "lt300"}
 
 ## interactive_story_2
 * restaurant_search{"cuisine": "chinese", "price": "lt300", "location": "Bhaavnaga"}
@@ -2474,6 +2430,523 @@
     - slot{"price": "300to700"}
     - action_search_restaurants
     - slot{"location": "ranchi"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Mumbai"}
+    - slot{"location": "Mumbai"}
+    - action_validate_location
+    - slot{"location": "mumbai"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "mumbai"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Varanasi"}
+    - slot{"location": "Varanasi"}
+    - action_validate_location
+    - slot{"location": "varanasi"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
+    - action_search_restaurants
+    - slot{"location": "varanasi"}
+    - slot{"cuisine": "nindian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Kolkata"}
+    - slot{"location": "Kolkata"}
+    - action_validate_location
+    - slot{"location": "kolkata"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - utter_ask_price_range
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - action_search_restaurants
+    - slot{"location": "kolkata"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhappy885@gmail.com"}
+    - slot{"contact_email": "jhappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
+    - utter_ask_location
+* restaurant_search{"location": "Coimbatore"}
+    - slot{"location": "Coimbatore"}
+    - action_validate_location
+    - slot{"location": "coimbatore"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "coimbatore"}
+    - slot{"cuisine": "nindian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_location
+* restaurant_search{"location": "Moradabad"}
+    - slot{"location": "Moradabad"}
+    - action_validate_location
+    - slot{"location": "moradabad"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "moradabad"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Faridabad"}
+    - slot{"location": "Faridabad"}
+    - action_validate_location
+    - slot{"location": "faridabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
+    - utter_ask_price_range
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - action_search_restaurants
+    - slot{"location": "faridabad"}
+    - slot{"cuisine": "nindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search
+
+## interactive_story_2
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_location
+
+## interactive_story_3
+* restaurant_search{"price": "lt300"}
+    - slot{"price": "lt300"}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - utter_ask_location
+* restaurant_search{"location": "Ujjain"}
+    - slot{"location": "Ujjain"}
+    - action_validate_location
+    - slot{"location": "ujjain"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "nindian"}
+    - slot{"cuisine": "nindian"}
+    - action_search_restaurants
+    - slot{"location": "ujjain"}
+    - slot{"cuisine": "nindian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - utter_ask_location
+* restaurant_search{"location": "Rajahmundry"}
+    - slot{"location": "Rajahmundry"}
+    - action_validate_location
+    - slot{"location": "rajahmundry"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
+    - action_search_restaurants
+
+## interactive_story_2
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - utter_ask_location
+* restaurant_search{"location": "Rajkot"}
+    - slot{"location": "Rajkot"}
+    - action_validate_location
+    - slot{"location": "rajkot"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - action_search_restaurants
+    - slot{"location": "rajkot"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_2
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - utter_ask_location
+* restaurant_search{"location": "Patna"}
+    - slot{"location": "Patna"}
+    - action_validate_location
+    - slot{"location": "patna"}
+    - utter_ask_price_range
+* price_info{"price": "lt300"}
+    - slot{"price": "lt300"}
+    - action_search_restaurants
+    - slot{"location": "patna"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
+    - utter_ask_location
+* restaurant_search{"location": "Gurgaon"}
+    - slot{"location": "Gurgaon"}
+    - action_validate_location
+    - slot{"location": "gurgaon"}
+    - utter_ask_price_range
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - action_search_restaurants
+    - slot{"location": "gurgaon"}
+    - slot{"cuisine": "italian"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - utter_ask_location
+* restaurant_search{"location": "Delhi"}
+    - slot{"location": "Delhi"}
+    - action_validate_location
+    - slot{"location": "delhi"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "delhi"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+
+## interactive_story_1
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - utter_ask_location
+* restaurant_search{"location": "Delhi"}
+    - slot{"location": "Delhi"}
+    - action_validate_location
+    - slot{"location": "delhi"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "delhi"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+
+
+## interactive_story_1
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+
+
+## interactive_story_1
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawfa"}
+    - slot{"location": "Vijayawfa"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawaza"}
+    - slot{"location": "Vijayawaza"}
+    - action_validate_location
+    - slot{"location": null}
+    - utter_ask_location
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Vijayawada"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - action_validate_location
+    - slot{"location": "bangalore"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - action_search_restaurants
+    - slot{"location": "bangalore"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - utter_ask_location
+* restaurant_search{"location": "Ghaziabad"}
+    - slot{"location": "Ghaziabad"}
+    - action_validate_location
+    - slot{"location": "ghaziabad"}
+    - utter_ask_price_range
+* price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - action_search_restaurants
+    - slot{"location": "ghaziabad"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "mt700"}
+
+## interactive_story_2
+* restaurant_search{"cuisine": "mexican", "price": "300to700", "location": "Bijapur"}
+    - slot{"cuisine": "mexican"}
+    - slot{"location": "Bijapur"}
+    - slot{"price": "300to700"}
+    - action_validate_location
+    - slot{"location": "bijapur"}
+    - action_search_restaurants
+    - slot{"location": "bijapur"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_price_range
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - utter_ask_location
+* restaurant_search{"location": "bangalore"}
+    - slot{"location": "bangalore"}
+    - action_validate_location
+    - slot{"location": "bangalore"}
+    - action_search_restaurants
+    - slot{"location": "bangalore"}
     - slot{"cuisine": "chinese"}
     - slot{"price": "300to700"}
     - utter_ask_send_details

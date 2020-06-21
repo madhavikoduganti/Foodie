@@ -99,6 +99,10 @@
 - [Beyond 700]{"entity": "price", "value": "mt700"} rupees
 - Cant do more than [300]{"entity": "price", "value": "lt300"}
 - for [less than 300]{"entity": "price", "value": "lt300"}
+- I wanna eat in budget [300 and 700]{"entity": "price", "value": "300to700"}
+- show me restaurants in range [300 and 700]{"entity": "price", "value": "300to700"}
+- I can do [less than 300]{"entity": "price", "value": "lt300"}
+- so much [more than 700]{"entity": "price", "value": "mt700"}
 - [300to700](price)
 
 ## intent:goodbye
@@ -142,6 +146,7 @@
 - yooooooooooooo
 - yoo honey
 - hi there
+- HI
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -200,6 +205,9 @@
 - mail it to [madhavi.koduganti@gmail.com](contact_email)
 - yes to [jhaappy885@gmail.com](contact_email)
 - yes to [manasa.koduganti@gmail.com](contact_email)
+- [jhappy885@gmail.com](contact_email)
+- mail to [madhavi.koduganti@gmail.com](contact_email)
+- yes. to [manasa.koduganti@gmail.com](contact_email)
 - [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
@@ -534,11 +542,31 @@
 - [pyderbad](location)
 - [qondon](location)
 - I want to eat [south]{"entity": "cuisine", "value": "sindian"} for [more than 700]{"entity": "price", "value": "mt700"} in [vhavnagar](location)
-- [chavnagar](location)
-- [jhavnagar](location)
-- [khavnagar](location)
-- [lhavnagar](location)
-- [shavnagar](location)
+- I love [chinese](cuisine)
+- I wanna eat in [rajahmundry](location)
+- I am looking for [mexican](cuisine) restaurants
+- [Vijayawada](location)
+- I want to eat [mexican](cuisine) foor for [less than 700]{"entity": "price", "value": "300to700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- I am hungry in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- I wanna eat [mexico]{"entity": "cuisine", "value": "mexican"} in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
+- I want to eat for [more than 300](price) in [chinese](cuisine) cuisine in [Chennai](location)
+- Please show me some restaurants
+- [Borivali](location)
+- please show me some [italinan]{"entity": "cuisine", "value": "italian"} hotels
+- I want to eat for more [than 300](price)
+- in [Bambai]{"entity": "location", "value": "Mumbai"}
+- I would like [mexico]{"entity": "cuisine", "value": "mexican"}
+- in [mumbai]{"entity": "location", "value": "Mumbai"}
+- Please show me some [chines]{"entity": "cuisine", "value": "chinese"} restaurants
+- I am in [Rachi]{"entity": "location", "value": "Ranchi"}
+- I wanna eat
+- [Bombay]{"entity": "location", "value": "Mumbai"}
+- [Chennai](location)
+- [Kanput](location)
+- [Ahmedabad](location)
+- [Jodhpur](location)
+- [Allahabad](location)
+- [Vijayavatika](location)
 - [ghavnagar](location)
 - [abcdf](location)
 - [ejfasf](location)
@@ -563,23 +591,58 @@
 - [bijayawada](location)
 - [lijayawada](location)
 - [zijayawada](location)
-- I love [chinese](cuisine)
-- I wanna eat in [rajahmundry](location)
-- I am looking for [mexican](cuisine) restaurants
-- [Vijayawada](location)
-- I want to eat [mexican](cuisine) foor for [less than 700]{"entity": "price", "value": "300to700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
-- I am hungry in [hyderabad]{"entity": "location", "value": "Hyderabad"}
-- I wanna eat [mexico]{"entity": "cuisine", "value": "mexican"} in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
-- I want to eat for [more than 300](price) in [chinese](cuisine) cuisine in [Chennai](location)
-- Please show me some restaurants
-- [Borivali](location)
-- please show me some [italinan]{"entity": "cuisine", "value": "italian"} hotels
-- I want to eat for more [than 300](price)
-- in [Bambai]{"entity": "location", "value": "Mumbai"}
-- I would like [mexico]{"entity": "cuisine", "value": "mexican"}
-- in [mumbai]{"entity": "location", "value": "Mumbai"}
-- Please show me some [chines]{"entity": "cuisine", "value": "chinese"} restaurants
-- I am in [Rachi]{"entity": "location", "value": "Ranchi"}
+- [dsefsfgg](location)
+- [abc](location)
+- [trtsejrfg](location)
+- [jgderrr](location)
+- [idhwfwue](location)
+- [fversersa](location)
+- [fxqedaf](location)
+- [kstekuhset](location)
+- [qxzxjdfr](location)
+- [rqgfdhdf](location)
+- [dqwoo](location)
+- [oolashfdf](location)
+- [qajksff](location)
+- [jweosf](location)
+- [csde](location)
+- [ppldqqbd](location)
+- [qwgsjc](location)
+- [zbvcdjyge](location)
+- [mmnege](location)
+- [Kashi]{"entity": "location", "value": "Varanasi"}
+- I would like [north]{"entity": "cuisine", "value": "nindian"}
+- [Kolkata](location)
+- I want to eat [north indian]{"entity": "cuisine", "value": "nindian"} food
+- [Coimbatore](location)
+- Wanna eat [chinese](cuisine)
+- [Moradabad](location)
+- Please show me restaurants
+- [Faridabad](location)
+- I wanna eat [chines]{"entity": "cuisine", "value": "chinese"}
+- I wanna eat for [less than 300]{"entity": "price", "value": "lt300"}
+- [Bezawada]{"entity": "location", "value": "Vijayawada"}
+- [Avantikapuri]{"entity": "location", "value": "Ujjain"}
+- [Bejawada]{"entity": "location", "value": "Vijayawada"}
+- Show me restaurants in range [300 to 700]{"entity": "price", "value": "300to700"}
+- [Rajamandri]{"entity": "location", "value": "Rajahmundry"}
+- I would like [American]{"entity": "cuisine", "value": "american"}
+- [Chitranagri]{"entity": "location", "value": "Rajkot"}
+- [Kusumpur]{"entity": "location", "value": "Patna"}
+- Show me [italian](cuisine)
+- [Gurugram]{"entity": "location", "value": "Gurgaon"}
+- get me [south]{"entity": "cuisine", "value": "sindian"}
+- [Dilli]{"entity": "location", "value": "Delhi"}
+- Please show me [chines]{"entity": "cuisine", "value": "chinese"} hotel
+- In [Vijayawfa](location)
+- [Vijayawaza](location)
+- I am in [Vijayawada](location)
+- I am in [Bangalore]{"entity": "location", "value": "bangalore"}
+- Can you please show me some [mexican](cuisine) restaurants
+- in [ghaziabad]{"entity": "location", "value": "Ghaziabad"}
+- Please show me some [mexican](cuisine) restaurants [under 700]{"entity": "price", "value": "300to700"} in [Bijapur](location)
+- Show me [chinese](cuisine)
+- in [bengaluru]{"entity": "location", "value": "bangalore"}
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -637,6 +700,7 @@
 - no more than 700
 - 300 700
 - less than 700
+- under 700
 - not above 700
 - not beyond 700
 - not above Rs. 700
@@ -760,8 +824,8 @@
 
 ## synonym:Delhi
 - New Delhi
-- new delhi
 - Dilli
+- new delhi
 - nai dilli
 - Nai dilli
 
@@ -778,8 +842,8 @@
 - Firojabad
 
 ## synonym:Ghaziabad
-- Ghaziuddinnagar
 - ghaziabad
+- Ghaziuddinnagar
 - gajiabad
 - Gajiabad
 - Gajiabaad
@@ -827,14 +891,6 @@
 ## synonym:Jamshedpur
 - Sakchi
 
-## synonym:Jhansi
-- Gateway of Bundelkhand
-- Crossroads of India
-- City of Rani Lakshmibai
-
-## synonym:Jodhpur
-- Blue City
-
 ## synonym:Kakinada
 - Cocanada
 
@@ -851,7 +907,6 @@
 - Cochin
 
 ## synonym:Kolhapur
-- Dakshin Kashi
 - Colapore
 
 ## synonym:Kolkata
@@ -898,7 +953,6 @@
 
 ## synonym:Moradabad
 - Pital Nagri
-- Brass City
 
 ## synonym:Mumbai
 - Bombay
@@ -939,10 +993,10 @@
 - poona
 
 ## synonym:Rajahmundry
+- Rajamandri
 - Rajamahendravaram
 - Rajamandry
 - Rajamundry
-- Rajamandri
 
 ## synonym:Rajkot
 - Chitranagri
@@ -951,9 +1005,7 @@
 - Rachi
 
 ## synonym:Rourkela
-- Steel City
 - Mahanagar
-- Engineering Hub
 
 ## synonym:Sangli
 - Sahagalli
@@ -969,9 +1021,6 @@
 - Suryanagari
 - Surajpur
 - Suryapur
-- THE SILK CITY
-- THE DIAMOND CITY
-- THE GREEN CITY
 
 ## synonym:Thiruvananthapuram
 - Trivandrum
@@ -991,18 +1040,18 @@
 - Tirupur
 
 ## synonym:Ujjain
+- Avantikapuri
 - Ujjaini
 - Avanti
 - Avantika
-- Avantikapuri
 
 ## synonym:Vadodara
 - Baroda
 
 ## synonym:Varanasi
+- Kashi
 - Benares
 - Banaras
-- Kashi
 
 ## synonym:Vellore
 - Velluru
