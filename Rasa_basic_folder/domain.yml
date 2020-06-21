@@ -20,11 +20,11 @@ entities:
 - location
 - price
 intents:
-- deny
-- greet
-- restaurant_search
-- price_info
 - contact_id
+- restaurant_search
+- deny
+- price_info
+- greet
 - affirm
 - out_of_scope
 - out_of_context
@@ -104,8 +104,21 @@ slots:
   contact_email:
     type: text
   cuisine:
-    type: text
+    type: categorical
+    values:
+    - chinese
+    - nindian
+    - sindian
+    - american
+    - mexican
+    - italian
+    - __other__
   location:
     type: text
   price:
-    type: text
+    type: categorical
+    values:
+    - lt300
+    - 300to700
+    - mt700
+    - __other__

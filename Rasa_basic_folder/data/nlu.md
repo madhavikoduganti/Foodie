@@ -14,8 +14,6 @@
 - thanks
 - Thanks
 - on my couch
-- in [kozikode](location)
-- in [kozhikode](location)
 
 ## intent:deny
 - no
@@ -38,67 +36,69 @@
 - nnnno
 - n
 - noppy
-- in [kakinada](location)
-- in [soupkela](location)
 
 ## intent:price_info
-- [LT300](price)
-- [MT700](price)
-- [300To700](price)
-- I can't do more than [300]{"entity": "price", "value": "LT300"}
-- I cannot pay more than [300]{"entity": "price", "value": "LT300"}
-- I can not go more than [300]{"entity": "price", "value": "LT300"}
-- I can not go beyond [300]{"entity": "price", "value": "LT300"}
-- My budget is [300]{"entity": "price", "value": "LT300"}
-- [Less than Rs. 300]{"entity": "price", "value": "LT300"}
-- [less than 300]{"entity": "price", "value": "LT300"}
-- [lesser than 300]{"entity": "price", "value": "LT300"}
-- [Less than 300]{"entity": "price", "value": "LT300"}
-- [300]{"entity": "price", "value": "LT300"}
-- [<300]{"entity": "price", "value": "LT300"}
-- [< 300]{"entity": "price", "value": "LT300"}
-- [Lesser than Rs. 300]{"entity": "price", "value": "LT300"}
-- [below 300]{"entity": "price", "value": "LT300"}
-- I have [not more than 300]{"entity": "price", "value": "LT300"}
-- I can do [not more than 300]{"entity": "price", "value": "LT300"}
-- budget is [not more than 300]{"entity": "price", "value": "LT300"}
-- My budget is [not more than 300]{"entity": "price", "value": "LT300"}
-- [300-700]{"entity": "price", "value": "300To700"} range
-- [between 300 and 700]{"entity": "price", "value": "300To700"}
-- [Rs. 300 to 700]{"entity": "price", "value": "300To700"}
-- [300 to 700]{"entity": "price", "value": "300To700"}
-- from [300 to 700]{"entity": "price", "value": "300To700"}
-- about [300 to 700]{"entity": "price", "value": "300To700"}
-- in range [300 and 700]{"entity": "price", "value": "300To700"}
-- I have [not more than 700]{"entity": "price", "value": "300To700"}
-- I can do [not more than 700]{"entity": "price", "value": "300To700"}
-- I [can't do more than 700]{"entity": "price", "value": "300To700"}
-- I [cannot do more than 700]{"entity": "price", "value": "300To700"}
-- budget is [not more than 700]{"entity": "price", "value": "300To700"}
-- My budget is [not more than 700]{"entity": "price", "value": "300To700"}
-- My budget is [700]{"entity": "price", "value": "300To700"}
-- [More than 700]{"entity": "price", "value": "MT700"}
-- [more than 700]{"entity": "price", "value": "MT700"}
-- [Above 700]{"entity": "price", "value": "MT700"}
-- [above 700]{"entity": "price", "value": "MT700"}
-- [> 700]{"entity": "price", "value": "MT700"}
-- [>700]{"entity": "price", "value": "MT700"}
-- I want budget [more than 700]{"entity": "price", "value": "MT700"}
-- I can do [more than 700]{"entity": "price", "value": "MT700"}
-- [less than 300]{"entity": "price", "value": "LT300"} is my budget
-- my budget is [< 300]{"entity": "contact_email", "value": "LT300"}
-- I am a rich kid. I can do [more than 700]{"entity": "price", "value": "MT700"}
-- I am so rich that I can go far [beyond 700]{"entity": "price", "value": "MT700"}
-- I can do [more than just 700]{"entity": "price", "value": "MT700"}
-- [beyond 700]{"entity": "price", "value": "MT700"}
-- [more than 700]{"entity": "price", "value": "MT700"} rupees please
-- within [300 and 700]{"entity": "price", "value": "300To700"}
-- I cannot do more than [300]{"entity": "price", "value": "LT300"}
-- I have < [700]{"entity": "price", "value": "300To700"}
-- I have [only 300]{"entity": "price", "value": "LT300"} rupees
-- I can do [no more than 700]{"entity": "price", "value": "300To700"}
-- my budget is [less than 300]{"entity": "price", "value": "LT300"}
-- I can do no more than [300]{"entity": "price", "value": "LT300"}
+- [lt300](price)
+- [mt700](price)
+- [300to700](price)
+- I can't do more than [300]{"entity": "price", "value": "lt300"}
+- I cannot pay more than [300]{"entity": "price", "value": "lt300"}
+- I can not go more than [300]{"entity": "price", "value": "lt300"}
+- I can not go beyond [300]{"entity": "price", "value": "lt300"}
+- My budget is [300]{"entity": "price", "value": "lt300"}
+- [Less than Rs. 300]{"entity": "price", "value": "lt300"}
+- [less than 300]{"entity": "price", "value": "lt300"}
+- [lesser than 300]{"entity": "price", "value": "lt300"}
+- [Less than 300]{"entity": "price", "value": "lt300"}
+- [300]{"entity": "price", "value": "lt300"}
+- [<300]{"entity": "price", "value": "lt300"}
+- [< 300]{"entity": "price", "value": "lt300"}
+- [Lesser than Rs. 300]{"entity": "price", "value": "lt300"}
+- [below 300]{"entity": "price", "value": "lt300"}
+- I have [not more than 300]{"entity": "price", "value": "lt300"}
+- I can do [not more than 300]{"entity": "price", "value": "lt300"}
+- budget is [not more than 300]{"entity": "price", "value": "lt300"}
+- My budget is [not more than 300]{"entity": "price", "value": "lt300"}
+- [300-700]{"entity": "price", "value": "300to700"} range
+- [between 300 and 700]{"entity": "price", "value": "300to700"}
+- [Rs. 300 to 700]{"entity": "price", "value": "300to700"}
+- [300 to 700]{"entity": "price", "value": "300to700"}
+- from [300 to 700]{"entity": "price", "value": "300to700"}
+- about [300 to 700]{"entity": "price", "value": "300to700"}
+- in range [300 and 700]{"entity": "price", "value": "300to700"}
+- I have [not more than 700]{"entity": "price", "value": "300to700"}
+- I can do [not more than 700]{"entity": "price", "value": "300to700"}
+- I [can't do more than 700]{"entity": "price", "value": "300to700"}
+- I [cannot do more than 700]{"entity": "price", "value": "300to700"}
+- budget is [not more than 700]{"entity": "price", "value": "300to700"}
+- My budget is [not more than 700]{"entity": "price", "value": "300to700"}
+- My budget is [700]{"entity": "price", "value": "300to700"}
+- [More than 700]{"entity": "price", "value": "mt700"}
+- [more than 700]{"entity": "price", "value": "mt700"}
+- [Above 700]{"entity": "price", "value": "mt700"}
+- [above 700]{"entity": "price", "value": "mt700"}
+- [> 700]{"entity": "price", "value": "mt700"}
+- [>700]{"entity": "price", "value": "mt700"}
+- I want budget [more than 700]{"entity": "price", "value": "mt700"}
+- I can do [more than 700]{"entity": "price", "value": "mt700"}
+- [less than 300]{"entity": "price", "value": "lt300"} is my budget
+- my budget is [< 300]{"entity": "contact_email", "value": "lt300"}
+- I am a rich kid. I can do [more than 700]{"entity": "price", "value": "mt700"}
+- I am so rich that I can go far [beyond 700]{"entity": "price", "value": "mt700"}
+- I can do [more than just 700]{"entity": "price", "value": "mt700"}
+- [beyond 700]{"entity": "price", "value": "mt700"}
+- [more than 700]{"entity": "price", "value": "mt700"} rupees please
+- within [300 and 700]{"entity": "price", "value": "300to700"}
+- I [cannot do more than 300]{"entity": "price", "value": "lt300"}
+- I have < [700]{"entity": "price", "value": "300to700"}
+- I have [only 300]{"entity": "price", "value": "lt300"} rupees
+- I can do [no more than 700]{"entity": "price", "value": "300to700"}
+- my budget is [less than 300]{"entity": "price", "value": "lt300"}
+- I can do [no more than 300]{"entity": "price", "value": "lt300"}
+- [Beyond Rs. 700]{"entity": "price", "value": "mt700"}
+- [Beyond 700]{"entity": "price", "value": "mt700"} rupees
+- Cant do more than [300]{"entity": "price", "value": "lt300"}
+- [300to700](price)
 
 ## intent:goodbye
 - bye
@@ -140,9 +140,6 @@
 - wassupp
 - yooooooooooooo
 - yoo honey
-- in [dehradoon]{"entity": "location", "value": "Dehradun"}
-- get me [south]{"entity": "cuisine", "value": "SIndian"}
-- in [hyderbad](location)
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -197,6 +194,11 @@
 - [manasa.koduganti@gmail.com](contact_email)
 - [jhaappy885@gmail.com](contact_email)
 - to [manasa.koduganti@gmail.com](contact_email)
+- to [jhaappy885@gmail.com](contact_email)
+- mail it to [madhavi.koduganti@gmail.com](contact_email)
+- yes to [jhaappy885@gmail.com](contact_email)
+- yes to [manasa.koduganti@gmail.com](contact_email)
+- [madhavi.koduganti@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [SIndian](cuisine)
@@ -224,7 +226,7 @@
 - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants in the [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
-- show me a [mexican](cuisine) place in the [centre](location)
+- show me a [mexican]{"entity": "cuisine", "value": "Mexican"} place in the [centre](location)
 - anywhere in the [west](location)
 - I am looking for [asian fusion](cuisine) food
 - I am looking a restaurant in [294328](location)
@@ -267,7 +269,7 @@
 - please show me some [Mexican](cuisine) eateries in [delhi](location)
 - please show me some [Mexican](cuisine) dine-outs in [Mangalore](location)
 - please show me some [Mexican](cuisine) eateries in [Kozhikode](location)
-- please show me some [mexican](cuisine) eateries in [chennai](location)
+- please show me some [mexican]{"entity": "cuisine", "value": "Mexican"} eateries in [chennai](location)
 - please show me some [south indian]{"entity": "cuisine", "value": "SIndian"} hotels in [bangalore](location)
 - please show me some [north Indian]{"entity": "cuisine", "value": "NIndian"} eateries in [delhi](location)
 - please show me some [italinan]{"entity": "cuisine", "value": "Italian"} dine-outs in [Mangalore](location)
@@ -286,7 +288,7 @@
 - please find me [Mexican](cuisine) restaurant in [delhi](location)
 - please find me [Mexican](cuisine) restaurant in [Mangalore](location)
 - please find me [Mexican](cuisine) restaurant in [Kozhikode](location)
-- please find me [mexican](cuisine) restaurant in [chennai](location)
+- please find me [mexican]{"entity": "cuisine", "value": "Mexican"} restaurant in [chennai](location)
 - please find me [south indian]{"entity": "cuisine", "value": "SIndian"} restaurant in [bangalore](location)
 - please find me [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurant in [delhi](location)
 - please find me [italinan]{"entity": "cuisine", "value": "Italian"} restaurant in [Mangalore](location)
@@ -307,15 +309,15 @@
 - please show me some [Mexican](cuisine) restaurants in [delhi](location)
 - please show me some [Mexican](cuisine) restaurants in [Mangalore](location)
 - please show me some [Mexican](cuisine) restaurants in [Kozhikode](location)
-- please show me some [mexican](cuisine) restaurants in [chennai](location)
+- please show me some [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants in [chennai](location)
 - please show me some [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [bangalore](location)
 - please show me some [north Indian]{"entity": "cuisine", "value": "NIndian"} restaurants in [delhi](location)
 - please show me some [italinan]{"entity": "cuisine", "value": "Italian"} restaurants in [Mangalore](location)
 - please show me some [american]{"entity": "cuisine", "value": "American"} restaurants in [Kozhikode](location)
 - please find me a restaurant in [ahmedabad](location)
-- please show me a few [italian](cuisine) restaurants in [bangalore](location)
-- get me [italian](cuisine) restaurants in [bangalore](location)
-- get me [italian](cuisine) restaurants from [bangalore](location)
+- please show me a few [italian]{"entity": "cuisine", "value": "Italian"} restaurants in [bangalore](location)
+- get me [italian]{"entity": "cuisine", "value": "Italian"} restaurants in [bangalore](location)
+- get me [italian](cuisineItalian) restaurants from [bangalore](location)
 - get me restaurants from [bangalore](location)
 - please show me restaurants from Quilon[]{"entity": "location", "value": "Quilon"}
 - I’m hungry. Looking out for some good restaurants
@@ -332,17 +334,17 @@
 - Can you suggest some good restaurants in [Kolkata](location)
 - Can you suggest some good restaurants in [kolkata](location)
 - Can you show me some good [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Kurnool](location)
-- can you show me restaurants in [below 300]{"entity": "price", "value": "LT300"}
+- can you show me restaurants in [below 300]{"entity": "price", "value": "lt300"}
 - can you show me some [chinese](cuisine) restaurants
 - in [Dehradun](location)
 - can you show me some restaurants in [Vadodara](location)
-- Can you show me some [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in price range [above 700]{"entity": "price", "value": "MT700"} in [Calicut]{"entity": "location", "value": "Kozhikode"}
-- I want to know about some healthy [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants in [Vadodara](location) for price range [between 300 and 700]{"entity": "price", "value": "300To700"}
-- can you show me some great restaurants for price [less than 300]{"entity": "price", "value": "LT300"}
+- Can you show me some [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in price range [above 700]{"entity": "price", "value": "mt700"} in [Calicut]{"entity": "location", "value": "Kozhikode"}
+- I want to know about some healthy [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants in [Vadodara](location) for price range [between 300 and 700]{"entity": "price", "value": "300to700"}
+- can you show me some great restaurants for price [less than 300]{"entity": "price", "value": "lt300"}
 - in [Mysore](location)
-- Can you show me some of my favourite non vegetarian [american]{"entity": "cuisine", "value": "American"} restaurants in [Maikala]{"entity": "location", "value": "Mangalore"} for the price range in [300 700]{"entity": "price", "value": "300To700"}?
+- Can you show me some of my favourite non vegetarian [american]{"entity": "cuisine", "value": "American"} restaurants in [Maikala]{"entity": "location", "value": "Mangalore"} for the price range in [300 700]{"entity": "price", "value": "300to700"}?
 - hello there. Show me some restaurants from [Chennai](location)
-- Get me [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants from [Chennai](location) in price range [above 700]{"entity": "price", "value": "MT700"}
+- Get me [mexican]{"entity": "cuisine", "value": "Mexican"} restaurants from [Chennai](location) in price range [above 700]{"entity": "price", "value": "mt700"}
 - I wanna see hotels from [Bangalore](location)
 - show me restaurants from [Ghaziabad](location)
 - can you show me some hotels from [Indore](location)?
@@ -356,41 +358,41 @@
 - I am very very hungry and I want to eat. I am sitting in [rreywif](location)
 - Can you please show me some restaurants in [Bhilai](location)
 - Can you please show me some restaurants in [ggfgeurgedfg](location)
-- I want find some [mexican]{"entity": "cuisine", "value": "Mexican"} eateries in [Hyderabad](location) in range [more than 700]{"entity": "price", "value": "MT700"}
+- I want find some [mexican]{"entity": "cuisine", "value": "Mexican"} eateries in [Hyderabad](location) in range [more than 700]{"entity": "price", "value": "mt700"}
 - my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My blood pressure and glucose is going so down that I can faint right now.
-- my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My vitals are going down and I am about to fall down. I am not that rich so please show me [below 300]{"entity": "price", "value": "LT300"}. Also I have not seen world much either so I am going to stick to my local [north indian]{"entity": "cuisine", "value": "NIndian"}. Please help me out.
+- my name is madhavi. I am very hungry. I want to eat. I should eat right now. I am in [Vijayawada](location). My vitals are going down and I am about to fall down. I am not that rich so please show me [below 300]{"entity": "price", "value": "lt300"}. Also I have not seen world much either so I am going to stick to my local [north indian]{"entity": "cuisine", "value": "NIndian"}. Please help me out.
 - get me some top restaurants from [Cuttack](location)
 - I am hungry. I need to eat. I am in [Guntur](location)
 - Show me restaurants from [Hyderabad](location)
 - Show me restaurants from [hyderabad](location)
 - I want [American](cuisine)
 - Get me restaurants from [Vizag]{"entity": "location", "value": "Visakhapatnam"}
-- Please tell me about hotels in [Vijayawada](location) with avg. budget of [less than 300]{"entity": "price", "value": "LT300"}
-- show me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [chennai](location) [above 700]{"entity": "price", "value": "MT700"}
+- Please tell me about hotels in [Vijayawada](location) with avg. budget of [less than 300]{"entity": "price", "value": "lt300"}
+- show me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [chennai](location) [above 700]{"entity": "price", "value": "mt700"}
 - Please help me find som erestaurants
 - Get me some restaurants
 - [Sonalpur]{"entity": "location", "value": "Solapur"}
 - [Rachi]{"entity": "location", "value": "Ranchi"}
-- Can you please show me some [Italian](cuisine) restaurants from [Nasik]{"entity": "location", "value": "Nashik"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Coimbatore](location) for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Koyampuththoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Koyamputhoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Kovai]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Kodial]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Maikala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Mangalooru]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Kodeyaala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Manjarun]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Mangalapuram]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Mangalore](location) for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [mangalore](location) for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Mexican](cuisine) restaurants from [Patna](location) for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [Italian](cuisine) restaurants from [Palibothra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [Pataliputra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [south Indian]{"entity": "cuisine", "value": "SIndian"} restaurants from [Pushpapura]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [American](cuisine) restaurants from [Kusumpur]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
-- hi. Get me some [chinese](cuisine) restaurants from [Azimabad]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "MT700"}
-- Hi, Get me some [Italian](cuisine) restaurants from [Kathiawad]{"entity": "location", "value": "Bhavnagar"} for price [more than 700]{"entity": "price", "value": "MT700"}
+- Can you please show me some [Italian](cuisine) restaurants from [Nasik]{"entity": "location", "value": "Nashik"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Coimbatore](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Koyampuththoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Koyamputhoor]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Kovai]{"entity": "location", "value": "Coimbatore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Kodial]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Maikala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Mangalooru]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Kodeyaala]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Manjarun]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Mangalapuram]{"entity": "location", "value": "Mangalore"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Mangalore](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [mangalore](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Mexican](cuisine) restaurants from [Patna](location) for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [Italian](cuisine) restaurants from [Palibothra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [north indian]{"entity": "cuisine", "value": "NIndian"} restaurants from [Pataliputra]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [south Indian]{"entity": "cuisine", "value": "SIndian"} restaurants from [Pushpapura]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [American](cuisine) restaurants from [Kusumpur]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- hi. Get me some [chinese](cuisine) restaurants from [Azimabad]{"entity": "location", "value": "Patna"} for price [above 700]{"entity": "price", "value": "mt700"}
+- Hi, Get me some [Italian](cuisine) restaurants from [Kathiawad]{"entity": "location", "value": "Bhavnagar"} for price [more than 700]{"entity": "price", "value": "mt700"}
 - Please get me some restaurants from [Chakra Kshetra]{"entity": "location", "value": "Bhubaneswar"}
 - Please get me some restaurants from [Ekamra Kanan]{"entity": "location", "value": "Bhubaneswar"}
 - Please get me some restaurants from [Ekamra Kshetra]{"entity": "location", "value": "Bhubaneswar"}
@@ -399,7 +401,7 @@
 - Please get me some restaurants from [Turmeric City]{"entity": "location", "value": "Erode"}
 - Please get me some restaurants from [Pink City]{"entity": "location", "value": "Jaipur"}
 - Please show me some restaurants from [Pital Nagri]{"entity": "location", "value": "Moradabad"}
-- hi. Please get me some [North Indian]{"entity": "cuisine", "value": "NIndian"} restaurants for price [under 300]{"entity": "price", "value": "LT300"} in [Nath Nagri]{"entity": "location", "value": "Bareilly"}
+- hi. Please get me some [North Indian]{"entity": "cuisine", "value": "NIndian"} restaurants for price [under 300]{"entity": "price", "value": "lt300"} in [Nath Nagri]{"entity": "location", "value": "Bareilly"}
 - so sooo hungry
 - [gibberland](location)
 - hungry
@@ -426,9 +428,9 @@
 - [uilaps](location)
 - I wanna eat [chinese](cuisine)
 - in [Bangalore]{"entity": "location", "value": "bangalore"}
-- looking for [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Goa](location) for price [less than 300]{"entity": "price", "value": "LT300"}
+- looking for [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants in [Goa](location) for price [less than 300]{"entity": "price", "value": "lt300"}
 - hungry in [surat](location)
-- I wanna eat [chines]{"entity": "cuisine", "value": "chinese"} for  [above Rs. 700]{"entity": "price", "value": "MT700"} in [roURkeLa](location)
+- I wanna eat [chines]{"entity": "cuisine", "value": "chinese"} for  [above Rs. 700]{"entity": "price", "value": "mt700"} in [roURkeLa](location)
 - I want to eat [iTaLIaN]{"entity": "cuisine", "value": "Italian"}
 - in [JaLaNDHaR](location)
 - Please find me some [mexico]{"entity": "cuisine", "value": "Mexican"} restaurants
@@ -483,14 +485,14 @@
 - I want to eat at [sajehg](cuisine) dine out
 - I want to eat at [erwedjgw](cuisine) restaurants
 - I want to eat at [weyuew](cuisine) restaurant
-- I want to eat [us]{"entity": "cuisine", "value": "American"} within [300 and 700]{"entity": "price", "value": "300To700"} in [bambai]{"entity": "location", "value": "Mumbai"}
+- I want to eat [us]{"entity": "cuisine", "value": "American"} within [300 and 700]{"entity": "price", "value": "300to700"} in [bambai]{"entity": "location", "value": "Mumbai"}
 - I want to eat in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
 - I want to eat [us]{"entity": "cuisine", "value": "American"}
 - [South Indian]{"entity": "cuisine", "value": "SIndian"}
 - with my brother in [Guntur](location)
 - in [Ranchi](location)
 - I would like [america]{"entity": "cuisine", "value": "America"}
-- I wanna eat for [more than 700]{"entity": "price", "value": "MT700"}
+- I wanna eat for [more than 700]{"entity": "price", "value": "mt700"}
 - in [Chandigarh](location)
 - I wanna eat [mexico]{"entity": "cuisine", "value": "Mexican"}
 - I am hungry
@@ -499,16 +501,18 @@
 - in [Vijayawafa](location)
 - in [Vijayawada](location)
 - I would like to eat [south]{"entity": "cuisine", "value": "SIndian"}
-- I am hungry in [pijayawada](location) and want to eat at [chines]{"entity": "cuisine", "value": "chinese"} hotel for [less than 300]{"entity": "price", "value": "LT300"}
+- I am hungry in [pijayawada](location) and want to eat at [chines]{"entity": "cuisine", "value": "chinese"} hotel for [less than 300]{"entity": "price", "value": "lt300"}
 - in [vijYwafa](location)
 - I am hungry in [durnool](location)
 - in [furnool](location)
 - in [kurnool](location)
-- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} for [more than 700]{"entity": "price", "value": "MT700"} budget in [pyderbad](location)
-- I am looking at [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants [under 300]{"entity": "price", "value": "LT300"} budget in [lumbai](location)
+- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} for [more than 700]{"entity": "price", "value": "mt700"} budget in [pyderbad](location)
+- I am looking at [south indian]{"entity": "cuisine", "value": "SIndian"} restaurants [under 300]{"entity": "price", "value": "lt300"} budget in [lumbai](location)
 - I meant in [mumbai]{"entity": "location", "value": "Mumbai"}
 - I am looking for some restaurants
-- I am looking for hotels [under 300]{"entity": "price", "value": "LT300"}
+- I am looking for [chines]{"entity": "cuisine", "value": "chinese"} cuisine hotel
+- I am looking for [chines]{"entity": "cuisine", "value": "chinese"}  cuisine restaurant
+- I am looking for hotels [under 300]{"entity": "price", "value": "lt300"}
 - In [Kakinada](location)
 - cuisine is [chines]{"entity": "cuisine", "value": "chinese"}
 - cuisine is [american]{"entity": "cuisine", "value": "American"}
@@ -523,6 +527,53 @@
 - in [paranasi](location)
 - in [tiruchirapali](location)
 - in [piruchirapalli](location)
+- Please help me with finding hotels
+- in [Moradabad](location)
+- please help me find eateries
+- in [Velluru]{"entity": "location", "value": "Vellore"}
+- I am looking for [North Indian]{"entity": "cuisine", "value": "NIndian"} cuisine hotel for [more than 700]{"entity": "price", "value": "mt700"} in [Bhav nagar]{"entity": "location", "value": "Bhavnagar"}
+- I am looking for chines cuisine hotel for [less than 300]{"entity": "price", "value": "lt300"} rupees in [Bhaavnagar]{"entity": "location", "value": "Bhavnagar"}
+- I am looking for [chines]{"entity": "cuisine", "value": "chinese"}  hotel for [less than 300]{"entity": "price", "value": "lt300"} rupees in [Bhaavnaga](location)
+- [bhavnagar]{"entity": "location", "value": "Bhavnagar"}
+- I wan tto eat [south]{"entity": "cuisine", "value": "SIndian"} for [more than 700]{"entity": "price", "value": "mt700"} in [nyderbad](location)
+- [wyderbad](location)
+- [pyderbad](location)
+- [qondon](location)
+- I want to eat [south]{"entity": "cuisine", "value": "SIndian"} for [more than 700]{"entity": "price", "value": "mt700"} in [vhavnagar](location)
+- [chavnagar](location)
+- [jhavnagar](location)
+- [khavnagar](location)
+- [lhavnagar](location)
+- [shavnagar](location)
+- [ghavnagar](location)
+- [abcdf](location)
+- [ejfasf](location)
+- [aerhfg awhefg](location)
+- [dtywf](location)
+- [awefuf](location)
+- [awfawe](location)
+- [oiubhu](location)
+- [msdfgbabcdf](location)
+- [sere](location)
+- [the sjhg erjgf](location)
+- [eru erferf](location)
+- [pbert sergkjeg](location)
+- [opehew](location)
+- [zgnzsrf](location)
+- [ffawe](location)
+- [arfjhrf](location)
+- [awyfdf](location)
+- [iiaeugff](location)
+- [vijayawada](location)
+- in [vijayawafa](location)
+- [bijayawada](location)
+- [lijayawada](location)
+- [zijayawada](location)
+- I love [chinese](cuisine)
+- I wanna eat in [rajahmundry](location)
+- I am looking for [Mexican](cuisine) restaurants
+- [Vijayawada](location)
+- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} foor for [less than 700]{"entity": "price", "value": "300to700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -567,7 +618,7 @@
 - I dont know
 - do whatever you want to do
 
-## synonym:300To700
+## synonym:300to700
 - 300-700
 - between 300 and 700
 - Rs. 300 to 700
@@ -657,11 +708,11 @@
 
 ## synonym:Bhavnagar
 - Kathiawad
-- Kathiawar
-- Bhaavnagar
-- Bhaav nagar
 - Bhav nagar
+- Bhaavnagar
 - bhavnagar
+- Kathiawar
+- Bhaav nagar
 
 ## synonym:Bhubaneswar
 - Chakra Kshetra
@@ -765,9 +816,9 @@
 
 ## synonym:Italian
 - italinan
+- italian
 - iTaLIaN
 - italy
-- italian
 - Italy
 
 ## synonym:Jabalpur
@@ -830,7 +881,7 @@
 ## synonym:Kurnool
 - Kandanavolu
 
-## synonym:LT300
+## synonym:lt300
 - 300
 - Less than Rs. 300
 - less than 300
@@ -841,10 +892,11 @@
 - Lesser than Rs. 300
 - below 300
 - not more than 300
+- cannot do more than 300
 - only 300
+- no more than 300
 - under 300
 - not above 300
-- no more than 300
 - not beyond 300
 - not above Rs. 300
 - not more than Rs. 300
@@ -858,7 +910,7 @@
 ## synonym:Lucknow
 - Lakhanpur
 
-## synonym:MT700
+## synonym:mt700
 - More than 700
 - more than 700
 - Above 700
@@ -867,6 +919,8 @@
 - >700
 - beyond 700
 - more than just 700
+- Beyond Rs. 700
+- Beyond 700
 - above Rs. 700
 
 ## synonym:Madurai
@@ -965,9 +1019,9 @@
 - Engineering Hub
 
 ## synonym:SIndian
-- south
 - south indian
 - south Indian
+- south
 - South Indian
 - South indian
 - South
@@ -1022,8 +1076,8 @@
 - Kashi
 
 ## synonym:Vellore
-- Velore
 - Velluru
+- Velore
 
 ## synonym:Vijayawada
 - Vijayavatika

@@ -11,7 +11,7 @@ import json
 import pandas as pd
 import re
 import traceback
-
+ 
 
 import logging
 logging.basicConfig(level=logging.WARN)
@@ -46,6 +46,7 @@ class Validator:
         else:
             cuisine_name = cuisine
         return cuisine_name
+        
 
 
 class ActionValidateLocation(Action):
@@ -99,17 +100,35 @@ class ActionSearchRestaurants(Action):
           
     def run(self, dispatcher, tracker, domain):
         try:
+            print("domain values for cuisine:",domain['slots']['cuisine']['values'])
+            print("domain values for price:",domain['slots']['price']['values'])
+            cuisines_dict={'american':1,'chinese':25,'italian':55,'mexican':73,'north indian':50,'south indian':85}
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
-            price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
+            price_abbrv = {"lt300":"less than 300", "300to700":"in range 300 and 700","mt700":"more than 700"}
             zomato = zomatopy.initialize_app(config)
+            
+
             loc = tracker.get_slot('location')
             cuisine = tracker.get_slot('cuisine')
             prc = tracker.get_slot('price')
-            
+
+            print(loc," ", cuisine, " ", prc)
+            print("domain values for cuisine:",domain['slots']['cuisine']['values'])
+            print("domain values for price:",domain['slots']['price']['values'])
             if(cuisine is None or prc is None or loc is None):
                 return [SlotSet('location',loc),SlotSet('cuisine',cuisine),SlotSet('price',prc)]
-                
-            cuisine_name = self.validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
+           
+            if cuisine.lower() not in domain['slots']['cuisine']['values'] or cuisine.lower() is "__other__":
+                return [SlotSet('cuisine',None)]
+            else:
+                cuisine = self.validator.validateAndGetCuisine(cuisine)
+           
+            if prc.lower() not in domain['slots']['price']['values'] or prc.lower() is "__other__":
+                return [SlotSet('price',None)]
+            else:
+                prc = prc.lower()
+            
+
             loc = loc.rstrip().lower()
             if loc not in self.validator.city_list:
                 print(loc," not found in city_list")
@@ -123,7 +142,6 @@ class ActionSearchRestaurants(Action):
             d1 = json.loads(location_detail)
             lat=d1["location_suggestions"][0]["latitude"]
             lon=d1["location_suggestions"][0]["longitude"]
-            cuisines_dict={'american':1,'chinese':25,'italian':55,'mexican':73,'north indian':50,'south indian':85}
             results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine_name.lower())),50)
             d = json.loads(results)
             rest_name_list = []
@@ -171,13 +189,34 @@ class ActionSendEmail(Action):
 
     def run(self, dispatcher, tracker, domain):
         try:
+
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
             price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
+            cuisines_dict={'american':1,'chinese':25,'italian':55,'mexican':73,'north indian':50,'south indian':85}
             zomato = zomatopy.initialize_app(config)
+            
+            self.validator.validate_slots(tracker,domain);
+
             loc = tracker.get_slot('location')
-            cuisine_name = self.validator.validateAndGetCuisine(tracker.get_slot('cuisine'))
             prc = tracker.get_slot('price')
+            cuisine = tracker.get_slot('cuisine')
             emailid = tracker.get_slot('contact_email')
+
+            
+            print(loc," ", cuisine, " ", prc, " ", emailid)
+            print("domain values for cuisine:",domain['slots']['cuisine']['values'])
+            print("domain values for price:",domain['slots']['price']['values'])
+            if(cuisine is None or prc is None or loc is None):
+                return [SlotSet('location',loc),SlotSet('cuisine',cuisine),SlotSet('price',prc)]
+            if tracker.get_slot('cuisine') not in domain['slots']['cuisine']['values']:
+                return [SlotSet('cuisine',None)]
+            if tracker.get_slot('price') not in domain['slots']['price']['values']:
+                return [SlotSet('price',None)]
+
+
+
+            cuisine_name = self.validator.validateAndGetCuisine(cuisine)
+
             loc = loc.rstrip().lower()
             if loc not in self.validator.city_list:
                 print(loc," not found in city_list")
@@ -190,7 +229,6 @@ class ActionSendEmail(Action):
             d1 = json.loads(location_detail)
             lat=d1["location_suggestions"][0]["latitude"]
             lon=d1["location_suggestions"][0]["longitude"]
-            cuisines_dict={'american':1,'chinese':25,'italian':55,'mexican':73,'north indian':50,'south indian':85}
             results=zomato.restaurant_search("", lat, lon, str(cuisines_dict.get(cuisine_name.lower())),50)
             d = json.loads(results)
             rest_name_list = []
