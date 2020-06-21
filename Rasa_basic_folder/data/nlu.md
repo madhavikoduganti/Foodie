@@ -98,6 +98,7 @@
 - [Beyond Rs. 700]{"entity": "price", "value": "mt700"}
 - [Beyond 700]{"entity": "price", "value": "mt700"} rupees
 - Cant do more than [300]{"entity": "price", "value": "lt300"}
+- for [less than 300]{"entity": "price", "value": "lt300"}
 - [300to700](price)
 
 ## intent:goodbye
@@ -140,6 +141,7 @@
 - wassupp
 - yooooooooooooo
 - yoo honey
+- hi there
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -225,9 +227,9 @@
 - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants in the [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
 - show me restaurants from [New Delhi]{"entity": "location", "value": "Delhi"}
-- show me a [mexican]{"entity": "cuisine", "value": "Mexican"} place in the [centre](location)
+- show me a [mexican](cuisine) place in the [centre](location)
 - I am looking for some restaurants in [Mumbai](location)
-- I am looking for [mexican indian fusion](cuisine:mexican)
+- I am looking for [mexican indian fusion]{"entity": "cuisine", "value": "mexican"}
 - please help me to find restaurants in [pune](location)
 - Please find me a restaurant in [bangalore](location)
 - get me a restaurant in [chennai](location)
@@ -244,7 +246,6 @@
 - get me [mexican](cuisine) restaurant in [delhi](location)
 - get me [mexican](cuisine) restaurant in [Mangalore](location)
 - get me [mexican](cuisine) restaurant in [Kozhikode](location)
-- get me [mexican](cuisine) restaurant in [chennai](location)
 - get me [south indian]{"entity": "cuisine", "value": "sindian"} restaurant in [bangalore](location)
 - get me [north Indian]{"entity": "cuisine", "value": "nindian"} restaurant in [delhi](location)
 - get me [italinan]{"entity": "cuisine", "value": "italian"} restaurant in [Mangalore](location)
@@ -265,7 +266,6 @@
 - please show me some [mexican](cuisine) eateries in [delhi](location)
 - please show me some [mexican](cuisine) dine-outs in [Mangalore](location)
 - please show me some [mexican](cuisine) eateries in [Kozhikode](location)
-- please show me some [mexican](cuisine) eateries in [chennai](location)
 - please show me some [south indian]{"entity": "cuisine", "value": "sindian"} hotels in [bangalore](location)
 - please show me some [north Indian]{"entity": "cuisine", "value": "nindian"} eateries in [delhi](location)
 - please show me some [italinan]{"entity": "cuisine", "value": "italian"} dine-outs in [Mangalore](location)
@@ -300,20 +300,19 @@
 - please show me some [chinese](cuisine) restaurants in [delhi](location)
 - please show me some [chinese](cuisine) restaurants in [Mangalore](location)
 - please show me some [chinese](cuisine) restaurants in [Kozhikode](location)
-- please show me some [Mexican](cuisine:mexican) restaurants in [chennai](location)
-- please show me some [Mexican](cuisine:mexican) restaurants in [bangalore](location)
-- please show me some [Mexican](cuisine:mexican) restaurants in [delhi](location)
-- please show me some [Mexican](cuisine:mexican) restaurants in [Mangalore](location)
-- please show me some [Mexican](cuisine:mexican) restaurants in [Kozhikode](location)
 - please show me some [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants in [chennai](location)
+- please show me some [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants in [bangalore](location)
+- please show me some [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants in [delhi](location)
+- please show me some [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants in [Mangalore](location)
+- please show me some [Mexican]{"entity": "cuisine", "value": "mexican"} restaurants in [Kozhikode](location)
 - please show me some [south indian]{"entity": "cuisine", "value": "sindian"} restaurants in [bangalore](location)
-- please show me some [north Indian]{"entity": "cuisine", "value": "sindian"} restaurants in [delhi](location)
+- please show me some [north Indian]{"entity": "cuisine", "value": "nindian"} restaurants in [delhi](location)
 - please show me some [italinan]{"entity": "cuisine", "value": "italian"} restaurants in [Mangalore](location)
 - please show me some [American]{"entity": "cuisine", "value": "american"} restaurants in [Kozhikode](location)
 - please find me a restaurant in [ahmedabad](location)
 - please show me a few [italian](cuisine) restaurants in [bangalore](location)
 - get me [italian](cuisine) restaurants in [bangalore](location)
-- get me [Italian](cuisine:italian) restaurants from [bangalore](location)
+- get me [Italian]{"entity": "cuisine", "value": "italian"} restaurants from [bangalore](location)
 - get me restaurants from [bangalore](location)
 - please show me restaurants from Quilon[]{"entity": "location", "value": "Quilon"}
 - I’m hungry. Looking out for some good restaurants
@@ -349,7 +348,7 @@
 - I wanna go to a [Mexican]{"entity": "cuisine", "value": "mexican"} restaurant in [Kohl]{"entity": "location", "value": "Aligarh"}
 - Want to go to a dineout in [Holkar]{"entity": "location", "value": "Indore"}
 - Can you please show me some hotels from [Chennai](location)
-- can you please help me fine some [American](cuisine:american)  restaurants in [Hyderabad](location)?
+- can you please help me fine some [American]{"entity": "cuisine", "value": "american"}  restaurants in [Hyderabad](location)?
 - Please show me some restaurants in [Chandigarh](location)
 - I am very very hungry and I want to eat. I am sitting in [rreywif](location)
 - Can you please show me some restaurants in [Bhilai](location)
@@ -429,10 +428,10 @@
 - I wanna eat [chines]{"entity": "cuisine", "value": "chinese"} for  [above Rs. 700]{"entity": "price", "value": "mt700"} in [roURkeLa](location)
 - I want to eat [iTaLIaN]{"entity": "cuisine", "value": "italian"}
 - in [JaLaNDHaR](location)
-- Please find me some [mexico]{"entity": "cuisine", "value": "Mexican"} restaurants
+- Please find me some [mexico]{"entity": "cuisine", "value": "mexican"} restaurants
 - in [JalaNDhaR](location)
 - I want to eat at [Pital Nagri]{"entity": "location", "value": "Moradabad"}
-- I want [mexcan]{"entity": "cuisine", "value": "Mexican"}
+- I want [mexcan]{"entity": "cuisine", "value": "mexican"}
 - hi. I want to eat [China]{"entity": "cuisine", "value": "chinese"}
 - hi I want to eat [china]{"entity": "cuisine", "value": "chinese"}
 - in [Rachi]{"entity": "location", "value": "Ranchi"}
@@ -442,19 +441,19 @@
 - I want to eat [north]{"entity": "cuisine", "value": "nindian"}
 - I want to eat [south]{"entity": "cuisine", "value": "sindian"}
 - I want to eat [America]{"entity": "cuisine", "value": "american"}
-- I want to eat [mexico]{"entity": "cuisine", "value": "Mexican"}
+- I want to eat [mexico]{"entity": "cuisine", "value": "mexican"}
 - show me [north]{"entity": "cuisine", "value": "nindian"} restaurants
 - show me [south]{"entity": "cuisine", "value": "sindian"} restaurants
 - show me [america]{"entity": "cuisine", "value": "american"} restaurants
-- show me [mexico]{"entity": "cuisine", "value": "Mexican"} restaurants
+- show me [mexico]{"entity": "cuisine", "value": "mexican"} restaurants
 - show me [north]{"entity": "cuisine", "value": "nindian"} hotels
 - show me [south]{"entity": "cuisine", "value": "sindian"} hotels
 - show me [america]{"entity": "cuisine", "value": "american"} hotels
-- show me [mexico]{"entity": "cuisine", "value": "Mexican"} hotels
+- show me [mexico]{"entity": "cuisine", "value": "mexican"} hotels
 - show me [north]{"entity": "cuisine", "value": "nindian"} dine-outs
 - show me [south]{"entity": "cuisine", "value": "sindian"} dine outs
 - show me [america]{"entity": "cuisine", "value": "american"} eateries
-- show me [mexico]{"entity": "cuisine", "value": "Mexican"} eatery
+- show me [mexico]{"entity": "cuisine", "value": "mexican"} eatery
 - show me [abcg](cuisine) eatery
 - show me [pqrs](cuisine) hotel
 - show me [xyza](cuisine) restaurant
@@ -487,10 +486,10 @@
 - [South Indian]{"entity": "cuisine", "value": "sindian"}
 - with my brother in [Guntur](location)
 - in [Ranchi](location)
-- I would like [america]{"entity": "cuisine", "value": "America"}
+- I would like [america]{"entity": "cuisine", "value": "american"}
 - I wanna eat for [more than 700]{"entity": "price", "value": "mt700"}
 - in [Chandigarh](location)
-- I wanna eat [mexico]{"entity": "cuisine", "value": "Mexican"}
+- I wanna eat [mexico]{"entity": "cuisine", "value": "mexican"}
 - I am hungry
 - I am hungry in [Kakiada](location)
 - I am in [Bijayawada](location)
@@ -502,7 +501,7 @@
 - I am hungry in [durnool](location)
 - in [furnool](location)
 - in [kurnool](location)
-- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} for [more than 700]{"entity": "price", "value": "mt700"} budget in [pyderbad](location)
+- I want to eat [mexican](cuisine) for [more than 700]{"entity": "price", "value": "mt700"} budget in [pyderbad](location)
 - I am looking at [south indian]{"entity": "cuisine", "value": "sindian"} restaurants [under 300]{"entity": "price", "value": "lt300"} budget in [lumbai](location)
 - I meant in [mumbai]{"entity": "location", "value": "Mumbai"}
 - I am looking for some restaurants
@@ -512,12 +511,11 @@
 - In [Kakinada](location)
 - cuisine is [chines]{"entity": "cuisine", "value": "chinese"}
 - cuisine is [American]{"entity": "cuisine", "value": "american"}
-- cuisine is [mexican]{"entity": "cuisine", "value": "Mexican"}
 - cuisine is [mexican](cuisine)
 - wanna eat [chines]{"entity": "cuisine", "value": "chinese"}
 - anywhere in [Almedabad](location)
 - [ahmedabad]{"entity": "location", "value": "Ahmedabad"}
-- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} in [Byderbad](location)
+- I want to eat [mexican](cuisine) in [Byderbad](location)
 - in [Vylarabad](location)
 - Please show me [chines]{"entity": "cuisine", "value": "chinese"} restaurants in [Varoda](location)
 - in [paranasi](location)
@@ -569,7 +567,19 @@
 - I wanna eat in [rajahmundry](location)
 - I am looking for [mexican](cuisine) restaurants
 - [Vijayawada](location)
-- I want to eat [mexican]{"entity": "cuisine", "value": "Mexican"} foor for [less than 700]{"entity": "price", "value": "300to700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- I want to eat [mexican](cuisine) foor for [less than 700]{"entity": "price", "value": "300to700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- I am hungry in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- I wanna eat [mexico]{"entity": "cuisine", "value": "mexican"} in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
+- I want to eat for [more than 300](price) in [chinese](cuisine) cuisine in [Chennai](location)
+- Please show me some restaurants
+- [Borivali](location)
+- please show me some [italinan]{"entity": "cuisine", "value": "italian"} hotels
+- I want to eat for more [than 300](price)
+- in [Bambai]{"entity": "location", "value": "Mumbai"}
+- I would like [mexico]{"entity": "cuisine", "value": "mexican"}
+- in [mumbai]{"entity": "location", "value": "Mumbai"}
+- Please show me some [chines]{"entity": "cuisine", "value": "chinese"} restaurants
+- I am in [Rachi]{"entity": "location", "value": "Ranchi"}
 
 ## intent:out_of_scope
 - Tell me about weather today
@@ -626,13 +636,13 @@
 - 700
 - no more than 700
 - 300 700
+- less than 700
 - not above 700
 - not beyond 700
 - not above Rs. 700
 - not more than Rs. 700
 - not beyond Rs. 700
 - upto 700
-- less than 700
 - maximum 700
 - limit 700
 - limit is 700
@@ -669,14 +679,6 @@
 - Prayagraj
 - Prayag
 - Illahabad
-
-## synonym:american
-- North American
-- American
-- america
-- US
-- us
-- America
 
 ## synonym:Amravati
 - amaravati
@@ -810,13 +812,6 @@
 ## synonym:Indore
 - Holkar
 
-## synonym:italian
-- italinan
-- Italian
-- iTaLIaN
-- italy
-- Italy
-
 ## synonym:Jabalpur
 - Jubbulpore
 
@@ -877,47 +872,8 @@
 ## synonym:Kurnool
 - Kandanavolu
 
-## synonym:lt300
-- 300
-- Less than Rs. 300
-- less than 300
-- lesser than 300
-- Less than 300
-- <300
-- < 300
-- Lesser than Rs. 300
-- below 300
-- not more than 300
-- cannot do more than 300
-- only 300
-- no more than 300
-- under 300
-- not above 300
-- not beyond 300
-- not above Rs. 300
-- not more than Rs. 300
-- not beyond Rs. 300
-- upto 300
-- maximum 300
-- limit 300
-- limit is 300
-- limit to 300
-
 ## synonym:Lucknow
 - Lakhanpur
-
-## synonym:mt700
-- More than 700
-- more than 700
-- Above 700
-- above 700
-- > 700
-- >700
-- beyond 700
-- more than just 700
-- Beyond Rs. 700
-- Beyond 700
-- above Rs. 700
 
 ## synonym:Madurai
 - Malligai Maanagar
@@ -940,13 +896,6 @@
 ## synonym:Meerut
 - Meerat
 
-## synonym:mexican
-- Mexican
-- mexico
-- mexcan
-- Mexico
-- Mexcan
-
 ## synonym:Moradabad
 - Pital Nagri
 - Brass City
@@ -955,23 +904,15 @@
 - Bombay
 - bambai
 - mumbai
+- Bambai
 - mumbaai
 - mumba
 - mumbayi
 - bombay
-- Bambai
 
 ## synonym:Mysore
 - Mysuru
 - Maisuru
-
-## synonym:nindian
-- north Indian
-- north indian
-- North Indian
-- north
-- North indian
-- North
 
 ## synonym:Nagpur
 - Nagpore
@@ -1013,14 +954,6 @@
 - Steel City
 - Mahanagar
 - Engineering Hub
-
-## synonym:sindian
-- south indian
-- south Indian
-- south
-- South Indian
-- South indian
-- South
 
 ## synonym:Sangli
 - Sahagalli
@@ -1094,6 +1027,14 @@
 - Ekasila Nagari
 - Omatikonda
 
+## synonym:american
+- North American
+- American
+- America
+- america
+- US
+- us
+
 ## synonym:bangalore
 - Bangalore
 - Bengaluru
@@ -1110,8 +1051,78 @@
 - china
 - Chines
 
+## synonym:italian
+- italinan
+- Italian
+- iTaLIaN
+- italy
+- Italy
+
+## synonym:lt300
+- 300
+- Less than Rs. 300
+- less than 300
+- lesser than 300
+- Less than 300
+- <300
+- < 300
+- Lesser than Rs. 300
+- below 300
+- not more than 300
+- cannot do more than 300
+- only 300
+- no more than 300
+- under 300
+- not above 300
+- not beyond 300
+- not above Rs. 300
+- not more than Rs. 300
+- not beyond Rs. 300
+- upto 300
+- maximum 300
+- limit 300
+- limit is 300
+- limit to 300
+
+## synonym:mexican
+- mexican indian fusion
+- Mexican
+- mexico
+- mexcan
+- Mexico
+- Mexcan
+
 ## synonym:mid
 - moderate
+
+## synonym:mt700
+- More than 700
+- more than 700
+- Above 700
+- above 700
+- > 700
+- >700
+- beyond 700
+- more than just 700
+- Beyond Rs. 700
+- Beyond 700
+- above Rs. 700
+
+## synonym:nindian
+- north Indian
+- north indian
+- North Indian
+- north
+- North indian
+- North
+
+## synonym:sindian
+- south indian
+- south Indian
+- south
+- South Indian
+- South indian
+- South
 
 ## synonym:vegetarian
 - veggie

@@ -2329,3 +2329,157 @@
     - utter_sent_mail
     - utter_goodbye
     - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "Hyderabad"}
+    - slot{"location": "Hyderabad"}
+    - action_validate_location
+    - slot{"location": "hyderabad"}
+    - utter_ask_cuisine
+* restaurant_search{"cuisine": "sindian"}
+    - slot{"cuisine": "sindian"}
+    - utter_ask_price_range
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - action_search_restaurants
+    - slot{"location": "hyderabad"}
+    - slot{"cuisine": "sindian"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+
+## interactive_story_2
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "mexican", "location": "Vijayawada"}
+    - slot{"cuisine": "mexican"}
+    - slot{"location": "Vijayawada"}
+    - action_validate_location
+    - slot{"location": "vijayawada"}
+    - utter_ask_price_range
+* price_info{"price": "lt300"}
+    - slot{"price": "lt300"}
+    - action_search_restaurants
+    - slot{"location": "vijayawada"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "manasa.koduganti@gmail.com"}
+    - slot{"contact_email": "manasa.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"price": "more than 300", "cuisine": "chinese", "location": "Chennai"}
+    - slot{"cuisine": "chinese"}
+    - slot{"location": "Chennai"}
+    - slot{"price": "more than 300"}
+    - action_validate_location
+    - slot{"location": "chennai"}
+    - action_search_restaurants
+    - slot{"price": null}
+    - utter_ask_price_range
+* price_info{"price": "than 300"}
+    - slot{"price": "than 300"}
+    - action_search_restaurants
+    - slot{"price": null}
+    - utter_ask_price_range
+* price_info
+    - action_search_restaurants
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": null}
+    - utter_ask_price_range
+* price_info
+    - action_search_restaurants
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": null}
+    - utter_ask_price_range
+* price_info
+    - action_search_restaurants
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": null}
+    - utter_ask_price_range
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - action_search_restaurants
+    - slot{"location": "chennai"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - utter_ask_location
+* restaurant_search{"location": "Borivali"}
+    - slot{"location": "Borivali"}
+    - action_validate_location
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "italian"}
+    - slot{"cuisine": "italian"}
+    - utter_ask_location
+* restaurant_search{"location": "Solapur"}
+    - slot{"location": "Solapur"}
+    - action_validate_location
+    - slot{"location": "solapur"}
+    - utter_ask_price_range
+* price_info{"price": "than 300"}
+    - slot{"price": "than 300"}
+    - action_search_restaurants
+    - slot{"price": null}
+    - utter_ask_price_range
+* price_info{"price": "lt300"}
+    - slot{"price": "lt300"}
+    - action_search_restaurants
+    - slot{"location": "solapur"}
+    - slot{"cuisine": "italian"}
+    - slot{"price": "lt300"}
+    - utter_ask_send_details
+* deny
+    - utter_goodbye
+    - action_restart_chat_helper
+
+ 
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "chinese"}
+    - slot{"cuisine": "chinese"}
+    - utter_ask_location
+* restaurant_search{"location": "Ranchi"}
+    - slot{"location": "Ranchi"}
+    - action_validate_location
+    - slot{"location": "ranchi"}
+    - utter_ask_price_range
+* price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - action_search_restaurants
+    - slot{"location": "ranchi"}
+    - slot{"cuisine": "chinese"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "madhavi.koduganti@gmail.com"}
+    - slot{"contact_email": "madhavi.koduganti@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
+    - action_restart_chat_helper

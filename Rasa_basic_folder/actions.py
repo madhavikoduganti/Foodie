@@ -100,8 +100,6 @@ class ActionSearchRestaurants(Action):
           
     def run(self, dispatcher, tracker, domain):
         try:
-            print("domain values for cuisine:",domain['slots']['cuisine']['values'])
-            print("domain values for price:",domain['slots']['price']['values'])
             cuisines_dict={'american':1,'chinese':25,'italian':55,'mexican':73,'north indian':50,'south indian':85}
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
             price_abbrv = {"lt300":"less than 300", "300to700":"in range 300 and 700","mt700":"more than 700"}
@@ -112,18 +110,24 @@ class ActionSearchRestaurants(Action):
             cuisine = tracker.get_slot('cuisine')
             prc = tracker.get_slot('price')
 
-            print(loc," ", cuisine, " ", prc)
-            print("domain values for cuisine:",domain['slots']['cuisine']['values'])
-            print("domain values for price:",domain['slots']['price']['values'])
             if(cuisine is None or prc is None or loc is None):
                 return [SlotSet('location',loc),SlotSet('cuisine',cuisine),SlotSet('price',prc)]
            
             if cuisine.lower() not in domain['slots']['cuisine']['values'] or cuisine.lower() is "__other__":
+                print("got cuisine", cuisine)
+                message = "Sorry, I am still young and learning. Please give from following cuisines:"
+                message += str([c for c in domain['slots']['cuisine']['values'] if c is not "__other__"])
+                dispatcher.utter_message(message)
                 return [SlotSet('cuisine',None)]
             else:
-                cuisine = self.validator.validateAndGetCuisine(cuisine)
+                cuisine = cuisine.lower()
+                cuisine_name = self.validator.validateAndGetCuisine(cuisine)
            
             if prc.lower() not in domain['slots']['price']['values'] or prc.lower() is "__other__":
+                print("got price", prc)
+                message = "Sorry, I am still young and learning. Please give something similar to following price ranges:"
+                message += str(["less than 300", "in range 300 and 700", "more than 700"])
+                dispatcher.utter_message(message)
                 return [SlotSet('price',None)]
             else:
                 prc = prc.lower()
@@ -191,31 +195,39 @@ class ActionSendEmail(Action):
         try:
 
             config={ "user_key":"35a1d24cad5c2653361da4c1e0daf8da"}
-            price_abbrv = {"LT300":"less than 300", "300To700":"in range 300 and 700","MT700":"more than 700"}
+            price_abbrv = {"lt300":"less than 300", "300to700":"in range 300 and 700","mt700":"more than 700"}
             cuisines_dict={'american':1,'chinese':25,'italian':55,'mexican':73,'north indian':50,'south indian':85}
             zomato = zomatopy.initialize_app(config)
             
-            self.validator.validate_slots(tracker,domain);
 
             loc = tracker.get_slot('location')
             prc = tracker.get_slot('price')
             cuisine = tracker.get_slot('cuisine')
             emailid = tracker.get_slot('contact_email')
 
-            
-            print(loc," ", cuisine, " ", prc, " ", emailid)
-            print("domain values for cuisine:",domain['slots']['cuisine']['values'])
-            print("domain values for price:",domain['slots']['price']['values'])
+
             if(cuisine is None or prc is None or loc is None):
                 return [SlotSet('location',loc),SlotSet('cuisine',cuisine),SlotSet('price',prc)]
-            if tracker.get_slot('cuisine') not in domain['slots']['cuisine']['values']:
+
+            if cuisine.lower() not in domain['slots']['cuisine']['values'] or cuisine.lower() is "__other__":
+                print("got cuisine", cuisine)
+                message = "Sorry, I am still young and learning. Please give from following cuisines:"
+                message += str([c for c in domain['slots']['cuisine']['values'] if c is not "__other__"])
+                dispatcher.utter_message(message)
                 return [SlotSet('cuisine',None)]
-            if tracker.get_slot('price') not in domain['slots']['price']['values']:
+            else:
+                cuisine = cuisine.lower()
+                cuisine_name = self.validator.validateAndGetCuisine(cuisine)
+
+            if prc.lower() not in domain['slots']['price']['values'] or prc.lower() is "__other__":
+                print("got price", prc)
+                message = "Sorry, I am still young and learning. Please give something similar to following price ranges:"
+                message += str(["less than 300", "in range 300 and 700", "more than 700"])
+                dispatcher.utter_message(message)
                 return [SlotSet('price',None)]
+            else:
+                prc = prc.lower()
 
-
-
-            cuisine_name = self.validator.validateAndGetCuisine(cuisine)
 
             loc = loc.rstrip().lower()
             if loc not in self.validator.city_list:
@@ -253,7 +265,7 @@ class ActionSendEmail(Action):
 
                 rest_df_sorted = rest_df_filter.sort_values(by=['rating'], ascending=False)
                 rest_df_html = rest_df_sorted.head(10).to_html(index=False)
-                html_msg = "<p>Hi!<br>Here are the top %s restaurants in %s for budget of %s<br><br>"%(cuisine_name,loc,price_abbrv[prc])+rest_df_html+"</p>"
+                html_msg = "<p>Hi!<br>Here are the top %s restaurants in %s for budget of %s<br><br>"%(cuisine_name,loc,price_abbrv[prc.lower()])+rest_df_html+"</p>"
                 try:
                     send_mail.mail_results(emailid, html_msg)
                 except Exception as error1:

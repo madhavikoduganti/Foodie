@@ -20,11 +20,11 @@ entities:
 - location
 - price
 intents:
+- price_info
 - contact_id
+- greet
 - restaurant_search
 - deny
-- price_info
-- greet
 - affirm
 - out_of_scope
 - out_of_context
@@ -33,17 +33,17 @@ intents:
 responses:
   utter_ask_cuisine:
   - buttons:
-    - payload: North Indian
+    - payload: nindian
       title: North Indian
-    - payload: South Indian
+    - payload: sindian
       title: South Indian
-    - payload: Chinese
+    - payload: chinese
       title: Chinese
-    - payload: Italian
+    - payload: italian
       title: Italian
-    - payload: Mexican
+    - payload: mexican
       title: Mexican
-    - payload: American
+    - payload: american
       title: American
     text: what kind of cuisine would you like?
   utter_ask_howcanhelp:
@@ -61,13 +61,14 @@ responses:
   - text: Where are you right now?
   utter_ask_price_range:
   - buttons:
-    - payload: LT300
+    - payload: lt300
       title: Lesser than Rs. 300
-    - payload: 300To700
+    - payload: 300to700
       title: Rs. 300 to 700
-    - payload: MT700
+    - payload: mt700
       title: More than 700
-    text: What average price range for two people are you looking at?
+    text: What average price range for two people are you looking at? Please mention
+      in above ranges of <300, 300-700, >700 only.
   utter_ask_send_details:
   - text: Do you want me to send the details of top 10 restaurants over your mail?
   - text: Do you want me to email you the details of these top 10 restaurants?
