@@ -114,6 +114,8 @@
 - I think I can do [more than 700]{"entity": "price", "value": "mt700"}
 - My budget is [between 300 and 700]{"entity": "price", "value": "300to700"}
 - I can do [more than 300]{"entity": "price", "value": "300to700"}
+- [between 300 to 700]{"entity": "price", "value": "300to700"}
+- [more than 700]{"entity": "price", "value": "mt700"}
 
 ## intent:greet
 - hey
@@ -149,6 +151,7 @@
 - HI
 - Heyo
 - Hi
+- hi there buddy
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -223,6 +226,7 @@
 - my email id is [jhaappy885@gmail.com](contact_email)
 - my id is [manasa.koduganti@gmail.com](contact_email)
 - my email ID is [madhavi.koduganti@gmail.com](contact_email)
+- [jhaappy885@gmail.com](contact_email)
 
 ## intent:restaurant_search
 - [sindian](cuisine)
@@ -768,6 +772,20 @@
 - in [hydberad](location)
 - I am looking for some hotels in [sydney](location)
 - I am looking for some cool hotels in [Singapore](location)
+- hi I am looking for hotels in [Rome](location)
+- Looking for some hotels in [Canberra](location)
+- Wanna eat in [london](location)
+- restaurants please
+- some [mexican](cuisine) please
+- in [Faridabad](location)
+- hotels please
+- in [juridabad](location)
+- in [sijapur](location)
+- in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- Your input ->  I like [americano](cuisine)
+- I like cuisine ghuergs
+- I would prefer triwwrb
+- [american](cuisine)
 
 ## intent:stop
 - ok then you cant help me
@@ -866,6 +884,9 @@
 - I dont know what to say
 - on cloud 9
 - I am ok with anything
+- on cloud nine honey
+- may be I dont want to eat because sky is blue
+- i am happily chilling at my home
 
 ## synonym:300to700
 - 300-700
@@ -879,6 +900,7 @@
 - 700
 - no more than 700
 - more than 300
+- between 300 to 700
 - 300 700
 - less than 700
 - under 700

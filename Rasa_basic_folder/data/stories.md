@@ -667,7 +667,10 @@
     - slot{"cuisine": "mexican"}
     - slot{"requested_slot": "location"}
 * stop
+    - form{"name": null}
+    - slot{"requested_slot": null}
     - action_restart_chat_helper
+
 
 ## interactive_story_1
 * greet
@@ -702,7 +705,11 @@
     - slot{"location": null}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
+
 
 ## interactive_story_1
 * greet
@@ -1422,7 +1429,10 @@
     - slot{"location": null}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
 
 ## interactive_story_1
 * greet
@@ -1437,7 +1447,11 @@
     - slot{"location": null}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
+
 
 ## interactive_story_1
 * greet
@@ -1452,7 +1466,10 @@
     - slot{"location": null}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
 
 
 
@@ -1464,7 +1481,10 @@
     - form{"name": "restaurant_form"}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
 
 
 
@@ -1484,7 +1504,10 @@
     - restaurant_form
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+    
 
 
 
@@ -1497,7 +1520,10 @@
     - slot{"location": null}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
 
 ## interactive_story_1
 * restaurant_search{"location": "london"}
@@ -1508,7 +1534,11 @@
     - slot{"location": null}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
+
 
 
 ## interactive_story_1
@@ -1517,7 +1547,11 @@
     - form{"name": "restaurant_form"}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
     - action_restart_chat_helper
+
+
 
 ## interactive_story_1
 * restaurant_search{"location": "Singapore"}
@@ -1528,4 +1562,278 @@
     - slot{"location": null}
     - slot{"requested_slot": "location"}
 * stop
+    - action_deactivate_form
+    - form{"name": null}
+    - action_restart_chat_helper
+
+
+
+## interactive_story_1
+* restaurant_search{"location": "Rome"}
+    - slot{"location": "Rome"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - action_restart_chat_helper
+
+
+
+
+
+## interactive_story_1
+* restaurant_search{"location": "Belgium"}
+    - slot{"location": "Rome"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - action_restart_chat_helper
+
+
+
+
+
+
+## interactive_story_1
+* restaurant_search{"location": "Minsk"}
+    - slot{"location": "Rome"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - action_restart_chat_helper
+
+
+
+
+
+
+
+## interactive_story_1
+* restaurant_search{"location": "NYC"}
+    - slot{"location": "Rome"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - action_restart_chat_helper
+
+
+
+
+## interactive_story_1
+* restaurant_search{"location": "Canberra"}
+    - slot{"location": "Canberra"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - action_restart_chat_helper
+
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "london"}
+    - slot{"location": "london"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_restart_chat_helper
+
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "pqrst"}
+    - slot{"location": "pqrst"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_restart_chat_helper
+
+
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"location": "abcds"}
+    - slot{"location": "abcds"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"location": null}
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_restart_chat_helper
+
+
+
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"requested_slot": "location"}
+* form: restaurant_search{"location": "vijayawafa"}
+    - slot{"location": "vijayawafa"}
+    - form: restaurant_form
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"cuisine": "mexican"}
+    - slot{"cuisine": "mexican"}
+    - slot{"requested_slot": "location"}
+* form: restaurant_search{"location": "Faridabad"}
+    - slot{"location": "Faridabad"}
+    - form: restaurant_form
+    - slot{"location": "faridabad"}
+    - slot{"requested_slot": "price"}
+* form: price_info{"price": "300to700"}
+    - slot{"price": "300to700"}
+    - form: restaurant_form
+    - slot{"price": "300to700"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_search_restaurants
+    - slot{"location": "faridabad"}
+    - slot{"cuisine": "mexican"}
+    - slot{"price": "300to700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye    
+    - action_restart_chat_helper
+
+## interactive_story_1
+* greet
+    - utter_greet
+* restaurant_search
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"requested_slot": "location"}
+* form: restaurant_search{"location": "juridabad"}
+    - slot{"location": "juridabad"}
+    - form: restaurant_form
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* form: restaurant_search{"location": "sijapur"}
+    - slot{"location": "sijapur"}
+    - form: restaurant_form
+    - slot{"location": null}
+    - slot{"requested_slot": "location"}
+* out_of_context
+    - utter_default
+    - restaurant_form
+    - slot{"requested_slot": "location"}
+* out_of_context
+    - utter_default
+    - restaurant_form
+    - slot{"requested_slot": "location"}
+* out_of_context
+    - utter_default
+    - restaurant_form
+    - slot{"requested_slot": "location"}
+* stop
+    - action_deactivate_form
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_restart_chat_helper
+
+## interactive_story_1
+* restaurant_search
+    - restaurant_form
+    - form{"name": "restaurant_form"}
+    - slot{"requested_slot": "location"}
+* form: restaurant_search{"location": "Hyderabad"}
+    - slot{"location": "Hyderabad"}
+    - form: restaurant_form
+    - slot{"location": "hyderabad"}
+    - slot{"requested_slot": "cuisine"}
+* form: restaurant_search{"cuisine": "americano"}
+    - slot{"cuisine": "americano"}
+    - form: restaurant_form
+    - slot{"cuisine": null}
+    - slot{"requested_slot": "cuisine"}
+* restaurant_search
+    - utter_default
+    - restaurant_form
+    - slot{"requested_slot": "cuisine"}
+* restaurant_search
+    - utter_default
+    - restaurant_form
+    - slot{"requested_slot": "cuisine"}
+* form: restaurant_search{"cuisine": "american"}
+    - slot{"cuisine": "american"}
+    - form: restaurant_form
+    - slot{"cuisine": "american"}
+    - slot{"requested_slot": "price"}
+* form: price_info{"price": "mt700"}
+    - slot{"price": "mt700"}
+    - form: restaurant_form
+    - slot{"price": "mt700"}
+    - form{"name": null}
+    - slot{"requested_slot": null}
+    - action_search_restaurants
+    - slot{"location": "hyderabad"}
+    - slot{"cuisine": "american"}
+    - slot{"price": "mt700"}
+    - utter_ask_send_details
+* contact_id{"contact_email": "jhaappy885@gmail.com"}
+    - slot{"contact_email": "jhaappy885@gmail.com"}
+    - action_send_mail
+    - utter_sent_mail
+    - utter_goodbye
     - action_restart_chat_helper

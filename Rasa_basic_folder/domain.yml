@@ -3,6 +3,7 @@ actions:
 - action_search_restaurants
 - action_send_mail
 - stop
+- utter_ask_continue
 - utter_ask_cuisine
 - utter_ask_howcanhelp
 - utter_ask_id
@@ -26,15 +27,17 @@ entities:
 forms:
 - restaurant_form
 intents:
-- stop
-- restaurant_search
-- greet
-- price_info
-- deny
-- out_of_context
-- affirm
 - contact_id
+- restaurant_search
+- price_info
+- out_of_context
+- greet
+- stop
+- deny
+- affirm
 responses:
+  utter_ask_continue:
+  - text: Should I continue?
   utter_ask_cuisine:
   - buttons:
     - payload: nindian
