@@ -27,13 +27,13 @@ entities:
 forms:
 - restaurant_form
 intents:
-- contact_id
 - restaurant_search
+- deny
 - price_info
+- stop
 - out_of_context
 - greet
-- stop
-- deny
+- contact_id
 - affirm
 responses:
   utter_ask_continue:

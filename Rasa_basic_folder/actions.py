@@ -211,27 +211,27 @@ class RestaurantForm(FormAction):
         return ["location", "cuisine", "price"]
 
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
-        try:
-            cuisine_slot_val = self.from_entity(entity="cuisine", intent="restaurant_search")
-        except Exception as error:
-            logger.exception(error)
-            cuisine_slot_val = None
-        try:
-            location_slot_val = self.from_entity(entity="location", intent="restaurant_search")
-        except Exception as error:
-            logger.exception(error)
-            location_slot_val = None
-        try:
-            price_slot_val = self.from_entity(entity="price", intent=["price_info", "request_restaurant"])
-        except Exception as error:
-            logger.exception(error)
-            price_slot_val = None
-        return {
-            "cuisine": cuisine_slot_val,
-            "location": location_slot_val,
-            "price": price_slot_val,
-        }
+        not_intents_cuisine = ["contact_id","price_info","out_of_context","greet","stop","deny","affirm"]
+        not_intents_location = ["contact_id","price_info","out_of_context","greet","stop","deny","affirm"]
+        not_intents_price = ["contact_id","out_of_context","greet","stop","deny","affirm"]
 
+        return {
+            "cuisine": [
+                self.from_intent(not_intent=not_intents_cuisine, value=None),
+                self.from_entity(entity="cuisine", intent="restaurant_search"),
+            ],
+            "location": [
+                self.from_intent(not_intent=not_intents_location, value=None),
+                self.from_entity(entity="location", intent="restaurant_search"),
+            ],
+            "price": [
+                self.from_intent(not_intent=not_intents_price, value=None),
+                self.from_entity(entity="price", intent=["price_info", "restaurant_search"]),
+            ],
+        }
+        
+
+    
     @staticmethod
     def cuisine_db() -> List[Text]:
         return [
@@ -259,16 +259,11 @@ class RestaurantForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
-        dispatcher.utter_message("Validating cuisine:", value)
 
         if value.lower() in self.cuisine_db():
-            # validation succeeded, set the value of the "cuisine" slot to value
-            dispatcher.utter_message("Cuisine Validated: "+value)
             return {"cuisine": value.lower()}
         else:
             dispatcher.utter_message(template="utter_wrong_cuisine")
-            # validation failed, set this slot to None, meaning the
-            # user will be asked for the slot again
             return {"cuisine": None}
 
     def validate_price(
@@ -278,16 +273,11 @@ class RestaurantForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
-        dispatcher.utter_message("Validating price:", value)
 
         if value.lower() in self.price_db():
-            dispatcher.utter_message("Price Validated: "+value.lower())
-            # validation succeeded, set the value of the "cuisine" slot to value
             return {"price": value.lower()}
         else:
             dispatcher.utter_message(template="utter_wrong_price")
-            # validation failed, set this slot to None, meaning the
-            # user will be asked for the slot again
             return {"price": None}
 
 
@@ -298,7 +288,6 @@ class RestaurantForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
-        dispatcher.utter_message("Validating location:", value)
 
         if value is not None:
             loc = value.lstrip().rstrip().lower()
@@ -320,7 +309,6 @@ class RestaurantForm(FormAction):
                         message += nearest_city
                     dispatcher.utter_message(message)
                     return {"location": None}
-            dispatcher.utter_message("Location Validated: "+value.lower())
             return {"location": value.lower()}
         else:
             dispatcher.utter_message(template="utter_wrong_location")

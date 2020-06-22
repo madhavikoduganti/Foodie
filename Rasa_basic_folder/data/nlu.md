@@ -115,7 +115,10 @@
 - My budget is [between 300 and 700]{"entity": "price", "value": "300to700"}
 - I can do [more than 300]{"entity": "price", "value": "300to700"}
 - [between 300 to 700]{"entity": "price", "value": "300to700"}
-- [more than 700]{"entity": "price", "value": "mt700"}
+- My budget is 300 to 400
+- My budget is Rs. [300 to 700]{"entity": "price", "value": "300to700"}
+- show me for [more than 700]{"entity": "price", "value": "mt700"}
+- around [300 to 700]{"entity": "price", "value": "300to700"}
 
 ## intent:greet
 - hey
@@ -226,7 +229,9 @@
 - my email id is [jhaappy885@gmail.com](contact_email)
 - my id is [manasa.koduganti@gmail.com](contact_email)
 - my email ID is [madhavi.koduganti@gmail.com](contact_email)
-- [jhaappy885@gmail.com](contact_email)
+- [jhaappy885@gmail.com](contact_email) is my mail id contact
+- [jhaappy885@gmail.com](contact_email) is my mail
+- [jhaappy885@gmail.com](contact_email) is my mail id
 
 ## intent:restaurant_search
 - [sindian](cuisine)
@@ -781,11 +786,24 @@
 - hotels please
 - in [juridabad](location)
 - in [sijapur](location)
-- in [hyderabad]{"entity": "location", "value": "Hyderabad"}
 - Your input ->  I like [americano](cuisine)
 - I like cuisine ghuergs
 - I would prefer triwwrb
-- [american](cuisine)
+- looking for [mexican](cuisine) hotels [under 300]{"entity": "price", "value": "lt300"} in [bijayawad](location)
+- Please help me find some restaurants in [chennai]{"entity": "location", "value": "Chennai"}
+- can you tell me some hotels in [Indore](location)?
+- I would prefer [north]{"entity": "cuisine", "value": "nindian"}
+- can you help me find some good hotels?
+- I am in [Kakinada](location)
+- in [Finland](location)
+- Please help me find hotels in [Vijayawafa](location)
+- [Cijayawada](location)
+- in [jupiter](location)
+- Please show me [italian](cuisine) restaurants for price [300 to 700]{"entity": "price", "value": "300to700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- show me [italian](cuisine) restaurnats [under 300]{"entity": "price", "value": "lt300"} in [bengaluru]{"entity": "location", "value": "bangalore"}
+- show me some [north indian]{"entity": "cuisine", "value": "nindian"} hotels for [300 to 700]{"entity": "price", "value": "300to700"} in [kolkata]{"entity": "location", "value": "Kolkata"}
+- show me some [italian](cuisine)
+- in [Jabalpur](location)
 
 ## intent:stop
 - ok then you cant help me
@@ -887,6 +905,9 @@
 - on cloud nine honey
 - may be I dont want to eat because sky is blue
 - i am happily chilling at my home
+- on my head
+- What is the meaning of life though
+- On jupiter
 
 ## synonym:300to700
 - 300-700
@@ -1003,8 +1024,8 @@
 - beejapur
 
 ## synonym:Chennai
-- Madras
 - chennai
+- Madras
 - chenai
 - cheni
 - chenny
