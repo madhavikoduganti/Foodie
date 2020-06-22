@@ -28,13 +28,12 @@ forms:
 intents:
 - stop
 - restaurant_search
-- affirm
-- contact_id
-- price_info
 - greet
+- price_info
 - deny
 - out_of_context
-- goodbye
+- affirm
+- contact_id
 responses:
   utter_ask_cuisine:
   - buttons:

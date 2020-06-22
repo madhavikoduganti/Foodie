@@ -185,6 +185,7 @@ class ActionRestartChatHelper(Action):
     def name(self):
         return 'action_restart_chat_helper'
     def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_message("-------END--------")
         return [Restarted()]
 
 
@@ -210,10 +211,25 @@ class RestaurantForm(FormAction):
         return ["location", "cuisine", "price"]
 
     def slot_mappings(self) -> Dict[Text, Union[Dict, List[Dict]]]:
+        try:
+            cuisine_slot_val = self.from_entity(entity="cuisine", intent="restaurant_search")
+        except Exception as error:
+            logger.exception(error)
+            cuisine_slot_val = None
+        try:
+            location_slot_val = self.from_entity(entity="location", intent="restaurant_search")
+        except Exception as error:
+            logger.exception(error)
+            location_slot_val = None
+        try:
+            price_slot_val = self.from_entity(entity="price", intent=["price_info", "request_restaurant"])
+        except Exception as error:
+            logger.exception(error)
+            price_slot_val = None
         return {
-            "cuisine": self.from_entity(entity="cuisine", intent="restaurant_search"),
-            "location": self.from_entity(entity="location", intent="restaurant_search"),
-            "price": self.from_entity(entity="price", intent=["price_info", "request_restaurant"]),
+            "cuisine": cuisine_slot_val,
+            "location": location_slot_val,
+            "price": price_slot_val,
         }
 
     @staticmethod
@@ -243,6 +259,7 @@ class RestaurantForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
+        dispatcher.utter_message("Validating cuisine:", value)
 
         if value.lower() in self.cuisine_db():
             # validation succeeded, set the value of the "cuisine" slot to value
@@ -261,6 +278,7 @@ class RestaurantForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
+        dispatcher.utter_message("Validating price:", value)
 
         if value.lower() in self.price_db():
             dispatcher.utter_message("Price Validated: "+value.lower())
@@ -280,6 +298,7 @@ class RestaurantForm(FormAction):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> Dict[Text, Any]:
+        dispatcher.utter_message("Validating location:", value)
 
         if value is not None:
             loc = value.lstrip().rstrip().lower()
@@ -289,13 +308,13 @@ class RestaurantForm(FormAction):
                 if not nearest_cities:
                     message = "We do not operate in location:"
                     message = message+str(loc)
-                    message = message+" yet. Sorry!"
-                    dispatcher.utter_message(template="utter_wrong_location")
+                    message = message+" yet. Sorry! You can either search for some other location in India or choose to stop the chat."
+                    dispatcher.utter_message(message)
                     return {"location": None}
                 else:
                     message = "We do not operate in location:"
                     message = message+str(loc)
-                    message = message+" yet. But, did you mean any of the following?"
+                    message = message+" yet. You can choose to stop or you can give any of the following valid cities."
                     for nearest_city in nearest_cities:
                         message += " "
                         message += nearest_city

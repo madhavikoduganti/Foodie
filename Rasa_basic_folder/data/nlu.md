@@ -110,16 +110,10 @@
 - so much [more than 700]{"entity": "price", "value": "mt700"}
 - My budget is [less than 300]{"entity": "price", "value": "lt300"}
 - Rs. [300 to 700]{"entity": "price", "value": "300to700"}
-
-## intent:goodbye
-- bye
-- goodbye
-- good bye
-- stop
-- end
-- farewell
-- Bye bye
-- have a good one
+- my budget is [300]{"entity": "price", "value": "lt300"}
+- I think I can do [more than 700]{"entity": "price", "value": "mt700"}
+- My budget is [between 300 and 700]{"entity": "price", "value": "300to700"}
+- I can do [more than 300]{"entity": "price", "value": "300to700"}
 
 ## intent:greet
 - hey
@@ -153,6 +147,8 @@
 - yoo honey
 - hi there
 - HI
+- Heyo
+- Hi
 
 ## intent:contact_id
 - My email id is [maxmeier@gmail.com](contact_email)
@@ -716,12 +712,72 @@
 - Show me [mexican](cuisine) restaurants from [Chennai](location)
 - show me [chines]{"entity": "cuisine", "value": "chinese"} hotels for price [between 300 and 700]{"entity": "price", "value": "300to700"} in [Baroda]{"entity": "location", "value": "Vadodara"}
 - Show me [mexican](cuisine) hotels
+- Show me restaurants
+- I would like [mexican](cuisine)
+- Show me some restaurants
+- In [Cpimbatore](location)
+- In [coimbaToRe]{"entity": "location", "value": "Coimbatore"}
+- I would like [americanoo](cuisine)
+- I think I will eat [american](cuisine)
+- Please show me some [north indian]{"entity": "cuisine", "value": "nindian"} hotels for price [more than 700]{"entity": "price", "value": "mt700"} in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- I am awesome
+- I am working
+- show me hotels
+- I am in [Vizag]{"entity": "location", "value": "Visakhapatnam"}
+- [North]{"entity": "location", "value": "nindian"}
+- I am here to search for some good [north]{"entity": "cuisine", "value": "nindian"} hotels [under 300]{"entity": "price", "value": "lt300"} rupees budget in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
+- I am in [Hyderabad](location). That is where I wanna eat
+- I will prefer [Mexican]{"entity": "cuisine", "value": "mexican"} please
+- show me some restaurants
+- I want some restaurants
+- I need to go to some eatery
+- show me some restaurant
+- show me some hotels
+- I want to eat at a hotel
+- I am looking for hotels
+- I like restaurants
+- I am in [Bezawada]{"entity": "location", "value": "Vijayawada"}
+- [Mexican]{"entity": "cuisine", "value": "mexican"}
+- I want to eat in a hotel
+- I want to eat in [London](location)
+- in [hyderabda](location)
+- in [hyderabad]{"entity": "location", "value": "Hyderabad"}
+- Show me [mexican](cuisine) restaurants for price in range [300 to 700]{"entity": "price", "value": "300to700"}
+- in [Vijayavatika]{"entity": "location", "value": "Vijayawada"}
+- I am very hungry
+- I can eat something
+- I want to eat in [Vizag]{"entity": "location", "value": "Visakhapatnam"}
+- I can do [mexican](cuisine)
+- Wanna eat
+- I can eat anywhere
+- I can eat in [Vijaywada](location)
+- yes in [vijayawada](location)
+- I can eat any cuisine
+- I will eat [south]{"entity": "cuisine", "value": "sindian"}
+- Any budget is fine for me
+- in some hotel
+- in [Baroda]{"entity": "location", "value": "Vadodara"}
+- [American]{"entity": "cuisine", "value": "american"}
+- show me some [mexican](cuisine) restaurnats for [less than 300]{"entity": "price", "value": "lt300"} in [mumbai]{"entity": "location", "value": "Mumbai"}
+- please show me [mexican](cuisine) restaurnats for [more than 700]{"entity": "price", "value": "mt700"} in [Delhi](location)
+- I would like to eat in [Coimbatore](location)
+- in [london](location)
+- in [sydney](location)
+- Looking for dine outs
+- looking for hotels
+- in [hydberad](location)
+- I am looking for some hotels in [sydney](location)
+- I am looking for some cool hotels in [Singapore](location)
 
 ## intent:stop
 - ok then you cant help me
 - that was shit, you're not helping
 - you can't help me
 - you can't help me with what i need
+- That's enough
+- That is enough
+- that is enough
+- that is enough.
 - i guess you can't help me then
 - ok i guess you can't help me
 - that's not what i want
@@ -734,7 +790,7 @@
 - stop
 - stop go back
 - do you get anything?
-- and you call yourself bot company? pff
+- and you call yourself bot? pff
 - and that's it?
 - nothing else?
 
@@ -791,6 +847,25 @@
 - please tell me who created you
 - tell me more about your creators
 - tell me more about your founders
+- Is the sky blue
+- I think I have malaria
+- Earth is blue. Water is blue. Sky is blue
+- What is the meaning of universe anyway
+- I like turmeric a lot
+- sky is blue
+- is there god. Does he eat dosa
+- I love my life
+- I like chocolate
+- Orange is orange
+- Chocolate is brown
+- UpGrad is the best
+- Grand Canyon is amazing
+- roses are red
+- I am crazy
+- I dont know you tell me
+- I dont know what to say
+- on cloud 9
+- I am ok with anything
 
 ## synonym:300to700
 - 300-700
@@ -803,6 +878,7 @@
 - cannot do more than 700
 - 700
 - no more than 700
+- more than 300
 - 300 700
 - less than 700
 - under 700
@@ -916,6 +992,7 @@
 - Koyampuththoor
 - Koyamputhoor
 - Kovai
+- coimbaToRe
 - coimbatore
 - koyambathhuru
 - koyambathuru
@@ -1268,8 +1345,8 @@
 - north indian
 - North Indian
 - north
-- North indian
 - North
+- North indian
 
 ## synonym:sindian
 - south indian
